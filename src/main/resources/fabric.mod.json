@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "vanenhanced",
+	"version": "0.0.1",
+	"name": "Wiles Vanilla Enhanced 1.21.1",
+	"description": "",
+	"authors": [
+		"bryanleonard1984"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/vanenhanced/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.bryanleonard1984.vanenhanced.Wilesvanillaenhanced1211"
+		],
+		"fabric-datagen": [
+			"net.bryanleonard1984.vanenhanced.Wilesvanillaenhanced1211DataGenerator"
+		],
+		"client": [
+			"net.bryanleonard1984.vanenhanced.Wilesvanillaenhanced1211Client"
+		]
+	},
+	"mixins": [
+		"vanenhanced.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
