@@ -1,0 +1,12 @@
+// 1.21.1	2025-02-13T11:41:14.790831773	Wiles Vanilla Enhanced 1.21.1/Model Definitions
+890bc07ae44b94f2e67d5dd83ad4a41cb50aaa6d assets/vanenhanced/models/block/decay_block.json
+92e293854d4bba9a9b5d94b529e140aeb9cccfbb assets/vanenhanced/models/block/reclaim_block.json
+3f7ec8f658218ae80efbff0de91f13bde770771c assets/vanenhanced/models/item/emerald_chisel.json
+d9e5b389f4e4d2bb26d2066a72995e25897e2c95 assets/vanenhanced/blockstates/reclaim_block.json
+2ff0943c3087a97ddd6ab5132bb4c41c1cff8183 assets/vanenhanced/blockstates/decay_block.json
+fcf17f15c300fd2267178a4252cc687302ac2586 assets/vanenhanced/models/item/iron_chisel.json
+175fcc6d7b0872e34bf5d7206ae192941a2cc793 assets/vanenhanced/models/item/decay_block.json
+8c340484db10f86eb8b3dbb5f294647390ef8ff8 assets/vanenhanced/models/item/reclaim_block.json
+957f8dd57dc13930c31880eb88e7be03ec3482ed assets/vanenhanced/models/item/book_enchantment_core.json
+4127bc44e67aaa996475a4166d0433a0dc424b87 assets/vanenhanced/models/item/diamond_chisel.json
+5c02f2a4f011d1cf62c37d485899d97ca84cadf3 assets/vanenhanced/models/item/netherite_chisel.json

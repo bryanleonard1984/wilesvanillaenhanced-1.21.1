@@ -1,5 +1,7 @@
 package net.bryanleonard1984.vanenhanced;
 
+import net.bryanleonard1984.vanenhanced.block.ModBlocks;
+import net.bryanleonard1984.vanenhanced.item.ModItemGroups;
 import net.bryanleonard1984.vanenhanced.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -14,6 +16,9 @@ public class Wilesvanillaenhanced1211 implements ModInitializer
 	@Override
 	public void onInitialize()
 	{
+		ModItemGroups.registerModItemGroups();
+
+		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
 	}
 }

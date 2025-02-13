@@ -3,5 +3,17 @@
   "item.vanenhanced.iron_chisel": "Iron Chisel",
   "item.vanenhanced.emerald_chisel": "Emerald Chisel",
   "item.vanenhanced.diamond_chisel": "Diamond Chisel",
-  "item.vanenhanced.netherite_chisel": "Netherite Chisel"
+  "item.vanenhanced.netherite_chisel": "Netherite Chisel",
+
+  "block.vanenhanced.decay_block": "Block of Decay",
+  "block.vanenhanced.reclaim_block": "Block of Restoration",
+
+  "itemgroup.vanenhanced.van_enhanced_tools": "Vanilla Enhanced Tools",
+  "itemgroup.vanenhanced.van_enhanced_items": "Vanilla Enhanced Items",
+  "itemgroup.vanenhanced.van_enhanced_blocks": "Vanilla Enhanced Blocks",
+
+  "tooltip.vanenhanced.chisel": "<Press §eshift§r for more info>",
+  "tooltip.vanenhanced.chisel.shiftdown": "Chisel blocks into bricks and back!",
+  "tooltip.vanenhanced.decay_block": "Throw an item on it to decay the item.",
+  "tooltip.vanenhanced.reclaim_block": "Throw a decayed item on it to restore the item!"
 }
