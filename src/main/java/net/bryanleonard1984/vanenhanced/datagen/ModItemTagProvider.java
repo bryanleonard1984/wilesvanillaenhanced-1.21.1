@@ -19,13 +19,13 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup)
     {
         getOrCreateTagBuilder(ModTags.Items.DECAYABLE_ITEMS)
-                .add(Items.LEATHER)
-                .add(Items.COBWEB)
-                .add(Items.SPIDER_EYE);
+                .add(Items.LEATHER,
+                        Items.COBWEB,
+                        Items.SPIDER_EYE);
 
         getOrCreateTagBuilder(ModTags.Items.RECLAMABLE_ITEMS)
-                .add(Items.ROTTEN_FLESH)
-                .add(Items.STRING)
-                .add(Items.FERMENTED_SPIDER_EYE);
+                .add(Items.ROTTEN_FLESH,
+                        Items.STRING,
+                        Items.FERMENTED_SPIDER_EYE);
     }
 }

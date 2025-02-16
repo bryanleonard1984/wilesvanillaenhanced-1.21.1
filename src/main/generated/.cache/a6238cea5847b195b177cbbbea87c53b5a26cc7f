@@ -1,0 +1,5 @@
+// 1.21.1	2025-02-15T20:16:27.290120232	Wiles Vanilla Enhanced 1.21.1/Block Loot Tables
+ef23cf147f250861e253b32c94ab6181aa128b1f data/vanenhanced/loot_table/blocks/nether_coal_ore.json
+c47ae1f1621efbc193fe0994bbe377e6bf1d3bf1 data/vanenhanced/loot_table/blocks/decay_block.json
+cf574900ac5572cc73229810996c6bd27ca399de data/vanenhanced/loot_table/blocks/reclaim_block.json
+70bb18f3588bf20543a8e85b6464746f1a0fdd27 data/vanenhanced/loot_table/blocks/nether_iron_ore.json

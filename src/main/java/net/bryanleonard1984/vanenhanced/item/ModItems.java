@@ -10,6 +10,8 @@ import net.minecraft.util.Identifier;
 public class ModItems
 {
     public static final Item BOOK_ENCHANTMENT_CORE = registerItem("book_enchantment_core", new Item(new Item.Settings()));
+    public static final Item TINY_CHARCOAL = registerItem("tiny_charcoal", new Item(new Item.Settings()));
+    public static final Item TINY_COAL = registerItem("tiny_coal", new Item(new Item.Settings()));
 
     public static final Item IRON_CHISEL = registerItem("iron_chisel", new ChiselItem(new Item.Settings().maxDamage(275)));
     public static final Item EMERALD_CHISEL = registerItem("emerald_chisel", new ChiselItem(new Item.Settings().maxDamage(500)));

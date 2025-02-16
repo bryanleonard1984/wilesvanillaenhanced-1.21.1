@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "vanenhanced:block/nether_iron_ore"
+    }
+  }
+}

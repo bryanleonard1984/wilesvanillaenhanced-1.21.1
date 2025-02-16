@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "B": {
+      "item": "minecraft:glowstone"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "L": {
+      "item": "minecraft:lapis_lazuli"
+    }
+  },
+  "pattern": [
+    "LGL",
+    "GBG",
+    "LGL"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanenhanced:reclaim_block"
+  }
+}

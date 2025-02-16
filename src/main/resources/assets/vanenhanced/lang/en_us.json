@@ -1,5 +1,7 @@
 {
   "item.vanenhanced.book_enchantment_core": "Book Enchantment Core",
+  "item.vanenhanced.tiny_charcoal": "Tiny Charcoal",
+  "item.vanenhanced.tiny_coal": "Tiny Coal",
   "item.vanenhanced.iron_chisel": "Iron Chisel",
   "item.vanenhanced.emerald_chisel": "Emerald Chisel",
   "item.vanenhanced.diamond_chisel": "Diamond Chisel",
@@ -7,6 +9,8 @@
 
   "block.vanenhanced.decay_block": "Block of Decay",
   "block.vanenhanced.reclaim_block": "Block of Restoration",
+  "block.vanenhanced.nether_coal_ore": "Nether Coal Ore",
+  "block.vanenhanced.nether_iron_ore": "Nether Iron Ore",
 
   "itemgroup.vanenhanced.van_enhanced_tools": "Vanilla Enhanced Tools",
   "itemgroup.vanenhanced.van_enhanced_items": "Vanilla Enhanced Items",

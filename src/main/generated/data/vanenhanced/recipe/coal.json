@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vanenhanced:tiny_coal"
+    },
+    {
+      "item": "vanenhanced:tiny_coal"
+    },
+    {
+      "item": "vanenhanced:tiny_coal"
+    },
+    {
+      "item": "vanenhanced:tiny_coal"
+    },
+    {
+      "item": "vanenhanced:tiny_coal"
+    },
+    {
+      "item": "vanenhanced:tiny_coal"
+    },
+    {
+      "item": "vanenhanced:tiny_coal"
+    },
+    {
+      "item": "vanenhanced:tiny_coal"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:coal"
+  }
+}

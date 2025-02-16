@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "tiny_fuel",
+  "ingredients": [
+    {
+      "item": "minecraft:charcoal"
+    }
+  ],
+  "result": {
+    "count": 8,
+    "id": "vanenhanced:tiny_charcoal"
+  }
+}

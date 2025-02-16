@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "B": {
+      "item": "minecraft:bone_block"
+    },
+    "F": {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    "R": {
+      "item": "minecraft:rotten_flesh"
+    }
+  },
+  "pattern": [
+    "RFR",
+    "FBF",
+    "RFR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanenhanced:decay_block"
+  }
+}

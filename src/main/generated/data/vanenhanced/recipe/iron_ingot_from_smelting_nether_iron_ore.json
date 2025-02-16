@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.75,
+  "group": "iron_ore_smelts",
+  "ingredient": {
+    "item": "vanenhanced:nether_iron_ore"
+  },
+  "result": {
+    "id": "minecraft:iron_ingot"
+  }
+}

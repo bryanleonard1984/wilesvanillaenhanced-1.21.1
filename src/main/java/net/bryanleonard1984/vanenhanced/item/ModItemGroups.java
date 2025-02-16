@@ -19,6 +19,8 @@ public class ModItemGroups
                     .entries((displayContext, entries) ->
                     {
                         entries.add(ModItems.BOOK_ENCHANTMENT_CORE);
+                        entries.add(ModItems.TINY_CHARCOAL);
+                        entries.add(ModItems.TINY_COAL);
                     }).build());
 
     public static final ItemGroup VAN_ENHANCED_TOOLS = Registry.register(Registries.ITEM_GROUP,
@@ -41,6 +43,8 @@ public class ModItemGroups
                     {
                         entries.add(ModBlocks.DECAY_BLOCK);
                         entries.add(ModBlocks.RECLAIM_BLOCK);
+                        entries.add(ModBlocks.NETHER_COAL_ORE);
+                        entries.add(ModBlocks.NETHER_IRON_ORE);
                     }).build());
 
     public static void registerModItemGroups()

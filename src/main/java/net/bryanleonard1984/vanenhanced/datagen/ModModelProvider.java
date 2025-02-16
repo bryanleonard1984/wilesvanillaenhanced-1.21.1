@@ -20,6 +20,8 @@ public class ModModelProvider extends FabricModelProvider
     {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DECAY_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RECLAIM_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_COAL_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_IRON_ORE);
     }
 
     @Override
@@ -30,5 +32,7 @@ public class ModModelProvider extends FabricModelProvider
         itemModelGenerator.register(ModItems.EMERALD_CHISEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.NETHERITE_CHISEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.BOOK_ENCHANTMENT_CORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TINY_CHARCOAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TINY_COAL, Models.GENERATED);
     }
 }
