@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.75,
+  "group": "lapis_ore_smelts",
+  "ingredient": {
+    "item": "vanenhanced:nether_lapis_ore"
+  },
+  "result": {
+    "id": "minecraft:lapis_lazuli"
+  }
+}
