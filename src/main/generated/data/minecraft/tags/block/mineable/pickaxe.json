@@ -3,6 +3,11 @@
     "vanenhanced:decay_block",
     "vanenhanced:reclaim_block",
     "vanenhanced:nether_coal_ore",
-    "vanenhanced:nether_iron_ore"
+    "vanenhanced:nether_iron_ore",
+    "vanenhanced:nether_diamond_ore",
+    "vanenhanced:nether_emerald_ore",
+    "vanenhanced:nether_lapis_ore",
+    "vanenhanced:nether_redstone_ore",
+    "vanenhanced:nether_copper_ore"
   ]
 }

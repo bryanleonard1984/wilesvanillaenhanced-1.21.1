@@ -1,5 +1,7 @@
 {
   "values": [
-    "vanenhanced:reclaim_block"
+    "vanenhanced:reclaim_block",
+    "vanenhanced:nether_diamond_ore",
+    "vanenhanced:nether_redstone_ore"
   ]
 }

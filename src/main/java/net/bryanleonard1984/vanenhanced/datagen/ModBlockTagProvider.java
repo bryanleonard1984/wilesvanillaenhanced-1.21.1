@@ -22,14 +22,26 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider
                 .add(ModBlocks.DECAY_BLOCK,
                         ModBlocks.RECLAIM_BLOCK,
                         ModBlocks.NETHER_COAL_ORE,
-                        ModBlocks.NETHER_IRON_ORE);
+                        ModBlocks.NETHER_IRON_ORE,
+                        ModBlocks.NETHER_DIAMOND_ORE,
+                        ModBlocks.NETHER_EMERALD_ORE,
+                        ModBlocks.NETHER_LAPIS_ORE,
+                        ModBlocks.NETHER_REDSTONE_ORE,
+                        ModBlocks.NETHER_COPPER_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.DECAY_BLOCK,
                         ModBlocks.NETHER_COAL_ORE,
-                        ModBlocks.NETHER_IRON_ORE);
+                        ModBlocks.NETHER_IRON_ORE,
+                        ModBlocks.NETHER_LAPIS_ORE,
+                        ModBlocks.NETHER_COPPER_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.RECLAIM_BLOCK);
+                .add(ModBlocks.RECLAIM_BLOCK,
+                        ModBlocks.NETHER_DIAMOND_ORE,
+                        ModBlocks.NETHER_REDSTONE_ORE);
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(ModBlocks.NETHER_EMERALD_ORE);
     }
 }

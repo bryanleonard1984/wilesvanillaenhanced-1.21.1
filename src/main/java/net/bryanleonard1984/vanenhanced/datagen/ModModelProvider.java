@@ -22,6 +22,11 @@ public class ModModelProvider extends FabricModelProvider
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RECLAIM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_COAL_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_IRON_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_DIAMOND_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_EMERALD_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_COPPER_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_LAPIS_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_REDSTONE_ORE);
     }
 
     @Override

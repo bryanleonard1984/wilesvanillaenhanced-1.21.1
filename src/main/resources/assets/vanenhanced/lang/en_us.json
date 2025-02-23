@@ -10,7 +10,12 @@
   "block.vanenhanced.decay_block": "Block of Decay",
   "block.vanenhanced.reclaim_block": "Block of Restoration",
   "block.vanenhanced.nether_coal_ore": "Nether Coal Ore",
+  "block.vanenhanced.nether_copper_ore": "Nether Copper Ore",
+  "block.vanenhanced.nether_diamond_ore": "Nether Diamond Ore",
+  "block.vanenhanced.nether_emerald_ore": "Nether Emerald Ore",
   "block.vanenhanced.nether_iron_ore": "Nether Iron Ore",
+  "block.vanenhanced.nether_lapis_ore": "Nether Lapis Ore",
+  "block.vanenhanced.nether_redstone_ore": "Nether Redstone Ore",
 
   "itemgroup.vanenhanced.van_enhanced_tools": "Vanilla Enhanced Tools",
   "itemgroup.vanenhanced.van_enhanced_items": "Vanilla Enhanced Items",

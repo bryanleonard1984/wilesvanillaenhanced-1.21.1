@@ -31,6 +31,26 @@ public class ModBlocks
             new ExperienceDroppingBlock(UniformIntProvider.create(3,5),
                     AbstractBlock.Settings.create().strength(3.25f, 1.75f)
                     .requiresTool().sounds(BlockSoundGroup.NETHER_ORE)));
+    public static final Block NETHER_DIAMOND_ORE = registerBlock("nether_diamond_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(4,6),
+                    AbstractBlock.Settings.create().strength(3.25f, 1.75f)
+                    .requiresTool().sounds(BlockSoundGroup.NETHER_ORE)));
+    public static final Block NETHER_LAPIS_ORE = registerBlock("nether_lapis_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(3,5),
+                    AbstractBlock.Settings.create().strength(3.25f, 1.75f)
+                            .requiresTool().sounds(BlockSoundGroup.NETHER_ORE)));
+    public static final Block NETHER_EMERALD_ORE = registerBlock("nether_emerald_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(4,7),
+                    AbstractBlock.Settings.create().strength(3.25f, 1.75f)
+                            .requiresTool().sounds(BlockSoundGroup.NETHER_ORE)));
+    public static final Block NETHER_REDSTONE_ORE = registerBlock("nether_redstone_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(3,5),
+                    AbstractBlock.Settings.create().strength(3.25f, 1.75f)
+                            .requiresTool().sounds(BlockSoundGroup.NETHER_ORE)));
+    public static final Block NETHER_COPPER_ORE = registerBlock("nether_copper_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(3,4),
+                    AbstractBlock.Settings.create().strength(3, 4)
+                            .requiresTool().sounds(BlockSoundGroup.NETHER_ORE)));
 
     private static Block registerBlock(String name, Block block)
     {

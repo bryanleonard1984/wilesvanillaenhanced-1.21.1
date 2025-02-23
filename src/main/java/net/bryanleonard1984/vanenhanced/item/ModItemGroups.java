@@ -45,6 +45,11 @@ public class ModItemGroups
                         entries.add(ModBlocks.RECLAIM_BLOCK);
                         entries.add(ModBlocks.NETHER_COAL_ORE);
                         entries.add(ModBlocks.NETHER_IRON_ORE);
+                        entries.add(ModBlocks.NETHER_DIAMOND_ORE);
+                        entries.add(ModBlocks.NETHER_EMERALD_ORE);
+                        entries.add(ModBlocks.NETHER_LAPIS_ORE);
+                        entries.add(ModBlocks.NETHER_REDSTONE_ORE);
+                        entries.add(ModBlocks.NETHER_COPPER_ORE);
                     }).build());
 
     public static void registerModItemGroups()
