@@ -21,16 +21,29 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.DECAY_BLOCK,
                         ModBlocks.RECLAIM_BLOCK,
+                        ModBlocks.QUARTZ_ORE,
+                        ModBlocks.DEEPSLATE_QUARTZ_ORE,
                         ModBlocks.NETHER_COAL_ORE,
                         ModBlocks.NETHER_IRON_ORE,
                         ModBlocks.NETHER_DIAMOND_ORE,
                         ModBlocks.NETHER_EMERALD_ORE,
                         ModBlocks.NETHER_LAPIS_ORE,
                         ModBlocks.NETHER_REDSTONE_ORE,
-                        ModBlocks.NETHER_COPPER_ORE);
+                        ModBlocks.NETHER_COPPER_ORE,
+                        ModBlocks.END_COAL_ORE,
+                        ModBlocks.END_COPPER_ORE,
+                        ModBlocks.END_DIAMOND_ORE,
+                        ModBlocks.END_EMERALD_ORE,
+                        ModBlocks.END_GOLD_ORE,
+                        ModBlocks.END_IRON_ORE,
+                        ModBlocks.END_LAPIS_ORE,
+                        ModBlocks.END_QUARTZ_ORE,
+                        ModBlocks.END_REDSTONE_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.DECAY_BLOCK,
+                        ModBlocks.QUARTZ_ORE,
+                        ModBlocks.DEEPSLATE_QUARTZ_ORE,
                         ModBlocks.NETHER_COAL_ORE,
                         ModBlocks.NETHER_IRON_ORE,
                         ModBlocks.NETHER_LAPIS_ORE,
@@ -39,9 +52,18 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.RECLAIM_BLOCK,
                         ModBlocks.NETHER_DIAMOND_ORE,
-                        ModBlocks.NETHER_REDSTONE_ORE);
+                        ModBlocks.NETHER_REDSTONE_ORE,
+                        ModBlocks.END_COAL_ORE,
+                        ModBlocks.END_COPPER_ORE,
+                        ModBlocks.END_LAPIS_ORE,
+                        ModBlocks.END_IRON_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.NETHER_EMERALD_ORE);
+                .add(ModBlocks.NETHER_EMERALD_ORE,
+                        ModBlocks.END_DIAMOND_ORE,
+                        ModBlocks.END_EMERALD_ORE,
+                        ModBlocks.END_GOLD_ORE,
+                        ModBlocks.END_QUARTZ_ORE,
+                        ModBlocks.END_REDSTONE_ORE);
     }
 }

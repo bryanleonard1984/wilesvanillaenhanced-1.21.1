@@ -1,5 +1,10 @@
 {
   "values": [
-    "vanenhanced:nether_emerald_ore"
+    "vanenhanced:nether_emerald_ore",
+    "vanenhanced:end_diamond_ore",
+    "vanenhanced:end_emerald_ore",
+    "vanenhanced:end_gold_ore",
+    "vanenhanced:end_quartz_ore",
+    "vanenhanced:end_redstone_ore"
   ]
 }

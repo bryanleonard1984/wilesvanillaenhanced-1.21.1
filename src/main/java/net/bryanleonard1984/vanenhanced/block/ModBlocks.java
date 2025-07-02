@@ -23,6 +23,15 @@ public class ModBlocks
             new DecayBlock(AbstractBlock.Settings.create().strength(3.0f, 1.5f)
                     .requiresTool().sounds(BlockSoundGroup.MUD)));
 
+    public static final Block QUARTZ_ORE = registerBlock("quartz_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(1, 3),
+                    AbstractBlock.Settings.create().strength(3.0f, 1.5f)
+                    .requiresTool().sounds(BlockSoundGroup.STONE)));
+    public static final Block DEEPSLATE_QUARTZ_ORE = registerBlock("deepslate_quartz_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 4),
+                    AbstractBlock.Settings.create().strength(4.5f, 2.0f)
+                    .requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
+
     public static final Block NETHER_COAL_ORE = registerBlock("nether_coal_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(3, 4),
                     AbstractBlock.Settings.create().strength(3.0f, 1.75f)
@@ -38,19 +47,58 @@ public class ModBlocks
     public static final Block NETHER_LAPIS_ORE = registerBlock("nether_lapis_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(3,5),
                     AbstractBlock.Settings.create().strength(3.25f, 1.75f)
-                            .requiresTool().sounds(BlockSoundGroup.NETHER_ORE)));
+                    .requiresTool().sounds(BlockSoundGroup.NETHER_ORE)));
     public static final Block NETHER_EMERALD_ORE = registerBlock("nether_emerald_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(4,7),
                     AbstractBlock.Settings.create().strength(3.25f, 1.75f)
-                            .requiresTool().sounds(BlockSoundGroup.NETHER_ORE)));
+                    .requiresTool().sounds(BlockSoundGroup.NETHER_ORE)));
     public static final Block NETHER_REDSTONE_ORE = registerBlock("nether_redstone_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(3,5),
                     AbstractBlock.Settings.create().strength(3.25f, 1.75f)
-                            .requiresTool().sounds(BlockSoundGroup.NETHER_ORE)));
+                    .requiresTool().sounds(BlockSoundGroup.NETHER_ORE)));
     public static final Block NETHER_COPPER_ORE = registerBlock("nether_copper_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(3,4),
                     AbstractBlock.Settings.create().strength(3, 4)
-                            .requiresTool().sounds(BlockSoundGroup.NETHER_ORE)));
+                    .requiresTool().sounds(BlockSoundGroup.NETHER_ORE)));
+
+    public static final Block END_COAL_ORE = registerBlock("end_coal_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),
+                    AbstractBlock.Settings.create().strength(3.0f, 2.0f)
+                    .requiresTool().sounds(BlockSoundGroup.STONE)));
+    public static final Block END_COPPER_ORE = registerBlock("end_copper_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),
+                    AbstractBlock.Settings.create().strength(3.0f, 2.0f)
+                            .requiresTool().sounds(BlockSoundGroup.STONE)));
+    public static final Block END_DIAMOND_ORE = registerBlock("end_diamond_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(5, 7),
+                    AbstractBlock.Settings.create().strength(3.25f, 2.0f)
+                            .requiresTool().sounds(BlockSoundGroup.STONE)));
+    public static final Block END_EMERALD_ORE = registerBlock("end_emerald_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(6, 8),
+                    AbstractBlock.Settings.create().strength(3.25f, 2.0f)
+                            .requiresTool().sounds(BlockSoundGroup.STONE)));
+    public static final Block END_GOLD_ORE = registerBlock("end_gold_ore",
+        new ExperienceDroppingBlock(UniformIntProvider.create(4, 7),
+                AbstractBlock.Settings.create().strength(3.0f, 2.0f)
+                        .requiresTool().sounds(BlockSoundGroup.STONE)));
+    public static final Block END_IRON_ORE = registerBlock("end_iron_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),
+                    AbstractBlock.Settings.create().strength(3.0f, 2.0f)
+                            .requiresTool().sounds(BlockSoundGroup.STONE)));
+    public static final Block END_LAPIS_ORE = registerBlock("end_lapis_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),
+                    AbstractBlock.Settings.create().strength(3.0f, 2.0f)
+                            .requiresTool().sounds(BlockSoundGroup.STONE)));
+    public static final Block END_QUARTZ_ORE = registerBlock("end_quartz_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),
+                    AbstractBlock.Settings.create().strength(3.0f, 2.0f)
+                            .requiresTool().sounds(BlockSoundGroup.STONE)));
+    public static final Block END_REDSTONE_ORE = registerBlock("end_redstone_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),
+                    AbstractBlock.Settings.create().strength(3.0f, 2.0f)
+                            .requiresTool().sounds(BlockSoundGroup.STONE)));
+
+
 
     private static Block registerBlock(String name, Block block)
     {

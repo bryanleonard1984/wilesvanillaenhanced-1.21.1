@@ -20,6 +20,8 @@ public class ModModelProvider extends FabricModelProvider
     {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DECAY_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RECLAIM_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.QUARTZ_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_QUARTZ_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_COAL_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_IRON_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_DIAMOND_ORE);
@@ -27,6 +29,15 @@ public class ModModelProvider extends FabricModelProvider
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_COPPER_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_LAPIS_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_REDSTONE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_COAL_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_COPPER_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_DIAMOND_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_EMERALD_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_GOLD_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_IRON_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_LAPIS_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_QUARTZ_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_REDSTONE_ORE);
     }
 
     @Override

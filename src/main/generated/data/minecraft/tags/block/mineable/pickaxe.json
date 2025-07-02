@@ -2,12 +2,23 @@
   "values": [
     "vanenhanced:decay_block",
     "vanenhanced:reclaim_block",
+    "vanenhanced:quartz_ore",
+    "vanenhanced:deepslate_quartz_ore",
     "vanenhanced:nether_coal_ore",
     "vanenhanced:nether_iron_ore",
     "vanenhanced:nether_diamond_ore",
     "vanenhanced:nether_emerald_ore",
     "vanenhanced:nether_lapis_ore",
     "vanenhanced:nether_redstone_ore",
-    "vanenhanced:nether_copper_ore"
+    "vanenhanced:nether_copper_ore",
+    "vanenhanced:end_coal_ore",
+    "vanenhanced:end_copper_ore",
+    "vanenhanced:end_diamond_ore",
+    "vanenhanced:end_emerald_ore",
+    "vanenhanced:end_gold_ore",
+    "vanenhanced:end_iron_ore",
+    "vanenhanced:end_lapis_ore",
+    "vanenhanced:end_quartz_ore",
+    "vanenhanced:end_redstone_ore"
   ]
 }

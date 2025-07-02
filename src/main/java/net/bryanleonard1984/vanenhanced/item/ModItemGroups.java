@@ -43,6 +43,8 @@ public class ModItemGroups
                     {
                         entries.add(ModBlocks.DECAY_BLOCK);
                         entries.add(ModBlocks.RECLAIM_BLOCK);
+                        entries.add(ModBlocks.QUARTZ_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_QUARTZ_ORE);
                         entries.add(ModBlocks.NETHER_COAL_ORE);
                         entries.add(ModBlocks.NETHER_IRON_ORE);
                         entries.add(ModBlocks.NETHER_DIAMOND_ORE);
@@ -50,6 +52,15 @@ public class ModItemGroups
                         entries.add(ModBlocks.NETHER_LAPIS_ORE);
                         entries.add(ModBlocks.NETHER_REDSTONE_ORE);
                         entries.add(ModBlocks.NETHER_COPPER_ORE);
+                        entries.add(ModBlocks.END_COAL_ORE);
+                        entries.add(ModBlocks.END_COPPER_ORE);
+                        entries.add(ModBlocks.END_DIAMOND_ORE);
+                        entries.add(ModBlocks.END_EMERALD_ORE);
+                        entries.add(ModBlocks.END_GOLD_ORE);
+                        entries.add(ModBlocks.END_IRON_ORE);
+                        entries.add(ModBlocks.END_LAPIS_ORE);
+                        entries.add(ModBlocks.END_QUARTZ_ORE);
+                        entries.add(ModBlocks.END_REDSTONE_ORE);
                     }).build());
 
     public static void registerModItemGroups()

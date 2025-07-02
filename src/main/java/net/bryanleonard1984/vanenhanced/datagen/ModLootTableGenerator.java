@@ -36,6 +36,9 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DECAY_BLOCK);
         addDrop(ModBlocks.RECLAIM_BLOCK);
 
+        addDrop(ModBlocks.QUARTZ_ORE, oreDrops(ModBlocks.QUARTZ_ORE, Items.QUARTZ));
+        addDrop(ModBlocks.DEEPSLATE_QUARTZ_ORE, oreDrops(ModBlocks.DEEPSLATE_QUARTZ_ORE, Items.QUARTZ));
+
         addDrop(ModBlocks.NETHER_COAL_ORE, multipleOreDrops(ModBlocks.NETHER_COAL_ORE, Items.COAL, 2.0f, 3.0f));
         addDrop(ModBlocks.NETHER_IRON_ORE, multipleOreDrops(ModBlocks.NETHER_IRON_ORE, Items.RAW_IRON, 1.0f, 3.0f));
         addDrop(ModBlocks.NETHER_DIAMOND_ORE, multipleOreDrops(ModBlocks.NETHER_DIAMOND_ORE, Items.DIAMOND, 1.0f, 2.0f));
@@ -44,6 +47,16 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.NETHER_COPPER_ORE, multipleOreDrops(ModBlocks.NETHER_COPPER_ORE, Items.RAW_COPPER, 3.0f, 6.0f));
         addDrop(ModBlocks.NETHER_EMERALD_ORE, multipleOreDrops(ModBlocks.NETHER_EMERALD_ORE, Items.EMERALD, 1.0f, 2.0f));
         addDrop(Blocks.NETHER_GOLD_ORE, multipleOreDrops(Blocks.NETHER_GOLD_ORE, Items.RAW_GOLD, 1.0f, 2.0f));
+
+        addDrop(ModBlocks.END_COAL_ORE, multipleOreDrops(ModBlocks.END_COAL_ORE, Items.COAL, 3.0f, 5.0f));
+        addDrop(ModBlocks.END_COPPER_ORE, multipleOreDrops(ModBlocks.END_COPPER_ORE, Items.RAW_COPPER, 5.0f, 8.0f));
+        addDrop(ModBlocks.END_DIAMOND_ORE, multipleOreDrops(ModBlocks.END_DIAMOND_ORE, Items.DIAMOND, 2.0f, 4.0f));
+        addDrop(ModBlocks.END_EMERALD_ORE, multipleOreDrops(ModBlocks.END_EMERALD_ORE, Items.EMERALD, 2.0f, 3.0f));
+        addDrop(ModBlocks.END_GOLD_ORE, multipleOreDrops(ModBlocks.END_GOLD_ORE, Items.RAW_GOLD, 2.0f, 3.0f));
+        addDrop(ModBlocks.END_IRON_ORE, multipleOreDrops(ModBlocks.END_IRON_ORE, Items.RAW_IRON, 2.0f, 5.0f));
+        addDrop(ModBlocks.END_LAPIS_ORE, multipleOreDrops(ModBlocks.END_LAPIS_ORE, Items.LAPIS_LAZULI, 6.0f, 11.0f));
+        addDrop(ModBlocks.END_QUARTZ_ORE, multipleOreDrops(ModBlocks.END_QUARTZ_ORE, Items.QUARTZ, 4.0f, 6.0f));
+        addDrop(ModBlocks.END_REDSTONE_ORE, multipleOreDrops(ModBlocks.END_REDSTONE_ORE, Items.REDSTONE, 6.0f, 10.0f));
     }
 
     @Override

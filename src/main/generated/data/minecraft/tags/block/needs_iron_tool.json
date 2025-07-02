@@ -2,6 +2,10 @@
   "values": [
     "vanenhanced:reclaim_block",
     "vanenhanced:nether_diamond_ore",
-    "vanenhanced:nether_redstone_ore"
+    "vanenhanced:nether_redstone_ore",
+    "vanenhanced:end_coal_ore",
+    "vanenhanced:end_copper_ore",
+    "vanenhanced:end_lapis_ore",
+    "vanenhanced:end_iron_ore"
   ]
 }

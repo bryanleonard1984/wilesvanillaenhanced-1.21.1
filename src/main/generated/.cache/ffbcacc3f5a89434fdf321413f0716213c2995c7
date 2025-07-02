@@ -1,5 +1,5 @@
-// 1.21.1	2025-02-23T16:39:00.052620622	Wiles Vanilla Enhanced 1.21.1/Tags for minecraft:block
-1f57b3216f0a304f354ad70fc896d101b082fdb1 data/minecraft/tags/block/mineable/pickaxe.json
-dad91a4d79d17635f65131282f58a6d5a09890dd data/minecraft/tags/block/needs_stone_tool.json
-e10c457e6f88f93710633ab24c12b94bda180697 data/minecraft/tags/block/needs_iron_tool.json
-9e74676c671451a81ac0f704aa341a7b60e6e70d data/minecraft/tags/block/needs_diamond_tool.json
+// 1.21.1	2025-07-01T21:45:23.22483379	Wiles Vanilla Enhanced 1.21.1/Tags for minecraft:block
+a6c210221aaeec381c6bc2363c5e83f921da3226 data/minecraft/tags/block/mineable/pickaxe.json
+7d2793fbe2aa568c81cf29be871d569f9d49247a data/minecraft/tags/block/needs_stone_tool.json
+1452750377a39a2aa1f374533e486afbfd34bad2 data/minecraft/tags/block/needs_iron_tool.json
+6d7cc82fd57f3685c0ff5e30d2cf522eaec38a92 data/minecraft/tags/block/needs_diamond_tool.json
