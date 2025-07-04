@@ -3,6 +3,7 @@ package net.bryanleonard1984.vanenhanced.item;
 import net.bryanleonard1984.vanenhanced.Wilesvanillaenhanced1211;
 import net.bryanleonard1984.vanenhanced.item.custom.ChiselItem;
 import net.bryanleonard1984.vanenhanced.item.custom.HammerItem;
+import net.bryanleonard1984.vanenhanced.item.custom.ModShearsItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.*;
 import net.minecraft.util.Identifier;
@@ -29,12 +30,12 @@ public class ModItems
     public static final Item CRUSHED_GOLD = registerItem("crushed_gold", new Item(new Item.Settings()));
     public static final Item CRUSHED_IRON = registerItem("crushed_iron", new Item(new Item.Settings()));
 
+    public static final Item MOD_SHEARS = new ModShearsItem(new Item.Settings().maxDamage(238).recipeRemainder(ModItems.MOD_SHEARS).maxCount(1));
+
     private static Item registerItem(String name, Item item)
     {
         return Registry.register(Registries.ITEM, Identifier.of(Wilesvanillaenhanced1211.MOD_ID, name), item);
     }
-
-
 
     public static void registerModItems()
     {

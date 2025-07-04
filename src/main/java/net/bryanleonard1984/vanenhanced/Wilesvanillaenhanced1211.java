@@ -6,6 +6,9 @@ import net.bryanleonard1984.vanenhanced.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,6 +22,7 @@ public class Wilesvanillaenhanced1211 implements ModInitializer
 	{
 		ModItemGroups.registerModItemGroups();
 
+		Registry.register(Registries.ITEM, Identifier.of("minecraft", "shears"), ModItems.MOD_SHEARS);
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
 

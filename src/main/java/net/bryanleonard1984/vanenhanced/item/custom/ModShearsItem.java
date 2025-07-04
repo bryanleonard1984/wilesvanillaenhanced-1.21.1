@@ -1,12 +1,16 @@
-package net.bryanleonard1984.vanenhanced.mixin;
+package net.bryanleonard1984.vanenhanced.item.custom;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ShearsItem;
-import org.spongepowered.asm.mixin.Mixin;
 
-@Mixin(ShearsItem.class)
-public class ShearsItemMixin
+public class ModShearsItem extends ShearsItem
 {
+    public ModShearsItem(Settings settings)
+    {
+        super(settings);
+    }
+
+    @Override
     public ItemStack getRecipeRemainder(ItemStack stack)
     {
         if(stack.getDamage() < stack.getMaxDamage() - 1)

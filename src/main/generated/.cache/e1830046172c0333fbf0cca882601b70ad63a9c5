@@ -1,4 +1,4 @@
-// 1.21.1	2025-07-04T15:02:53.3107729	Wiles Vanilla Enhanced 1.21.1/Model Definitions
+// 1.21.1	2025-07-04T16:03:54.9409293	Wiles Vanilla Enhanced 1.21.1/Model Definitions
 a79c410e288b4e5702adb5139b5adc1e8fcc5fc6 assets\vanenhanced\blockstates\nether_diamond_ore.json
 4097165e992652ba85e11b6667b83252e0be89a5 assets\vanenhanced\models\item\iron_hammer.json
 8aa81520487893e16f0e8d54f992c9e5ba69421b assets\vanenhanced\models\block\end_diamond_ore.json
@@ -10,8 +10,8 @@ b2d1130697cf728cc1c5453cb7b64819c1ea9403 assets\vanenhanced\models\item\nether_l
 8df0be8a7bd5007adf6ce42fa47546fcf23d81fc assets\vanenhanced\blockstates\nether_lapis_ore.json
 b3a11beeefca9b710bccb8520eec4cd3532bcf0c assets\vanenhanced\models\block\end_lapis_ore.json
 72268cef6b61050f6baf6326b5593eeea5c9ee93 assets\vanenhanced\models\item\crushed_copper.json
-4658cac5d732dda160ee16d197f04179e11b9438 assets\vanenhanced\blockstates\nether_copper_ore.json
 b882aefcd0e83a5ef5a2408c9d92ff1c4d2820a0 assets\vanenhanced\blockstates\end_gold_ore.json
+4658cac5d732dda160ee16d197f04179e11b9438 assets\vanenhanced\blockstates\nether_copper_ore.json
 4ec5ed517b0af628ab157e63b2ae2e428211c810 assets\vanenhanced\models\block\deepslate_quartz_ore.json
 cac9c8fe07e46eade73010dab79f65985eac0fb3 assets\vanenhanced\models\item\end_diamond_ore.json
 63a732dad8ddbe9b249d634bcf9bb5608d1d7c90 assets\vanenhanced\models\item\nether_diamond_ore.json

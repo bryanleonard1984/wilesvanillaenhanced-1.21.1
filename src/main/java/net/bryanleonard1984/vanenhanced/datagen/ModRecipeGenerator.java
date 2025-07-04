@@ -144,6 +144,11 @@ public class ModRecipeGenerator extends FabricRecipeProvider
                 .criterion(hasItem(Items.FLINT), conditionsFromItem(Items.FLINT))
                 .offerTo(recipeExporter);
 
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.STRING, 4)
+                .input(ItemTags.WOOL).input(Items.SHEARS)
+                .criterion(hasItem(Items.SHEARS), conditionsFromItem(Items.SHEARS))
+                .offerTo(recipeExporter, "string_with_shears");
+
         offerShapelessRecipe(recipeExporter, Items.NETHER_WART, Blocks.NETHER_WART_BLOCK, "nether_wart", 4);
 
         recipeBuilder.ChiselRecipes(ModItems.IRON_CHISEL, Items.IRON_INGOT, recipeExporter);
