@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "group": "diamond_ore_smelts",
+  "ingredient": {
+    "item": "vanenhanced:end_diamond_ore"
+  },
+  "result": {
+    "id": "minecraft:diamond"
+  }
+}

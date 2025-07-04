@@ -1,5 +1,6 @@
 package net.bryanleonard1984.vanenhanced.datagen;
 
+import net.bryanleonard1984.vanenhanced.item.ModItems;
 import net.bryanleonard1984.vanenhanced.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
@@ -19,13 +20,15 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup)
     {
         getOrCreateTagBuilder(ModTags.Items.DECAYABLE_ITEMS)
-                .add(Items.LEATHER,
-                        Items.COBWEB,
-                        Items.SPIDER_EYE);
+                .add(Items.LEATHER, Items.COBWEB, Items.SPIDER_EYE);
 
         getOrCreateTagBuilder(ModTags.Items.RECLAMABLE_ITEMS)
-                .add(Items.ROTTEN_FLESH,
-                        Items.STRING,
-                        Items.FERMENTED_SPIDER_EYE);
+                .add(Items.ROTTEN_FLESH, Items.STRING, Items.FERMENTED_SPIDER_EYE);
+
+        getOrCreateTagBuilder(ModTags.Items.HAMMERS)
+                .add(ModItems.STONE_HAMMER, ModItems.IRON_HAMMER, ModItems.DIAMOND_HAMMER, ModItems.NETHERITE_HAMMER);
+
+        getOrCreateTagBuilder(ModTags.Items.CHISELS)
+                .add(ModItems.IRON_CHISEL, ModItems.DIAMOND_CHISEL, ModItems.EMERALD_CHISEL, ModItems.NETHERITE_CHISEL);
     }
 }

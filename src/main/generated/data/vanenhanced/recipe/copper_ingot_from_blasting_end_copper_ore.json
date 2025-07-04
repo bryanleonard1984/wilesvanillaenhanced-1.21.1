@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.75,
+  "group": "copper_ore_smelts",
+  "ingredient": {
+    "item": "vanenhanced:end_copper_ore"
+  },
+  "result": {
+    "id": "minecraft:copper_ingot"
+  }
+}

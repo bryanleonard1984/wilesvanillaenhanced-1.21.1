@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "M": {
+      "item": "minecraft:emerald"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "S  ",
+    " M ",
+    "  M"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanenhanced:emerald_chisel"
+  }
+}

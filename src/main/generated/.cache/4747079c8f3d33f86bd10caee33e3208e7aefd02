@@ -1,3 +1,5 @@
-// 1.21.1	2025-07-01T21:45:23.225323211	Wiles Vanilla Enhanced 1.21.1/Tags for minecraft:item
-25efefe9434320d07736266bcbd6e8acbda2fc3a data/vanenhanced/tags/item/decayable_items.json
-dbfc6b0afd6cecdacf602577f6bd1e7fef42bf8b data/vanenhanced/tags/item/reclamable_items.json
+// 1.21.1	2025-07-03T22:58:27.7380014	Wiles Vanilla Enhanced 1.21.1/Tags for minecraft:item
+25efefe9434320d07736266bcbd6e8acbda2fc3a data\vanenhanced\tags\item\decayable_items.json
+dbfc6b0afd6cecdacf602577f6bd1e7fef42bf8b data\vanenhanced\tags\item\reclamable_items.json
+a24b7222b0736336f3da4c678a3ad0962b87ca3e data\vanenhanced\tags\item\chisels.json
+4f10d620d35cac6d95d7cd34e7b37b4d51cfa1fa data\vanenhanced\tags\item\hammers.json

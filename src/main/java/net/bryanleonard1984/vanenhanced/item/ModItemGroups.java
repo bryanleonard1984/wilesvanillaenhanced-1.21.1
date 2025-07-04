@@ -21,6 +21,10 @@ public class ModItemGroups
                         entries.add(ModItems.BOOK_ENCHANTMENT_CORE);
                         entries.add(ModItems.TINY_CHARCOAL);
                         entries.add(ModItems.TINY_COAL);
+                        entries.add(ModItems.CRUSHED_COAL);
+                        entries.add(ModItems.CRUSHED_COPPER);
+                        entries.add(ModItems.CRUSHED_GOLD);
+                        entries.add(ModItems.CRUSHED_IRON);
                     }).build());
 
     public static final ItemGroup VAN_ENHANCED_TOOLS = Registry.register(Registries.ITEM_GROUP,
@@ -33,6 +37,10 @@ public class ModItemGroups
                         entries.add(ModItems.DIAMOND_CHISEL);
                         entries.add(ModItems.EMERALD_CHISEL);
                         entries.add(ModItems.NETHERITE_CHISEL);
+                        entries.add(ModItems.STONE_HAMMER);
+                        entries.add(ModItems.IRON_HAMMER);
+                        entries.add(ModItems.DIAMOND_HAMMER);
+                        entries.add(ModItems.NETHERITE_HAMMER);
                     }).build());
 
     public static final ItemGroup VAN_ENHANCED_BLOCKS = Registry.register(Registries.ITEM_GROUP,

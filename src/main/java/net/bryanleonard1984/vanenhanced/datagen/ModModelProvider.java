@@ -50,5 +50,13 @@ public class ModModelProvider extends FabricModelProvider
         itemModelGenerator.register(ModItems.BOOK_ENCHANTMENT_CORE, Models.GENERATED);
         itemModelGenerator.register(ModItems.TINY_CHARCOAL, Models.GENERATED);
         itemModelGenerator.register(ModItems.TINY_COAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRUSHED_COAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRUSHED_COPPER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRUSHED_GOLD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRUSHED_IRON, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STONE_HAMMER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.IRON_HAMMER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DIAMOND_HAMMER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NETHERITE_HAMMER, Models.GENERATED);
     }
 }

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "M": {
+      "item": "minecraft:diamond"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " MS",
+    " SM",
+    "S  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanenhanced:diamond_hammer"
+  }
+}

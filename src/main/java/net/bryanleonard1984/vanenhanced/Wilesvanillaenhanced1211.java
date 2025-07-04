@@ -24,5 +24,6 @@ public class Wilesvanillaenhanced1211 implements ModInitializer
 
 		FuelRegistry.INSTANCE.add(ModItems.TINY_CHARCOAL, 200);
 		FuelRegistry.INSTANCE.add(ModItems.TINY_COAL, 200);
+		FuelRegistry.INSTANCE.add(ModItems.CRUSHED_COAL, 1600);
 	}
 }

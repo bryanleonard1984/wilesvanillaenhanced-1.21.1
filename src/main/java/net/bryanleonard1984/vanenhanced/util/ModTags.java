@@ -21,6 +21,8 @@ public class ModTags
     {
         public static final TagKey<Item> RECLAMABLE_ITEMS = createTag("reclamable_items");
         public static final TagKey<Item> DECAYABLE_ITEMS = createTag("decayable_items");
+        public static final TagKey<Item> HAMMERS = createTag("hammers");
+        public static final TagKey<Item> CHISELS = createTag("chisels");
 
         private static TagKey<Item> createTag(String name)
         {

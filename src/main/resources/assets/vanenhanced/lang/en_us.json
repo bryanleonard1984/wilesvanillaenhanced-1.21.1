@@ -3,9 +3,17 @@
   "item.vanenhanced.tiny_charcoal": "Tiny Charcoal",
   "item.vanenhanced.tiny_coal": "Tiny Coal",
   "item.vanenhanced.iron_chisel": "Iron Chisel",
+  "item.vanenhanced.crushed_coal": "Crushed Coal",
+  "item.vanenhanced.crushed_copper": "Crushed Copper",
+  "item.vanenhanced.crushed_gold": "Crushed Gold",
+  "item.vanenhanced.crushed_iron": "Crushed Iron",
   "item.vanenhanced.emerald_chisel": "Emerald Chisel",
   "item.vanenhanced.diamond_chisel": "Diamond Chisel",
   "item.vanenhanced.netherite_chisel": "Netherite Chisel",
+  "item.vanenhanced.stone_hammer": "Stone Hammer",
+  "item.vanenhanced.iron_hammer": "Iron Hammer",
+  "item.vanenhanced.diamond_hammer": "Diamond Hammer",
+  "item.vanenhanced.netherite_hammer": "Netherite Hammer",
 
   "block.vanenhanced.decay_block": "Block of Decay",
   "block.vanenhanced.reclaim_block": "Block of Restoration",
@@ -34,6 +42,8 @@
 
   "tooltip.vanenhanced.chisel": "<Press §eshift§r for more info>",
   "tooltip.vanenhanced.chisel.shiftdown": "Chisel blocks into bricks and back!",
+  "tooltip.vanenhanced.hammer": "<Press §eshift§r for more info>",
+  "tooltip.vanenhanced.hammer.shiftdown": "Crushes various ores and stone!",
   "tooltip.vanenhanced.decay_block": "Throw an item on it to decay the item.",
   "tooltip.vanenhanced.reclaim_block": "Throw a decayed item on it to restore the item!"
 }
