@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_black_banner": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:black_banner"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:vindicator_spawn_egg"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_black_banner"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:vindicator_spawn_egg"
+    ]
+  }
+}

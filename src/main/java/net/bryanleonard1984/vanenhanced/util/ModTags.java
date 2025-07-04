@@ -23,6 +23,8 @@ public class ModTags
         public static final TagKey<Item> DECAYABLE_ITEMS = createTag("decayable_items");
         public static final TagKey<Item> HAMMERS = createTag("hammers");
         public static final TagKey<Item> CHISELS = createTag("chisels");
+        public static final TagKey<Item> SEEDS = createTag("seeds");
+        public static final TagKey<Item> GRASS = createTag("grass");
 
         private static TagKey<Item> createTag(String name)
         {

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "minecraft:nautilus_shell"
+    },
+    "W": {
+      "tag": "minecraft:wool"
+    }
+  },
+  "pattern": [
+    " C ",
+    "CWC",
+    " C "
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:sponge"
+  }
+}

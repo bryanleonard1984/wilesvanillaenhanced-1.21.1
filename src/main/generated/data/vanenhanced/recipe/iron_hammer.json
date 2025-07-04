@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "M": {
+    "I": {
       "item": "minecraft:iron_ingot"
     },
     "S": {
@@ -10,8 +10,8 @@
     }
   },
   "pattern": [
-    " MS",
-    " SM",
+    " IS",
+    " SI",
     "S  "
   ],
   "result": {

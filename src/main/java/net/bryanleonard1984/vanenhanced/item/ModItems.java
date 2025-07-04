@@ -3,10 +3,8 @@ package net.bryanleonard1984.vanenhanced.item;
 import net.bryanleonard1984.vanenhanced.Wilesvanillaenhanced1211;
 import net.bryanleonard1984.vanenhanced.item.custom.ChiselItem;
 import net.bryanleonard1984.vanenhanced.item.custom.HammerItem;
-import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.minecraft.item.Item;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
+import net.minecraft.registry.*;
 import net.minecraft.util.Identifier;
 
 public class ModItems
@@ -35,6 +33,8 @@ public class ModItems
     {
         return Registry.register(Registries.ITEM, Identifier.of(Wilesvanillaenhanced1211.MOD_ID, name), item);
     }
+
+
 
     public static void registerModItems()
     {

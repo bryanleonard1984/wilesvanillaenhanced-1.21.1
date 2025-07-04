@@ -30,5 +30,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider
 
         getOrCreateTagBuilder(ModTags.Items.CHISELS)
                 .add(ModItems.IRON_CHISEL, ModItems.DIAMOND_CHISEL, ModItems.EMERALD_CHISEL, ModItems.NETHERITE_CHISEL);
+
+        getOrCreateTagBuilder(ModTags.Items.SEEDS)
+                .add(Items.BEETROOT_SEEDS, Items.MELON_SEEDS, Items.PUMPKIN_SEEDS, Items.WHEAT_SEEDS, Items.TORCHFLOWER_SEEDS);
+
+        getOrCreateTagBuilder(ModTags.Items.GRASS)
+                .add(Items.SHORT_GRASS, Items.TALL_GRASS, Items.FERN, Items.LARGE_FERN);
     }
 }

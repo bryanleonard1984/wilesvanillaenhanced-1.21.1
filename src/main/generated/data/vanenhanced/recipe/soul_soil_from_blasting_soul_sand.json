@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 75,
+  "experience": 1.0,
+  "group": "soul_smelts",
+  "ingredient": {
+    "item": "minecraft:soul_sand"
+  },
+  "result": {
+    "id": "minecraft:soul_soil"
+  }
+}
