@@ -22,7 +22,6 @@ public class Wilesvanillaenhanced1211 implements ModInitializer
 	{
 		ModItemGroups.registerModItemGroups();
 
-		Registry.register(Registries.ITEM, Identifier.of("minecraft", "shears"), ModItems.MOD_SHEARS);
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
 

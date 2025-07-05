@@ -1,4 +1,4 @@
-// 1.21.1	2025-07-04T16:03:54.937929	Wiles Vanilla Enhanced 1.21.1/Recipes
+// 1.21.1	2025-07-04T23:40:48.9604439	Wiles Vanilla Enhanced 1.21.1/Recipes
 c031f673fc581df308e274037e8e754630985cf9 data\vanenhanced\recipe\redstone_from_smelting_end_redstone_ore.json
 d54352a6c1344e4cfec6f45e4047585e40120e06 data\vanenhanced\advancement\recipes\transportation\elytra.json
 23ae49e833b53260b77ae1257a48dca773c80936 data\vanenhanced\advancement\recipes\misc\creeper_spawn_egg.json
@@ -8,6 +8,7 @@ b302ff8804f65cf6e224a803e7cae8b1fd477dbd data\vanenhanced\recipe\emerald_from_sm
 db01b840d88393544667e3af3ba720ca0d659d86 data\vanenhanced\recipe\flint.json
 1bffd949eadb01fce356244d206a8f7ad870aea8 data\vanenhanced\recipe\blaze_spawn_egg.json
 c3d7b49262d6e1f9f22a795692242db0a8e19656 data\vanenhanced\recipe\spider_spawn_egg.json
+63ede7304d8adf36614d8a420995d204a528d690 data\vanenhanced\recipe\torch.json
 f1db3aa7c6b40ee5c83a9c66844cc7cc3094cc34 data\vanenhanced\advancement\recipes\misc\ghast_spawn_egg.json
 55e284bdce97f231212be3555d8ba77dc5124794 data\vanenhanced\advancement\recipes\misc\pig_spawn_egg.json
 7f8ebb6132ff816b5f8ac281f77594ad3bb641c8 data\vanenhanced\advancement\recipes\misc\charcoal.json
@@ -236,6 +237,7 @@ a2713a6fbd733ccbb2aa26d139ebbc8b7cd9d081 data\vanenhanced\recipe\magma_cube_spaw
 a75ee125b4164c2791841196431e597510a6937f data\vanenhanced\recipe\diamond_from_smelting_end_diamond_ore.json
 b46a50ee57e5848bc1f604d671e55e88aa180d01 data\vanenhanced\recipe\shulker_spawn_egg.json
 4f163a51fb12c22c836e566fbeac096179e2b226 data\vanenhanced\recipe\wolf_spawn_egg.json
+bbd3a44cd48a82b07619c89d22e0d491c5006240 data\vanenhanced\advancement\recipes\misc\torch.json
 3ca3b0de32dc6221ef2095744279ec12fe35bfc2 data\vanenhanced\recipe\emerald_chisel.json
 afe35ca6be1d3eac5a0513227d0c66976d02e669 data\vanenhanced\recipe\slime_spawn_egg.json
 f9fc8b0bcccb894f2aea53126dac1d32709ea881 data\vanenhanced\advancement\recipes\misc\lapis_lazuli_from_smelting_nether_lapis_ore.json

@@ -30,11 +30,18 @@ public class ModItems
     public static final Item CRUSHED_GOLD = registerItem("crushed_gold", new Item(new Item.Settings()));
     public static final Item CRUSHED_IRON = registerItem("crushed_iron", new Item(new Item.Settings()));
 
-    public static final Item MOD_SHEARS = new ModShearsItem(new Item.Settings().maxDamage(238).recipeRemainder(ModItems.MOD_SHEARS).maxCount(1));
+    public static final Item MOD_SHEARS = registerVanillaItem("shears", new ModShearsItem(new Item.Settings()
+            .maxDamage(238).recipeRemainder(ModItems.MOD_SHEARS).maxCount(1)));
+    //public static final Item MOD_SHEARS = new ModShearsItem(new Item.Settings().maxDamage(238).recipeRemainder(ModItems.MOD_SHEARS).maxCount(1));
 
     private static Item registerItem(String name, Item item)
     {
         return Registry.register(Registries.ITEM, Identifier.of(Wilesvanillaenhanced1211.MOD_ID, name), item);
+    }
+
+    private static Item registerVanillaItem(String name, Item item)
+    {
+        return Registry.register(Registries.ITEM, Identifier.of("minecraft", name), item);
     }
 
     public static void registerModItems()

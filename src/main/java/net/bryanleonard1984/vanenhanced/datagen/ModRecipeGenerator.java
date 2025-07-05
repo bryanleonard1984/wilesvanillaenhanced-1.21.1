@@ -8,11 +8,13 @@ import net.bryanleonard1984.vanenhanced.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
+import net.minecraft.data.server.recipe.CookingRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
@@ -65,6 +67,10 @@ public class ModRecipeGenerator extends FabricRecipeProvider
         offerBlasting(recipeExporter, QUARTZ_SMELTABLES, RecipeCategory.MISC, Items.QUARTZ, 1.0f, 100, "quartz_ore_smelts");
         offerBlasting(recipeExporter, GOLD_SMELTABLES, RecipeCategory.MISC, Items.GOLD_INGOT, 1.0f, 100, "gold_ore_smelts");
         offerBlasting(recipeExporter, SOUL_SMELTABLES, RecipeCategory.BUILDING_BLOCKS, Blocks.SOUL_SOIL, 1.0f, 75, "soul_smelts");
+
+        CookingRecipeJsonBuilder.createCampfireCooking(Ingredient.ofItems(Items.STICK), RecipeCategory.MISC, Items.TORCH,
+                0.5f, 50).criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(recipeExporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DECAY_BLOCK)
                 .pattern("RFR")
