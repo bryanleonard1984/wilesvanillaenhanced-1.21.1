@@ -69,6 +69,7 @@ public class ModItemGroups
                         entries.add(ModBlocks.END_LAPIS_ORE);
                         entries.add(ModBlocks.END_QUARTZ_ORE);
                         entries.add(ModBlocks.END_REDSTONE_ORE);
+                        entries.add(ModBlocks.BANK_BLOCK);
                     }).build());
 
     public static void registerModItemGroups()

@@ -57,6 +57,8 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.END_LAPIS_ORE, multipleOreDrops(ModBlocks.END_LAPIS_ORE, Items.LAPIS_LAZULI, 6.0f, 11.0f));
         addDrop(ModBlocks.END_QUARTZ_ORE, multipleOreDrops(ModBlocks.END_QUARTZ_ORE, Items.QUARTZ, 4.0f, 6.0f));
         addDrop(ModBlocks.END_REDSTONE_ORE, multipleOreDrops(ModBlocks.END_REDSTONE_ORE, Items.REDSTONE, 6.0f, 10.0f));
+
+        addDrop(ModBlocks.BANK_BLOCK);
     }
 
     @Override

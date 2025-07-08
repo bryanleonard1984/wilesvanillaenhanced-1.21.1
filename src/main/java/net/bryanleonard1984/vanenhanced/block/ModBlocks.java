@@ -1,6 +1,7 @@
 package net.bryanleonard1984.vanenhanced.block;
 
 import net.bryanleonard1984.vanenhanced.Wilesvanillaenhanced1211;
+import net.bryanleonard1984.vanenhanced.block.custom.BankBlock;
 import net.bryanleonard1984.vanenhanced.block.custom.DecayBlock;
 import net.bryanleonard1984.vanenhanced.block.custom.ReclaimBlock;
 import net.minecraft.block.AbstractBlock;
@@ -97,6 +98,10 @@ public class ModBlocks
             new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),
                     AbstractBlock.Settings.create().strength(3.0f, 2.0f)
                             .requiresTool().sounds(BlockSoundGroup.STONE)));
+
+    public static final Block BANK_BLOCK = registerBlock("bank_block",
+            new BankBlock(AbstractBlock.Settings.create().strength(3.0f, 2.0f).burnable()
+                    .sounds(BlockSoundGroup.WOOD).nonOpaque()));
 
 
 
