@@ -25,6 +25,7 @@ public class ModItemGroups
                         entries.add(ModItems.CRUSHED_COPPER);
                         entries.add(ModItems.CRUSHED_GOLD);
                         entries.add(ModItems.CRUSHED_IRON);
+                        entries.add(ModItems.COPPER_SMALL_COIN);
                     }).build());
 
     public static final ItemGroup VAN_ENHANCED_TOOLS = Registry.register(Registries.ITEM_GROUP,

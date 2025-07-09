@@ -1,7 +1,7 @@
-// 1.21.1	2025-07-07T06:58:31.5811689	Wiles Vanilla Enhanced 1.21.1/Tags for minecraft:item
-25efefe9434320d07736266bcbd6e8acbda2fc3a data\vanenhanced\tags\item\decayable_items.json
-aa3f45a2b63092c7414f468979a4e4080571be8b data\vanenhanced\tags\item\grass.json
-dbfc6b0afd6cecdacf602577f6bd1e7fef42bf8b data\vanenhanced\tags\item\reclamable_items.json
-a24b7222b0736336f3da4c678a3ad0962b87ca3e data\vanenhanced\tags\item\chisels.json
-4b6b93a1d34df35f1d7c9ca5012f5d2419375d35 data\vanenhanced\tags\item\seeds.json
-4f10d620d35cac6d95d7cd34e7b37b4d51cfa1fa data\vanenhanced\tags\item\hammers.json
+// 1.21.1	2025-07-08T20:00:47.225540466	Wiles Vanilla Enhanced 1.21.1/Tags for minecraft:item
+4b6b93a1d34df35f1d7c9ca5012f5d2419375d35 data/vanenhanced/tags/item/seeds.json
+4f10d620d35cac6d95d7cd34e7b37b4d51cfa1fa data/vanenhanced/tags/item/hammers.json
+25efefe9434320d07736266bcbd6e8acbda2fc3a data/vanenhanced/tags/item/decayable_items.json
+aa3f45a2b63092c7414f468979a4e4080571be8b data/vanenhanced/tags/item/grass.json
+dbfc6b0afd6cecdacf602577f6bd1e7fef42bf8b data/vanenhanced/tags/item/reclamable_items.json
+a24b7222b0736336f3da4c678a3ad0962b87ca3e data/vanenhanced/tags/item/chisels.json
