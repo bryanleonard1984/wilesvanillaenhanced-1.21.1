@@ -32,7 +32,9 @@ public class ModItems
 
     public static final Item MOD_SHEARS = registerVanillaItem("shears", new ModShearsItem(new Item.Settings()
             .maxDamage(238).recipeRemainder(ModItems.MOD_SHEARS).maxCount(1)));
-    public static final Item COPPER_SMALL_COIN = registerItem("small_copper_coin", new Item(new Item.Settings()));
+    public static final Item SMALL_COPPER_COIN = registerItem("small_copper_coin", new Item(new Item.Settings()));
+    public static final Item SMALL_IRON_COIN = registerItem("small_iron_coin", new Item(new Item.Settings()));
+    public static final Item SMALL_GOLD_COIN = registerItem("small_gold_coin", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item)
     {
