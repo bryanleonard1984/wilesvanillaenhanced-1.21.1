@@ -28,6 +28,9 @@ public class ModItemGroups
                         entries.add(ModItems.SMALL_COPPER_COIN);
                         entries.add(ModItems.SMALL_IRON_COIN);
                         entries.add(ModItems.SMALL_GOLD_COIN);
+                        entries.add(ModItems.COPPER_COIN);
+                        entries.add(ModItems.IRON_COIN);
+                        entries.add(ModItems.GOLD_COIN);
 
                     }).build());
 

@@ -17,6 +17,9 @@
   "item.vanenhanced.small_copper_coin": "Small Copper Coin",
   "item.vanenhanced.small_iron_coin": "Small Iron Coin",
   "item.vanenhanced.small_gold_coin": "Small Gold Coin",
+  "item.vanenhanced.copper_coin": "Copper Coin",
+  "item.vanenhanced.iron_coin": "Iron Coin",
+  "item.vanenhanced.gold_coin": "Gold Coin",
 
   "block.vanenhanced.decay_block": "Block of Decay",
   "block.vanenhanced.reclaim_block": "Block of Restoration",
