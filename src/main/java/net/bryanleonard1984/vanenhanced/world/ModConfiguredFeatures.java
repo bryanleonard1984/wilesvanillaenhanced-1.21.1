@@ -20,8 +20,8 @@ import java.util.List;
 
 public class ModConfiguredFeatures
 {
-    public static final RegistryKey<ConfiguredFeature<?, ?>> STONE = registerVanillaKey("stone");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> DEEPSLATE = registerVanillaKey("deepslate");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> STONE = registerKey("stone");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> DEEPSLATE = registerKey("deepslate");
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> QUARTZ_ORE = registerKey("quartz_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> QUARTZ_ORE_LARGE = registerKey("quartz_ore_large");
