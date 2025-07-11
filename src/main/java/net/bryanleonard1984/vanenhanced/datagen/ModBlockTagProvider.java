@@ -1,8 +1,10 @@
 package net.bryanleonard1984.vanenhanced.datagen;
 
 import net.bryanleonard1984.vanenhanced.block.ModBlocks;
+import net.bryanleonard1984.vanenhanced.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 
@@ -65,5 +67,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider
                         ModBlocks.END_GOLD_ORE,
                         ModBlocks.END_QUARTZ_ORE,
                         ModBlocks.END_REDSTONE_ORE);
+
+        getOrCreateTagBuilder(ModTags.Blocks.OVERWORLD_ORES)
+                .add(Blocks.COAL_ORE, Blocks.COAL_BLOCK,
+                        Blocks.IRON_ORE, Blocks.RAW_IRON_BLOCK);
+
+        getOrCreateTagBuilder(ModTags.Blocks.DEEPSLATE_ORES)
+                .add(Blocks.DEEPSLATE_COAL_ORE, Blocks.COAL_BLOCK,
+                        Blocks.DEEPSLATE_IRON_ORE, Blocks.RAW_IRON_BLOCK);
     }
 }

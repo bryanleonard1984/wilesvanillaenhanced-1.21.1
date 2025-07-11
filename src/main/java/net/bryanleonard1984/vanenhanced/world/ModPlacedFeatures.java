@@ -12,6 +12,9 @@ import java.util.List;
 
 public class ModPlacedFeatures
 {
+    public static final RegistryKey<PlacedFeature> STONE = registerKey("stone");
+    public static final RegistryKey<PlacedFeature> DEEPSLATE = registerKey("deepslate");
+
     public static final RegistryKey<PlacedFeature> QUARTZ_ORE_PLACED = registerKey("quartz_ore_placed_key");
     public static final RegistryKey<PlacedFeature> QUARTZ_ORE_LARGE_PLACED = registerKey("quartz_ore_large_placed");
     public static final RegistryKey<PlacedFeature> NETHER_COAL_ORE_PLACED = registerKey("nether_coal_ore_placed");
@@ -50,6 +53,9 @@ public class ModPlacedFeatures
     {
         RegistryEntryLookup<ConfiguredFeature<?, ?>> registryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
+        RegistryEntry<ConfiguredFeature<?, ?>> stone = registryEntryLookup.getOrThrow(ModConfiguredFeatures.STONE);
+        RegistryEntry<ConfiguredFeature<?, ?>> deepslate = registryEntryLookup.getOrThrow(ModConfiguredFeatures.DEEPSLATE);
+
         RegistryEntry<ConfiguredFeature<?, ?>> quartzOre = registryEntryLookup.getOrThrow(ModConfiguredFeatures.QUARTZ_ORE);
         RegistryEntry<ConfiguredFeature<?, ?>> quartzOreLarge = registryEntryLookup.getOrThrow(ModConfiguredFeatures.QUARTZ_ORE_LARGE);
         RegistryEntry<ConfiguredFeature<?, ?>> netherCoal = registryEntryLookup.getOrThrow(ModConfiguredFeatures.NETHER_COAL_ORE);
@@ -68,6 +74,12 @@ public class ModPlacedFeatures
         RegistryEntry<ConfiguredFeature<?, ?>> endLapis = registryEntryLookup.getOrThrow(ModConfiguredFeatures.END_LAPIS_ORE);
         RegistryEntry<ConfiguredFeature<?, ?>> endQuartz = registryEntryLookup.getOrThrow(ModConfiguredFeatures.END_QUARTZ_ORE);
         RegistryEntry<ConfiguredFeature<?, ?>> endRedstone = registryEntryLookup.getOrThrow(ModConfiguredFeatures.END_REDSTONE_ORE);
+
+        register(context, STONE, stone, modifiersWithRarity(1, HeightRangePlacementModifier
+                .uniform(YOffset.BOTTOM, YOffset.TOP)));
+        register(context, DEEPSLATE, deepslate, modifiersWithRarity(1, HeightRangePlacementModifier
+                .uniform(YOffset.BOTTOM, YOffset.TOP)));
+
 
         register(context, QUARTZ_ORE_PLACED, quartzOre, modifiersWithCount(5, HeightRangePlacementModifier
                 .uniform(YOffset.fixed(-80), YOffset.fixed(35))));
@@ -111,6 +123,11 @@ public class ModPlacedFeatures
     public static RegistryKey<PlacedFeature> registerKey(String name)
     {
         return RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of(Wilesvanillaenhanced1211.MOD_ID, name));
+    }
+
+    public static RegistryKey<PlacedFeature> registerVanillaKey(String name)
+    {
+        return RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of("minecraft", name));
     }
 
     private static void register(Registerable<PlacedFeature> context, RegistryKey<PlacedFeature> key, RegistryEntry<ConfiguredFeature<?, ?>> configuration,

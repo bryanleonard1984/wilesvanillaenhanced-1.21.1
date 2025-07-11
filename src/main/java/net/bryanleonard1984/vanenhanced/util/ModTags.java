@@ -11,6 +11,9 @@ public class ModTags
 {
     public static class Blocks
     {
+        public static final TagKey<Block> OVERWORLD_ORES = createTag("overworld_ores");
+        public static final TagKey<Block> DEEPSLATE_ORES = createTag("deepslate_ores");
+
         private static TagKey<Block> createTag(String name)
         {
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(Wilesvanillaenhanced1211.MOD_ID, name));

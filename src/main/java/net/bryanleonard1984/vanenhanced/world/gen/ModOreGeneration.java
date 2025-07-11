@@ -11,6 +11,8 @@ public class ModOreGeneration
 {
     public static void generateOres()
     {
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.STONE);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.DEEPSLATE);
 
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DESERT, BiomeKeys.BADLANDS, BiomeKeys.WOODED_BADLANDS,
                         BiomeKeys.ERODED_BADLANDS), GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.QUARTZ_ORE_LARGE_PLACED);
