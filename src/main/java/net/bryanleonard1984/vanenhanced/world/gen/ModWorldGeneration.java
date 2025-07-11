@@ -4,7 +4,7 @@ public class ModWorldGeneration
 {
     public static void generateModWorldGeneration()
     {
-
+        ModOreGeneration.removeOres();
         ModOreGeneration.generateOres();
     }
 }

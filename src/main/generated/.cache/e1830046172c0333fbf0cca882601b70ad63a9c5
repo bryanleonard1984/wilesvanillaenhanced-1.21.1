@@ -1,4 +1,4 @@
-// 1.21.1	2025-07-11T10:27:19.0357131	Wiles Vanilla Enhanced 1.21.1/Model Definitions
+// 1.21.1	2025-07-11T11:04:02.4679184	Wiles Vanilla Enhanced 1.21.1/Model Definitions
 a79c410e288b4e5702adb5139b5adc1e8fcc5fc6 assets\vanenhanced\blockstates\nether_diamond_ore.json
 4097165e992652ba85e11b6667b83252e0be89a5 assets\vanenhanced\models\item\iron_hammer.json
 8aa81520487893e16f0e8d54f992c9e5ba69421b assets\vanenhanced\models\block\end_diamond_ore.json
@@ -10,8 +10,8 @@ b2d1130697cf728cc1c5453cb7b64819c1ea9403 assets\vanenhanced\models\item\nether_l
 8df0be8a7bd5007adf6ce42fa47546fcf23d81fc assets\vanenhanced\blockstates\nether_lapis_ore.json
 b3a11beeefca9b710bccb8520eec4cd3532bcf0c assets\vanenhanced\models\block\end_lapis_ore.json
 72268cef6b61050f6baf6326b5593eeea5c9ee93 assets\vanenhanced\models\item\crushed_copper.json
-b882aefcd0e83a5ef5a2408c9d92ff1c4d2820a0 assets\vanenhanced\blockstates\end_gold_ore.json
 4658cac5d732dda160ee16d197f04179e11b9438 assets\vanenhanced\blockstates\nether_copper_ore.json
+b882aefcd0e83a5ef5a2408c9d92ff1c4d2820a0 assets\vanenhanced\blockstates\end_gold_ore.json
 4ec5ed517b0af628ab157e63b2ae2e428211c810 assets\vanenhanced\models\block\deepslate_quartz_ore.json
 cac9c8fe07e46eade73010dab79f65985eac0fb3 assets\vanenhanced\models\item\end_diamond_ore.json
 63a732dad8ddbe9b249d634bcf9bb5608d1d7c90 assets\vanenhanced\models\item\nether_diamond_ore.json
@@ -27,8 +27,8 @@ e2dce11c213d89ba64d8db679ab758d655b1d95a assets\vanenhanced\blockstates\end_emer
 613ab3224283f34e7ad2ee9b7b622711878b24c0 assets\vanenhanced\models\item\tiny_charcoal.json
 5c02f2a4f011d1cf62c37d485899d97ca84cadf3 assets\vanenhanced\models\item\netherite_chisel.json
 4127bc44e67aaa996475a4166d0433a0dc424b87 assets\vanenhanced\models\item\diamond_chisel.json
-fc8297c88cdff99f96e026b7581e255c3eeba8a1 assets\vanenhanced\models\item\nether_iron_ore.json
 f32d92637b7f38260f3c6dfb16d8eb0b92325dab assets\vanenhanced\models\block\nether_coal_ore.json
+fc8297c88cdff99f96e026b7581e255c3eeba8a1 assets\vanenhanced\models\item\nether_iron_ore.json
 e1a50f96e653d92a1dae87078fe3cdd8bfd4aa2a assets\vanenhanced\models\block\nether_lapis_ore.json
 7c9aea230263e9ca13fa3df3571dee9c4dd52da4 assets\vanenhanced\models\block\end_emerald_ore.json
 97b289f569fbbb8b5ba01839231f56216f95a525 assets\vanenhanced\models\item\crushed_gold.json
@@ -46,8 +46,8 @@ d9e5b389f4e4d2bb26d2066a72995e25897e2c95 assets\vanenhanced\blockstates\reclaim_
 078b8057d0b172afdd3fea968048188f374f0f0a assets\vanenhanced\models\item\quartz_ore.json
 8c340484db10f86eb8b3dbb5f294647390ef8ff8 assets\vanenhanced\models\item\reclaim_block.json
 a435e3f0b3e941c9f49ed175dd0797272c8b8885 assets\vanenhanced\blockstates\end_diamond_ore.json
-58c1ce49a47ce4f0a2f5583dbaba28733ecf8d50 assets\vanenhanced\blockstates\nether_redstone_ore.json
 37c87e8ec8a70c8b72f556583a5cccf279265fe2 assets\vanenhanced\blockstates\deepslate_quartz_ore.json
+58c1ce49a47ce4f0a2f5583dbaba28733ecf8d50 assets\vanenhanced\blockstates\nether_redstone_ore.json
 3f7ec8f658218ae80efbff0de91f13bde770771c assets\vanenhanced\models\item\emerald_chisel.json
 957f8dd57dc13930c31880eb88e7be03ec3482ed assets\vanenhanced\models\item\book_enchantment_core.json
 92e293854d4bba9a9b5d94b529e140aeb9cccfbb assets\vanenhanced\models\block\reclaim_block.json
