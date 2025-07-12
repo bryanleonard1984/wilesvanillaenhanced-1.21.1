@@ -5,6 +5,7 @@ import net.bryanleonard1984.vanenhanced.util.ModTags;
 import net.bryanleonard1984.vanenhanced.world.ModPlacedFeatures;
 import net.fabricmc.fabric.api.biome.v1.*;
 import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.tag.BiomeTags;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.biome.BiomeKeys;
 import net.minecraft.world.gen.GenerationStep;
@@ -23,15 +24,43 @@ public class ModOreGeneration
         Predicate<BiomeSelectionContext> nether = BiomeSelectors.foundInTheNether();
         Predicate<BiomeSelectionContext> end = BiomeSelectors.foundInTheEnd();
 
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_PLAINS), UNDERGROUND_ORES, ModPlacedFeatures.COAL_ORE_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_PLAINS), UNDERGROUND_ORES, ModPlacedFeatures.COPPER_ORE_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_PLAINS), UNDERGROUND_ORES, ModPlacedFeatures.DIAMOND_ORE_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_PLAINS), UNDERGROUND_ORES, ModPlacedFeatures.GOLD_ORE_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_PLAINS), UNDERGROUND_ORES, ModPlacedFeatures.IRON_ORE_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_PLAINS), UNDERGROUND_ORES, ModPlacedFeatures.LAPIS_ORE_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_PLAINS), UNDERGROUND_ORES, ModPlacedFeatures.QUARTZ_ORE_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_PLAINS), UNDERGROUND_ORES, ModPlacedFeatures.REDSTONE_ORE_PLACED);
+
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.COAL_BIOMES), UNDERGROUND_ORES, ModPlacedFeatures.COAL_ORE_LARGE_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.STONY_PEAKS, BiomeKeys.BADLANDS, BiomeKeys.LUSH_CAVES),
+                UNDERGROUND_ORES, ModPlacedFeatures.COPPER_ORE_LARGE_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.COAL_BIOMES), UNDERGROUND_ORES, ModPlacedFeatures.DIAMOND_ORE_LARGE_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.STONY_PEAKS), UNDERGROUND_ORES, ModPlacedFeatures.EMERALD_ORE_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.BADLANDS, BiomeKeys.ERODED_BADLANDS, BiomeKeys.WOODED_BADLANDS),
+                UNDERGROUND_ORES, ModPlacedFeatures.GOLD_ORE_LARGE_PLACED);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DESERT, BiomeKeys.STONY_PEAKS),
                 UNDERGROUND_ORES, ModPlacedFeatures.IRON_ORE_LARGE_PLACED);
-        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_PLAINS), UNDERGROUND_ORES, ModPlacedFeatures.IRON_ORE_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.tag(BiomeTags.IS_OCEAN), UNDERGROUND_ORES, ModPlacedFeatures.LAPIS_ORE_LARGE_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_SANDY), UNDERGROUND_ORES, ModPlacedFeatures.QUARTZ_ORE_LARGE_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.tag(BiomeTags.IS_SAVANNA), UNDERGROUND_ORES, ModPlacedFeatures.REDSTONE_ORE_LARGE_PLACED);
+
+        BiomeModifications.addFeature(BiomeSelectors.excludeByKey(BiomeKeys.SWAMP, BiomeKeys.MANGROVE_SWAMP, BiomeKeys.STONY_PEAKS),
+                UNDERGROUND_ORES, ModPlacedFeatures.COAL_ORE_SMALL_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.excludeByKey(BiomeKeys.STONY_PEAKS, BiomeKeys.BADLANDS, BiomeKeys.LUSH_CAVES),
+                UNDERGROUND_ORES, ModPlacedFeatures.COPPER_ORE_SMALL_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.excludeByKey(BiomeKeys.SWAMP, BiomeKeys.MANGROVE_SWAMP, BiomeKeys.STONY_PEAKS),
+                UNDERGROUND_ORES, ModPlacedFeatures.DIAMOND_ORE_SMALL_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.excludeByKey(BiomeKeys.BADLANDS, BiomeKeys.ERODED_BADLANDS, BiomeKeys.WOODED_BADLANDS),
+                UNDERGROUND_ORES, ModPlacedFeatures.GOLD_ORE_SMALL_PLACED);
         BiomeModifications.addFeature(BiomeSelectors.excludeByKey(BiomeKeys.DESERT, BiomeKeys.STONY_PEAKS), UNDERGROUND_ORES, ModPlacedFeatures.IRON_ORE_SMALL_PLACED);
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DESERT, BiomeKeys.BADLANDS, BiomeKeys.ERODED_BADLANDS, BiomeKeys.WOODED_BADLANDS),
-                UNDERGROUND_ORES, ModPlacedFeatures.QUARTZ_ORE_LARGE_PLACED);
-        BiomeModifications.addFeature(BiomeSelectors.tag(ModTags.Biomes.IS_PLAINS), UNDERGROUND_ORES, ModPlacedFeatures.QUARTZ_ORE_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.excludeByKey(BiomeKeys.OCEAN, BiomeKeys.WARM_OCEAN, BiomeKeys.COLD_OCEAN, BiomeKeys.FROZEN_OCEAN),
+                UNDERGROUND_ORES, ModPlacedFeatures.LAPIS_ORE_SMALL_PLACED);
         BiomeModifications.addFeature(BiomeSelectors.excludeByKey(BiomeKeys.DESERT, BiomeKeys.BADLANDS, BiomeKeys.ERODED_BADLANDS, BiomeKeys.WOODED_BADLANDS),
                 UNDERGROUND_ORES, ModPlacedFeatures.QUARTZ_ORE_SMALL_PLACED);
+        BiomeModifications.addFeature(BiomeSelectors.excludeByKey(BiomeKeys.SAVANNA, BiomeKeys.SAVANNA_PLATEAU, BiomeKeys.WINDSWEPT_SAVANNA),
+                UNDERGROUND_ORES, ModPlacedFeatures.REDSTONE_ORE_SMALL_PLACED);
 
         addOreFeatureBySelector(nether, ModPlacedFeatures.NETHER_COAL_ORE_PLACED);
         addOreFeatureBySelector(nether, ModPlacedFeatures.NETHER_COPPER_ORE_PLACED);

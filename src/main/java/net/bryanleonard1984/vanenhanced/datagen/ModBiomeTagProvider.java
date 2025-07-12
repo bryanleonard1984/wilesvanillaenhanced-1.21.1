@@ -1,12 +1,10 @@
 package net.bryanleonard1984.vanenhanced.datagen;
 
-import net.bryanleonard1984.vanenhanced.Wilesvanillaenhanced1211;
+import net.bryanleonard1984.vanenhanced.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.registry.tag.TagKey;
-import net.minecraft.util.Identifier;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.BiomeKeys;
 
@@ -14,8 +12,6 @@ import java.util.concurrent.CompletableFuture;
 
 public class ModBiomeTagProvider extends FabricTagProvider<Biome>
 {
-    public static final TagKey<Biome> MOD_BIOME_TAGS = TagKey.of(RegistryKeys.BIOME, Identifier.of(Wilesvanillaenhanced1211.MOD_ID, "mod_biome_tags"));
-
     public ModBiomeTagProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> lookup)
     {
         super(output, RegistryKeys.BIOME, lookup);
@@ -24,7 +20,13 @@ public class ModBiomeTagProvider extends FabricTagProvider<Biome>
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup)
     {
-        getOrCreateTagBuilder(MOD_BIOME_TAGS)
+        getOrCreateTagBuilder(ModTags.Biomes.IS_PLAINS)
                 .add(BiomeKeys.PLAINS, BiomeKeys.SNOWY_PLAINS, BiomeKeys.SUNFLOWER_PLAINS);
+
+        getOrCreateTagBuilder(ModTags.Biomes.IS_SANDY)
+                .add(BiomeKeys.DESERT, BiomeKeys.BEACH, BiomeKeys.SNOWY_BEACH, BiomeKeys.BADLANDS, BiomeKeys.ERODED_BADLANDS, BiomeKeys.WOODED_BADLANDS);
+
+        getOrCreateTagBuilder(ModTags.Biomes.COAL_BIOMES)
+                .add(BiomeKeys.SWAMP, BiomeKeys.MANGROVE_SWAMP, BiomeKeys.STONY_PEAKS);
     }
 }

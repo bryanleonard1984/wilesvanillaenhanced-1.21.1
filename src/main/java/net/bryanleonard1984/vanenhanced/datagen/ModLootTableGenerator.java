@@ -24,7 +24,8 @@ import net.minecraft.registry.RegistryWrapper;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.BiConsumer;
 
-public class ModLootTableGenerator extends FabricBlockLootTableProvider {
+public class ModLootTableGenerator extends FabricBlockLootTableProvider
+{
     public ModLootTableGenerator(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup)
     {
         super(dataOutput, registryLookup);

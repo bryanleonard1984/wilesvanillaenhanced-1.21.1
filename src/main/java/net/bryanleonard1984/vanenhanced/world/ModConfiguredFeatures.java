@@ -9,21 +9,37 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.FeatureConfig;
-import net.minecraft.world.gen.feature.OreFeatureConfig;
+import net.minecraft.world.gen.feature.*;
 
 import java.util.List;
 
 public class ModConfiguredFeatures
 {
+    public static final RegistryKey<ConfiguredFeature<?, ?>> COAL_ORE = registerKey("coal_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> COAL_ORE_LARGE = registerKey("coal_ore_large");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> COAL_ORE_SMALL = registerKey("coal_ore_small");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> COPPER_ORE = registerKey("copper_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> COPPER_ORE_LARGE = registerKey("copper_ore_large");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> COPPER_ORE_SMALL = registerKey("copper_ore_small");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> DIAMOND_ORE =registerKey("diamond_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> DIAMOND_ORE_LARGE = registerKey("diamond_ore_large");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> DIAMOND_ORE_SMALL = registerKey("diamond_ore_small");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> EMERALD_ORE = registerKey("emerald_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> GOLD_ORE = registerKey("gold_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> GOLD_ORE_LARGE = registerKey("gold_ore_large");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> GOLD_ORE_SMALL = registerKey("gold_ore_small");
     public static final RegistryKey<ConfiguredFeature<?, ?>> IRON_ORE_SMALL = registerKey("iron_ore_small");
     public static final RegistryKey<ConfiguredFeature<?, ?>> IRON_ORE = registerKey("iron_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> IRON_ORE_LARGE = registerKey("iron_ore_large");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> LAPIS_ORE = registerKey("lapis_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> LAPIS_ORE_LARGE = registerKey("lapis_ore_large");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> LAPIS_ORE_SMALL = registerKey("lapis_ore_small");
     public static final RegistryKey<ConfiguredFeature<?, ?>> QUARTZ_ORE = registerKey("quartz_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> QUARTZ_ORE_SMALL = registerKey("quartz_ore_small");
     public static final RegistryKey<ConfiguredFeature<?, ?>> QUARTZ_ORE_LARGE = registerKey("quartz_ore_large");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> REDSTONE_ORE = registerKey("redstone_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> REDSTONE_ORE_LARGE = registerKey("redstone_ore_large");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> REDSTONE_ORE_SMALL = registerKey("redstone_ore_small");
     public static final RegistryKey<ConfiguredFeature<?, ?>> NETHER_COAL_ORE = registerKey("nether_coal_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> NETHER_COPPER_ORE = registerKey("nether_copper_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> NETHER_DIAMOND_ORE = registerKey("nether_diamond_ore");
@@ -48,12 +64,33 @@ public class ModConfiguredFeatures
         RuleTest netherReplaceables = new BlockMatchRuleTest(Blocks.NETHERRACK);
         RuleTest endReplaceables = new BlockMatchRuleTest(Blocks.END_STONE);
 
-        List<OreFeatureConfig.Target> overworldQuartzOres =
-                List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.QUARTZ_ORE.getDefaultState()),
-                        OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.DEEPSLATE_QUARTZ_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldCoalOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplaceables, Blocks.COAL_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplaceables, Blocks.DEEPSLATE_COAL_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldCopperOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplaceables, Blocks.COPPER_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplaceables, Blocks.DEEPSLATE_COPPER_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldDiamondOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplaceables, Blocks.DIAMOND_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplaceables, Blocks.DEEPSLATE_DIAMOND_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldEmeraldOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplaceables, Blocks.EMERALD_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplaceables, Blocks.DEEPSLATE_EMERALD_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldGoldOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplaceables, Blocks.GOLD_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplaceables, Blocks.DEEPSLATE_GOLD_ORE.getDefaultState()));
         List<OreFeatureConfig.Target> overworldIronOres =
                 List.of(OreFeatureConfig.createTarget(stoneReplaceables, Blocks.IRON_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplaceables, Blocks.DEEPSLATE_IRON_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldLapisOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplaceables, Blocks.LAPIS_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplaceables, Blocks.DEEPSLATE_LAPIS_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldQuartzOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.QUARTZ_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.DEEPSLATE_QUARTZ_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldRedstoneOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplaceables, Blocks.REDSTONE_ORE.getDefaultState()),
+                    OreFeatureConfig.createTarget(deepslateReplaceables, Blocks.DEEPSLATE_REDSTONE_ORE.getDefaultState()));
 
         List<OreFeatureConfig.Target> netherCoalOres =
                 List.of(OreFeatureConfig.createTarget(netherReplaceables, ModBlocks.NETHER_COAL_ORE.getDefaultState()));
@@ -89,12 +126,31 @@ public class ModConfiguredFeatures
         List<OreFeatureConfig.Target> endRedstoneOres =
                 List.of(OreFeatureConfig.createTarget(endReplaceables, ModBlocks.END_REDSTONE_ORE.getDefaultState()));
 
+        register(context, COAL_ORE, Feature.ORE, new OreFeatureConfig(overworldCoalOres, 20));
+        register(context, COAL_ORE_LARGE, Feature.ORE, new OreFeatureConfig(overworldCoalOres, 40));
+        register(context, COAL_ORE_SMALL, Feature.SCATTERED_ORE, new OreFeatureConfig(overworldCoalOres, 12));
+        register(context, COPPER_ORE, Feature.ORE, new OreFeatureConfig(overworldCopperOres, 18));
+        register(context, COPPER_ORE_LARGE, Feature.ORE, new OreFeatureConfig(overworldCopperOres, 30));
+        register(context, COPPER_ORE_SMALL, Feature.SCATTERED_ORE, new OreFeatureConfig(overworldCopperOres, 10));
+        register(context, DIAMOND_ORE, Feature.ORE, new OreFeatureConfig(overworldDiamondOres, 10, 0.25f));
+        register(context, DIAMOND_ORE_LARGE, Feature.ORE, new OreFeatureConfig(overworldDiamondOres, 18, 0.15f));
+        register(context, DIAMOND_ORE_SMALL, Feature.SCATTERED_ORE, new OreFeatureConfig(overworldDiamondOres, 6, 0.85f));
+        register(context, EMERALD_ORE, Feature.SCATTERED_ORE, new OreFeatureConfig(overworldEmeraldOres, 6, 1.0f));
+        register(context, GOLD_ORE, Feature.ORE, new OreFeatureConfig(overworldGoldOres, 12));
+        register(context, GOLD_ORE_LARGE, Feature.ORE, new OreFeatureConfig(overworldGoldOres, 30));
+        register(context, GOLD_ORE_SMALL, Feature.SCATTERED_ORE, new OreFeatureConfig(overworldGoldOres, 8));
         register(context, IRON_ORE_SMALL, Feature.SCATTERED_ORE, new OreFeatureConfig(overworldIronOres, 8));
-        register(context, IRON_ORE, Feature.ORE, new OreFeatureConfig(overworldIronOres, 18));
-        register(context, IRON_ORE_LARGE, Feature.ORE, new OreFeatureConfig(overworldIronOres, 45));
+        register(context, IRON_ORE, Feature.ORE, new OreFeatureConfig(overworldIronOres, 16));
+        register(context, IRON_ORE_LARGE, Feature.ORE, new OreFeatureConfig(overworldIronOres, 35));
+        register(context, LAPIS_ORE, Feature.ORE, new OreFeatureConfig(overworldLapisOres, 12));
+        register(context, LAPIS_ORE_LARGE, Feature.ORE, new OreFeatureConfig(overworldLapisOres, 32));
+        register(context, LAPIS_ORE_SMALL, Feature.SCATTERED_ORE, new OreFeatureConfig(overworldLapisOres, 10, 0.35f));
         register(context, QUARTZ_ORE_SMALL, Feature.SCATTERED_ORE, new OreFeatureConfig(overworldQuartzOres, 6));
-        register(context, QUARTZ_ORE, Feature.ORE, new OreFeatureConfig(overworldQuartzOres, 15));
+        register(context, QUARTZ_ORE, Feature.ORE, new OreFeatureConfig(overworldQuartzOres, 14));
         register(context, QUARTZ_ORE_LARGE, Feature.ORE, new OreFeatureConfig(overworldQuartzOres, 30));
+        register(context, REDSTONE_ORE, Feature.ORE, new OreFeatureConfig(overworldRedstoneOres, 12));
+        register(context, REDSTONE_ORE_LARGE, Feature.ORE, new OreFeatureConfig(overworldRedstoneOres, 35, 0.25f));
+        register(context, REDSTONE_ORE_SMALL, Feature.SCATTERED_ORE, new OreFeatureConfig(overworldRedstoneOres, 8, 0.55f));
 
         register(context, NETHER_COAL_ORE, Feature.ORE, new OreFeatureConfig(netherCoalOres, 18));
         register(context, NETHER_COPPER_ORE, Feature.ORE, new OreFeatureConfig(netherCopperOres, 15));

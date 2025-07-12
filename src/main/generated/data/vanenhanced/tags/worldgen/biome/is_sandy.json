@@ -1,0 +1,10 @@
+{
+  "values": [
+    "minecraft:desert",
+    "minecraft:beach",
+    "minecraft:snowy_beach",
+    "minecraft:badlands",
+    "minecraft:eroded_badlands",
+    "minecraft:wooded_badlands"
+  ]
+}

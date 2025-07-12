@@ -24,6 +24,8 @@ public class ModTags
     public static class Biomes
     {
         public static final TagKey<Biome> IS_PLAINS = createTag("is_plains");
+        public static final TagKey<Biome> IS_SANDY = createTag("is_sandy");
+        public static final TagKey<Biome> COAL_BIOMES = createTag("coal_biomes");
 
         private static TagKey<Biome> createTag(String name)
         {
