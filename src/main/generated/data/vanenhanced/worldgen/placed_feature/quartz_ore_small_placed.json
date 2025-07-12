@@ -1,9 +1,9 @@
 {
-  "feature": "vanenhanced:deepslate",
+  "feature": "vanenhanced:quartz_ore_small",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 1
+      "chance": 2
     },
     {
       "type": "minecraft:in_square"
@@ -13,10 +13,10 @@
       "height": {
         "type": "minecraft:uniform",
         "max_inclusive": {
-          "below_top": 0
+          "absolute": 40
         },
         "min_inclusive": {
-          "above_bottom": 0
+          "absolute": -50
         }
       }
     },

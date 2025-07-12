@@ -3,6 +3,14 @@
     "minecraft:coal_ore",
     "minecraft:coal_block",
     "minecraft:iron_ore",
-    "minecraft:raw_iron_block"
+    "minecraft:raw_iron_block",
+    "minecraft:copper_ore",
+    "minecraft:raw_copper_block",
+    "minecraft:diamond_ore",
+    "minecraft:emerald_ore",
+    "minecraft:gold_ore",
+    "minecraft:raw_gold_block",
+    "minecraft:lapis_ore",
+    "minecraft:redstone_ore"
   ]
 }

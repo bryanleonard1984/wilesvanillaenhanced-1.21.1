@@ -1,5 +1,5 @@
 {
-  "feature": "vanenhanced:quartz_ore",
+  "feature": "vanenhanced:iron_ore",
   "placement": [
     {
       "type": "minecraft:count",
@@ -13,10 +13,10 @@
       "height": {
         "type": "minecraft:uniform",
         "max_inclusive": {
-          "absolute": 35
+          "absolute": 60
         },
         "min_inclusive": {
-          "absolute": -50
+          "absolute": -40
         }
       }
     },

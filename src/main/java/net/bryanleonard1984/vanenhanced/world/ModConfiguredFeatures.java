@@ -2,14 +2,12 @@ package net.bryanleonard1984.vanenhanced.world;
 
 import net.bryanleonard1984.vanenhanced.Wilesvanillaenhanced1211;
 import net.bryanleonard1984.vanenhanced.block.ModBlocks;
-import net.bryanleonard1984.vanenhanced.util.ModTags;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.structure.rule.RuleTest;
-import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
@@ -20,10 +18,11 @@ import java.util.List;
 
 public class ModConfiguredFeatures
 {
-    public static final RegistryKey<ConfiguredFeature<?, ?>> STONE = registerKey("stone");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> DEEPSLATE = registerKey("deepslate");
-
+    public static final RegistryKey<ConfiguredFeature<?, ?>> IRON_ORE_SMALL = registerKey("iron_ore_small");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> IRON_ORE = registerKey("iron_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> IRON_ORE_LARGE = registerKey("iron_ore_large");
     public static final RegistryKey<ConfiguredFeature<?, ?>> QUARTZ_ORE = registerKey("quartz_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> QUARTZ_ORE_SMALL = registerKey("quartz_ore_small");
     public static final RegistryKey<ConfiguredFeature<?, ?>> QUARTZ_ORE_LARGE = registerKey("quartz_ore_large");
     public static final RegistryKey<ConfiguredFeature<?, ?>> NETHER_COAL_ORE = registerKey("nether_coal_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> NETHER_COPPER_ORE = registerKey("nether_copper_ore");
@@ -44,8 +43,6 @@ public class ModConfiguredFeatures
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context)
     {
-        RuleTest oreReplaceables = new TagMatchRuleTest(ModTags.Blocks.OVERWORLD_ORES);
-        RuleTest deepslateOreReplaceables = new TagMatchRuleTest(ModTags.Blocks.DEEPSLATE_ORES);
         RuleTest stoneReplaceables = new BlockMatchRuleTest(Blocks.STONE);
         RuleTest deepslateReplaceables = new BlockMatchRuleTest(Blocks.DEEPSLATE);
         RuleTest netherReplaceables = new BlockMatchRuleTest(Blocks.NETHERRACK);
@@ -54,10 +51,9 @@ public class ModConfiguredFeatures
         List<OreFeatureConfig.Target> overworldQuartzOres =
                 List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.QUARTZ_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.DEEPSLATE_QUARTZ_ORE.getDefaultState()));
-        List<OreFeatureConfig.Target> overworldOres =
-                List.of(OreFeatureConfig.createTarget(oreReplaceables, Blocks.STONE.getDefaultState()));
-        List<OreFeatureConfig.Target> deepslateOres =
-                List.of(OreFeatureConfig.createTarget(deepslateOreReplaceables, Blocks.DEEPSLATE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldIronOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplaceables, Blocks.IRON_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplaceables, Blocks.DEEPSLATE_IRON_ORE.getDefaultState()));
 
         List<OreFeatureConfig.Target> netherCoalOres =
                 List.of(OreFeatureConfig.createTarget(netherReplaceables, ModBlocks.NETHER_COAL_ORE.getDefaultState()));
@@ -93,10 +89,11 @@ public class ModConfiguredFeatures
         List<OreFeatureConfig.Target> endRedstoneOres =
                 List.of(OreFeatureConfig.createTarget(endReplaceables, ModBlocks.END_REDSTONE_ORE.getDefaultState()));
 
-        register(context, STONE, Feature.ORE, new OreFeatureConfig(overworldOres, 20));
-        register(context, DEEPSLATE, Feature.ORE, new OreFeatureConfig(deepslateOres, 20));
-
-        register(context, QUARTZ_ORE, Feature.ORE, new OreFeatureConfig(overworldQuartzOres, 6));
+        register(context, IRON_ORE_SMALL, Feature.SCATTERED_ORE, new OreFeatureConfig(overworldIronOres, 8));
+        register(context, IRON_ORE, Feature.ORE, new OreFeatureConfig(overworldIronOres, 18));
+        register(context, IRON_ORE_LARGE, Feature.ORE, new OreFeatureConfig(overworldIronOres, 45));
+        register(context, QUARTZ_ORE_SMALL, Feature.SCATTERED_ORE, new OreFeatureConfig(overworldQuartzOres, 6));
+        register(context, QUARTZ_ORE, Feature.ORE, new OreFeatureConfig(overworldQuartzOres, 15));
         register(context, QUARTZ_ORE_LARGE, Feature.ORE, new OreFeatureConfig(overworldQuartzOres, 30));
 
         register(context, NETHER_COAL_ORE, Feature.ORE, new OreFeatureConfig(netherCoalOres, 18));
@@ -121,11 +118,6 @@ public class ModConfiguredFeatures
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name)
     {
         return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, Identifier.of(Wilesvanillaenhanced1211.MOD_ID, name));
-    }
-
-    public static RegistryKey<ConfiguredFeature<?, ?>> registerVanillaKey(String name)
-    {
-        return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, Identifier.of("minecraft", name));
     }
 
     private static <FC extends FeatureConfig, F extends Feature<FC>> void register(Registerable<ConfiguredFeature<?, ?>>

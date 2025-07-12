@@ -70,10 +70,22 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider
 
         getOrCreateTagBuilder(ModTags.Blocks.OVERWORLD_ORES)
                 .add(Blocks.COAL_ORE, Blocks.COAL_BLOCK,
-                        Blocks.IRON_ORE, Blocks.RAW_IRON_BLOCK);
+                        Blocks.IRON_ORE, Blocks.RAW_IRON_BLOCK,
+                        Blocks.COPPER_ORE, Blocks.RAW_COPPER_BLOCK,
+                        Blocks.DIAMOND_ORE,
+                        Blocks.EMERALD_ORE,
+                        Blocks.GOLD_ORE, Blocks.RAW_GOLD_BLOCK,
+                        Blocks.LAPIS_ORE,
+                        Blocks.REDSTONE_ORE);
 
         getOrCreateTagBuilder(ModTags.Blocks.DEEPSLATE_ORES)
                 .add(Blocks.DEEPSLATE_COAL_ORE, Blocks.COAL_BLOCK,
-                        Blocks.DEEPSLATE_IRON_ORE, Blocks.RAW_IRON_BLOCK);
+                        Blocks.DEEPSLATE_IRON_ORE, Blocks.RAW_IRON_BLOCK,
+                        Blocks.DEEPSLATE_COPPER_ORE, Blocks.RAW_COPPER_BLOCK,
+                        Blocks.DEEPSLATE_DIAMOND_ORE,
+                        Blocks.DEEPSLATE_EMERALD_ORE,
+                        Blocks.DEEPSLATE_GOLD_ORE, Blocks.RAW_GOLD_BLOCK,
+                        Blocks.DEEPSLATE_LAPIS_ORE,
+                        Blocks.DEEPSLATE_REDSTONE_ORE);
     }
 }
