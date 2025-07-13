@@ -48,6 +48,15 @@ public class ModItemGroups
                         entries.add(ModItems.IRON_HAMMER);
                         entries.add(ModItems.DIAMOND_HAMMER);
                         entries.add(ModItems.NETHERITE_HAMMER);
+                        entries.add(ModItems.EMERALD_AXE);
+                        entries.add(ModItems.EMERALD_HOE);
+                        entries.add(ModItems.EMERALD_PICKAXE);
+                        entries.add(ModItems.EMERALD_SHOVEL);
+                        entries.add(ModItems.EMERALD_SWORD);
+                        entries.add(ModItems.EMERALD_BOOTS);
+                        entries.add(ModItems.EMERALD_CHESTPLATE);
+                        entries.add(ModItems.EMERALD_HELMET);
+                        entries.add(ModItems.EMERALD_LEGGINGS);
                     }).build());
 
     public static final ItemGroup VAN_ENHANCED_BLOCKS = Registry.register(Registries.ITEM_GROUP,

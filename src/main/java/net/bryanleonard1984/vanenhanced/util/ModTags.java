@@ -14,6 +14,8 @@ public class ModTags
     {
         public static final TagKey<Block> OVERWORLD_ORES = createTag("overworld_ores");
         public static final TagKey<Block> DEEPSLATE_ORES = createTag("deepslate_ores");
+        public static final TagKey<Block> NEEDS_EMERALD_TOOL = createTag("needs_emerald_tool");
+        public static final TagKey<Block> INCORRECT_FOR_EMERALD_TOOL = createTag("incorrect_for_emerald_tool");
 
         private static TagKey<Block> createTag(String name)
         {

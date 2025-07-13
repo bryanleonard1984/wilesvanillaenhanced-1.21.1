@@ -21,6 +21,16 @@
   "item.vanenhanced.iron_coin": "Iron Coin",
   "item.vanenhanced.gold_coin": "Gold Coin",
 
+  "item.vanenhanced.emerald_axe": "Emerald Axe",
+  "item.vanenhanced.emerald_boots": "Emerald Boots",
+  "item.vanenhanced.emerald_chestplate": "Emerald Chestplate",
+  "item.vanenhanced.emerald_helmet": "Emerald Helmet",
+  "item.vanenhanced.emerald_hoe": "Emerald Hoe",
+  "item.vanenhanced.emerald_leggings": "Emerald Leggings",
+  "item.vanenhanced.emerald_pickaxe": "Emerald Pickaxe",
+  "item.vanenhanced.emerald_shovel": "Emerald Shovel",
+  "item.vanenhanced.emerald_sword": "Emerald Sword",
+
   "block.vanenhanced.decay_block": "Block of Decay",
   "block.vanenhanced.reclaim_block": "Block of Restoration",
   "block.vanenhanced.quartz_ore": "Quartz Ore",
