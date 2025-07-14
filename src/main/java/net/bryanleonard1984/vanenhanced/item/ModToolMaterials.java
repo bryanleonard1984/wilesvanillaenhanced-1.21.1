@@ -12,6 +12,7 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial
 {
+    COPPER(ModTags.Blocks.INCORRECT_FOR_COPPER_TOOL, 190, 5.0F, 1.5F, 14, () -> Ingredient.ofItems(Items.COPPER_INGOT)),
     EMERALD(ModTags.Blocks.INCORRECT_FOR_EMERALD_TOOL, 1561, 12.0F, 3.0F, 22, () -> Ingredient.ofItems(Items.EMERALD));
 
 

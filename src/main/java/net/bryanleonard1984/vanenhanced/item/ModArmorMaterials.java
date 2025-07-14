@@ -18,20 +18,16 @@ import java.util.function.Supplier;
 
 public class ModArmorMaterials
 {
-    /*public static final RegistryEntry<ArmorMaterial> CHAIN = register("chainmail", Util.make(new EnumMap(ArmorItem.Type.class), map -> {
-        map.put(ArmorItem.Type.BOOTS, 1);
-        map.put(ArmorItem.Type.LEGGINGS, 4);
-        map.put(ArmorItem.Type.CHESTPLATE, 5);
-        map.put(ArmorItem.Type.HELMET, 2);
-        map.put(ArmorItem.Type.BODY, 4);
-    }), 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F, () -> Ingredient.ofItems(Items.IRON_INGOT));
-    public static final RegistryEntry<ArmorMaterial> IRON = register("iron", Util.make(new EnumMap(ArmorItem.Type.class), map -> {
-        map.put(ArmorItem.Type.BOOTS, 2);
-        map.put(ArmorItem.Type.LEGGINGS, 5);
-        map.put(ArmorItem.Type.CHESTPLATE, 6);
-        map.put(ArmorItem.Type.HELMET, 2);
-        map.put(ArmorItem.Type.BODY, 5);
-    }), 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.ofItems(Items.IRON_INGOT));*/
+    public static final RegistryEntry<ArmorMaterial> COPPER = registerArmorMaterial("copper",
+            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map ->
+            {
+                map.put(ArmorItem.Type.BOOTS, 1);
+                map.put(ArmorItem.Type.LEGGINGS, 5);
+                map.put(ArmorItem.Type.CHESTPLATE, 5);
+                map.put(ArmorItem.Type.HELMET, 2);
+                map.put(ArmorItem.Type.BODY, 4);
+            }), 12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, () -> Ingredient.ofItems(Items.COPPER_INGOT),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(Wilesvanillaenhanced1211.MOD_ID, "copper"))), 0.0F, 0));
 
     public static final RegistryEntry<ArmorMaterial> EMERALD = registerArmorMaterial("emerald",
             () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map ->

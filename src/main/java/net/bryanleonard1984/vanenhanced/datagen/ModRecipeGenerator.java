@@ -225,10 +225,11 @@ public class ModRecipeGenerator extends FabricRecipeProvider
         recipeBuilder.TinyFuelRecipes(ModItems.TINY_CHARCOAL, Items.CHARCOAL, recipeExporter);
         recipeBuilder.TinyFuelRecipes(ModItems.TINY_COAL, Items.COAL, recipeExporter);
 
+        recipeBuilder.AxeRecipes(ModItems.COPPER_AXE, Items.COPPER_INGOT, recipeExporter, "copper_axe");
         recipeBuilder.AxeRecipes(ModItems.EMERALD_AXE, Items.EMERALD, recipeExporter, "emerald_axe");
-
+        recipeBuilder.AxeRecipes(ModItems.COPPER_HOE, Items.COPPER_INGOT, recipeExporter, "copper_hoe");
         recipeBuilder.HoeRecipes(ModItems.EMERALD_HOE, Items.EMERALD, recipeExporter, "emerald_hoe");
-
+        recipeBuilder.PickaxeRecipes(ModItems.COPPER_PICKAXE, Items.COPPER_INGOT, recipeExporter);
         recipeBuilder.PickaxeRecipes(ModItems.EMERALD_PICKAXE, Items.EMERALD, recipeExporter);
 
         recipeBuilder.ShovelRecipes(ModItems.EMERALD_SHOVEL, Items.EMERALD, recipeExporter);
