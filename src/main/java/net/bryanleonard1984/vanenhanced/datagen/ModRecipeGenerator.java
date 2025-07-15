@@ -3,7 +3,7 @@ package net.bryanleonard1984.vanenhanced.datagen;
 import net.bryanleonard1984.vanenhanced.Wilesvanillaenhanced1211;
 import net.bryanleonard1984.vanenhanced.block.ModBlocks;
 import net.bryanleonard1984.vanenhanced.item.ModItems;
-import net.bryanleonard1984.vanenhanced.recipe.RecipeBuilder;
+import static net.bryanleonard1984.vanenhanced.recipe.RecipeBuilder.*;
 import net.bryanleonard1984.vanenhanced.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
@@ -23,10 +23,10 @@ import net.minecraft.util.Identifier;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
+import static net.bryanleonard1984.wileslib.util.RecipeBuilderLib.*;
+
 public class ModRecipeGenerator extends FabricRecipeProvider
 {
-    RecipeBuilder recipeBuilder = new RecipeBuilder();
-
     public ModRecipeGenerator(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture)
     {
         super(output, registriesFuture);
@@ -157,91 +157,91 @@ public class ModRecipeGenerator extends FabricRecipeProvider
 
         offerShapelessRecipe(recipeExporter, Items.NETHER_WART, Blocks.NETHER_WART_BLOCK, "nether_wart", 4);
 
-        recipeBuilder.ChiselRecipes(ModItems.IRON_CHISEL, Items.IRON_INGOT, recipeExporter);
-        recipeBuilder.ChiselRecipes(ModItems.DIAMOND_CHISEL, Items.DIAMOND, recipeExporter);
-        recipeBuilder.ChiselRecipes(ModItems.EMERALD_CHISEL, Items.EMERALD, recipeExporter);
-        recipeBuilder.ChiselRecipes(ModItems.NETHERITE_CHISEL, Items.NETHERITE_INGOT, recipeExporter);
+        ChiselRecipes(ModItems.IRON_CHISEL, Items.IRON_INGOT, recipeExporter);
+        ChiselRecipes(ModItems.DIAMOND_CHISEL, Items.DIAMOND, recipeExporter);
+        ChiselRecipes(ModItems.EMERALD_CHISEL, Items.EMERALD, recipeExporter);
+        ChiselRecipes(ModItems.NETHERITE_CHISEL, Items.NETHERITE_INGOT, recipeExporter);
 
-        recipeBuilder.CrushedOreRecipes(ModItems.CRUSHED_COAL, Items.COAL, recipeExporter);
-        recipeBuilder.CrushedOreRecipes(ModItems.CRUSHED_COPPER, Items.RAW_COPPER, recipeExporter);
-        recipeBuilder.CrushedOreRecipes(ModItems.CRUSHED_GOLD, Items.RAW_GOLD, recipeExporter);
-        recipeBuilder.CrushedOreRecipes(ModItems.CRUSHED_IRON, Items.RAW_IRON, recipeExporter);
-        recipeBuilder.CrushedOreRecipes(Items.COBBLESTONE, Items.STONE, recipeExporter);
-        recipeBuilder.CrushedOreRecipes(Items.GRAVEL, Items.COBBLESTONE, recipeExporter);
-        recipeBuilder.CrushedOreRecipes(Items.SAND, Items.GRAVEL, recipeExporter);
-        recipeBuilder.CrushedOreRecipes(Items.SOUL_SAND, Items.SOUL_SOIL, recipeExporter);
+        CrushedOreRecipes(ModItems.CRUSHED_COAL, Items.COAL, recipeExporter);
+        CrushedOreRecipes(ModItems.CRUSHED_COPPER, Items.RAW_COPPER, recipeExporter);
+        CrushedOreRecipes(ModItems.CRUSHED_GOLD, Items.RAW_GOLD, recipeExporter);
+        CrushedOreRecipes(ModItems.CRUSHED_IRON, Items.RAW_IRON, recipeExporter);
+        CrushedOreRecipes(Items.COBBLESTONE, Items.STONE, recipeExporter);
+        CrushedOreRecipes(Items.GRAVEL, Items.COBBLESTONE, recipeExporter);
+        CrushedOreRecipes(Items.SAND, Items.GRAVEL, recipeExporter);
+        CrushedOreRecipes(Items.SOUL_SAND, Items.SOUL_SOIL, recipeExporter);
 
-        recipeBuilder.eggRecipe(Items.ALLAY_SPAWN_EGG, Items.AMETHYST_SHARD, recipeExporter);
-        recipeBuilder.eggRecipe(Items.AXOLOTL_SPAWN_EGG, Items.TROPICAL_FISH, recipeExporter);
-        recipeBuilder.eggRecipe(Items.BEE_SPAWN_EGG, Items.HONEYCOMB, recipeExporter);
-        recipeBuilder.eggRecipe(Items.CAT_SPAWN_EGG, Items.COD, recipeExporter);
-        recipeBuilder.eggRecipe(Items.CHICKEN_SPAWN_EGG, Items.FEATHER, recipeExporter);
-        recipeBuilder.eggRecipe(Items.COW_SPAWN_EGG, Items.LEATHER, recipeExporter);
-        recipeBuilder.eggRecipe(Items.FROG_SPAWN_EGG, Items.MUD, recipeExporter);
-        recipeBuilder.eggRecipe(Items.HORSE_SPAWN_EGG, Items.HAY_BLOCK, recipeExporter);
-        recipeBuilder.eggRecipe(Items.IRON_GOLEM_SPAWN_EGG, Items.IRON_BLOCK, recipeExporter);
-        recipeBuilder.eggRecipe(Items.LLAMA_SPAWN_EGG, Items.WHITE_CARPET, recipeExporter);
-        recipeBuilder.eggRecipe(Items.MOOSHROOM_SPAWN_EGG, Items.RED_MUSHROOM, recipeExporter);
-        recipeBuilder.eggRecipe(Items.PARROT_SPAWN_EGG, Items.WHEAT_SEEDS, recipeExporter);
-        recipeBuilder.eggRecipe(Items.PIG_SPAWN_EGG, Items.PORKCHOP, recipeExporter);
-        recipeBuilder.eggRecipe(Items.RABBIT_SPAWN_EGG, Items.RABBIT_HIDE, recipeExporter);
-        recipeBuilder.eggRecipe(Items.SHEEP_SPAWN_EGG, Items.WHITE_WOOL, recipeExporter);
-        recipeBuilder.eggRecipe(Items.SNOW_GOLEM_SPAWN_EGG, Items.SNOW_BLOCK, recipeExporter);
-        recipeBuilder.eggRecipe(Items.VILLAGER_SPAWN_EGG, Items.EMERALD_BLOCK, recipeExporter);
-        recipeBuilder.eggRecipe(Items.WOLF_SPAWN_EGG, Items.MUTTON, recipeExporter);
+        eggRecipe(Items.ALLAY_SPAWN_EGG, Items.AMETHYST_SHARD, recipeExporter);
+        eggRecipe(Items.AXOLOTL_SPAWN_EGG, Items.TROPICAL_FISH, recipeExporter);
+        eggRecipe(Items.BEE_SPAWN_EGG, Items.HONEYCOMB, recipeExporter);
+        eggRecipe(Items.CAT_SPAWN_EGG, Items.COD, recipeExporter);
+        eggRecipe(Items.CHICKEN_SPAWN_EGG, Items.FEATHER, recipeExporter);
+        eggRecipe(Items.COW_SPAWN_EGG, Items.LEATHER, recipeExporter);
+        eggRecipe(Items.FROG_SPAWN_EGG, Items.MUD, recipeExporter);
+        eggRecipe(Items.HORSE_SPAWN_EGG, Items.HAY_BLOCK, recipeExporter);
+        eggRecipe(Items.IRON_GOLEM_SPAWN_EGG, Items.IRON_BLOCK, recipeExporter);
+        eggRecipe(Items.LLAMA_SPAWN_EGG, Items.WHITE_CARPET, recipeExporter);
+        eggRecipe(Items.MOOSHROOM_SPAWN_EGG, Items.RED_MUSHROOM, recipeExporter);
+        eggRecipe(Items.PARROT_SPAWN_EGG, Items.WHEAT_SEEDS, recipeExporter);
+        eggRecipe(Items.PIG_SPAWN_EGG, Items.PORKCHOP, recipeExporter);
+        eggRecipe(Items.RABBIT_SPAWN_EGG, Items.RABBIT_HIDE, recipeExporter);
+        eggRecipe(Items.SHEEP_SPAWN_EGG, Items.WHITE_WOOL, recipeExporter);
+        eggRecipe(Items.SNOW_GOLEM_SPAWN_EGG, Items.SNOW_BLOCK, recipeExporter);
+        eggRecipe(Items.VILLAGER_SPAWN_EGG, Items.EMERALD_BLOCK, recipeExporter);
+        eggRecipe(Items.WOLF_SPAWN_EGG, Items.MUTTON, recipeExporter);
 
-        recipeBuilder.eggRecipe(Items.BLAZE_SPAWN_EGG, Items.BLAZE_ROD, recipeExporter);
-        recipeBuilder.eggRecipe(Items.CREEPER_SPAWN_EGG, Items.GUNPOWDER, recipeExporter);
-        recipeBuilder.eggRecipe(Items.DROWNED_SPAWN_EGG, Items.NAUTILUS_SHELL, recipeExporter);
-        recipeBuilder.eggRecipe(Items.ENDERMAN_SPAWN_EGG, Items.ENDER_PEARL, recipeExporter);
-        recipeBuilder.eggRecipe(Items.EVOKER_SPAWN_EGG, Items.BOOKSHELF, recipeExporter);
-        recipeBuilder.eggRecipe(Items.GHAST_SPAWN_EGG, Items.GHAST_TEAR, recipeExporter);
-        recipeBuilder.eggRecipe(Items.GUARDIAN_SPAWN_EGG, Items.PRISMARINE_SHARD, recipeExporter);
-        recipeBuilder.eggRecipe(Items.MAGMA_CUBE_SPAWN_EGG, Items.MAGMA_CREAM, recipeExporter);
-        recipeBuilder.eggRecipe(Items.PIGLIN_SPAWN_EGG, Items.GOLD_INGOT, recipeExporter);
-        recipeBuilder.eggRecipe(Items.PILLAGER_SPAWN_EGG, Items.WHITE_BANNER, recipeExporter);
-        recipeBuilder.eggRecipe(Items.SHULKER_SPAWN_EGG, Items.SHULKER_SHELL, recipeExporter);
-        recipeBuilder.eggRecipe(Items.SKELETON_SPAWN_EGG, Items.BONE, recipeExporter);
-        recipeBuilder.eggRecipe(Items.SLIME_SPAWN_EGG, Items.SLIME_BALL, recipeExporter);
-        recipeBuilder.eggRecipe(Items.SPIDER_SPAWN_EGG, Items.COBWEB, recipeExporter);
-        recipeBuilder.eggRecipe(Items.VINDICATOR_SPAWN_EGG, Items.BLACK_BANNER, recipeExporter);
-        recipeBuilder.eggRecipe(Items.WITCH_SPAWN_EGG, Items.GLASS_BOTTLE, recipeExporter);
-        recipeBuilder.eggRecipe(Items.WITHER_SPAWN_EGG, Items.WITHER_SKELETON_SKULL, recipeExporter);
-        recipeBuilder.eggRecipe(Items.WITHER_SKELETON_SPAWN_EGG, Items.COAL, recipeExporter);
-        recipeBuilder.eggRecipe(Items.ZOMBIE_SPAWN_EGG, Items.ROTTEN_FLESH, recipeExporter);
-        recipeBuilder.eggRecipe(Items.ZOMBIE_VILLAGER_SPAWN_EGG, Items.EMERALD, recipeExporter);
-        recipeBuilder.eggRecipe(Items.ZOMBIFIED_PIGLIN_SPAWN_EGG, Items.GOLD_NUGGET, recipeExporter);
+        eggRecipe(Items.BLAZE_SPAWN_EGG, Items.BLAZE_ROD, recipeExporter);
+        eggRecipe(Items.CREEPER_SPAWN_EGG, Items.GUNPOWDER, recipeExporter);
+        eggRecipe(Items.DROWNED_SPAWN_EGG, Items.NAUTILUS_SHELL, recipeExporter);
+        eggRecipe(Items.ENDERMAN_SPAWN_EGG, Items.ENDER_PEARL, recipeExporter);
+        eggRecipe(Items.EVOKER_SPAWN_EGG, Items.BOOKSHELF, recipeExporter);
+        eggRecipe(Items.GHAST_SPAWN_EGG, Items.GHAST_TEAR, recipeExporter);
+        eggRecipe(Items.GUARDIAN_SPAWN_EGG, Items.PRISMARINE_SHARD, recipeExporter);
+        eggRecipe(Items.MAGMA_CUBE_SPAWN_EGG, Items.MAGMA_CREAM, recipeExporter);
+        eggRecipe(Items.PIGLIN_SPAWN_EGG, Items.GOLD_INGOT, recipeExporter);
+        eggRecipe(Items.PILLAGER_SPAWN_EGG, Items.WHITE_BANNER, recipeExporter);
+        eggRecipe(Items.SHULKER_SPAWN_EGG, Items.SHULKER_SHELL, recipeExporter);
+        eggRecipe(Items.SKELETON_SPAWN_EGG, Items.BONE, recipeExporter);
+        eggRecipe(Items.SLIME_SPAWN_EGG, Items.SLIME_BALL, recipeExporter);
+        eggRecipe(Items.SPIDER_SPAWN_EGG, Items.COBWEB, recipeExporter);
+        eggRecipe(Items.VINDICATOR_SPAWN_EGG, Items.BLACK_BANNER, recipeExporter);
+        eggRecipe(Items.WITCH_SPAWN_EGG, Items.GLASS_BOTTLE, recipeExporter);
+        eggRecipe(Items.WITHER_SPAWN_EGG, Items.WITHER_SKELETON_SKULL, recipeExporter);
+        eggRecipe(Items.WITHER_SKELETON_SPAWN_EGG, Items.COAL, recipeExporter);
+        eggRecipe(Items.ZOMBIE_SPAWN_EGG, Items.ROTTEN_FLESH, recipeExporter);
+        eggRecipe(Items.ZOMBIE_VILLAGER_SPAWN_EGG, Items.EMERALD, recipeExporter);
+        eggRecipe(Items.ZOMBIFIED_PIGLIN_SPAWN_EGG, Items.GOLD_NUGGET, recipeExporter);
 
-        recipeBuilder.HammerRecipes(ModItems.STONE_HAMMER, Blocks.COBBLESTONE, recipeExporter);
-        recipeBuilder.HammerRecipes(ModItems.IRON_HAMMER, Items.IRON_INGOT, recipeExporter);
-        recipeBuilder.HammerRecipes(ModItems.DIAMOND_HAMMER, Items.DIAMOND, recipeExporter);
-        recipeBuilder.HammerRecipes(ModItems.NETHERITE_HAMMER, Items.NETHERITE_INGOT, recipeExporter);
+        HammerRecipes(ModItems.STONE_HAMMER, Blocks.COBBLESTONE, recipeExporter);
+        HammerRecipes(ModItems.IRON_HAMMER, Items.IRON_INGOT, recipeExporter);
+        HammerRecipes(ModItems.DIAMOND_HAMMER, Items.DIAMOND, recipeExporter);
+        HammerRecipes(ModItems.NETHERITE_HAMMER, Items.NETHERITE_INGOT, recipeExporter);
 
-        recipeBuilder.horseArmorRecipes(Items.LEATHER_HORSE_ARMOR, Items.LEATHER, recipeExporter);
-        recipeBuilder.horseArmorRecipes(Items.IRON_HORSE_ARMOR, Items.IRON_INGOT, recipeExporter);
-        recipeBuilder.horseArmorRecipes(Items.GOLDEN_HORSE_ARMOR, Items.GOLD_INGOT, recipeExporter);
-        recipeBuilder.horseArmorRecipes(Items.DIAMOND_HORSE_ARMOR, Items.DIAMOND, recipeExporter);
+        horseArmorRecipes(Items.LEATHER_HORSE_ARMOR, Items.LEATHER, recipeExporter);
+        horseArmorRecipes(Items.IRON_HORSE_ARMOR, Items.IRON_INGOT, recipeExporter);
+        horseArmorRecipes(Items.GOLDEN_HORSE_ARMOR, Items.GOLD_INGOT, recipeExporter);
+        horseArmorRecipes(Items.DIAMOND_HORSE_ARMOR, Items.DIAMOND, recipeExporter);
 
-        recipeBuilder.TinyFuelRecipes(ModItems.TINY_CHARCOAL, Items.CHARCOAL, recipeExporter);
-        recipeBuilder.TinyFuelRecipes(ModItems.TINY_COAL, Items.COAL, recipeExporter);
+        compactingRecipeWithEightItems(ModItems.TINY_CHARCOAL, Items.CHARCOAL, "tiny_fuel", recipeExporter);
+        compactingRecipeWithEightItems(ModItems.TINY_COAL, Items.COAL, "tiny_fuel", recipeExporter);
 
-        recipeBuilder.AxeRecipes(ModItems.COPPER_AXE, Items.COPPER_INGOT, recipeExporter, "copper_axe");
-        recipeBuilder.AxeRecipes(ModItems.EMERALD_AXE, Items.EMERALD, recipeExporter, "emerald_axe");
-        recipeBuilder.AxeRecipes(ModItems.COPPER_HOE, Items.COPPER_INGOT, recipeExporter, "copper_hoe");
-        recipeBuilder.HoeRecipes(ModItems.EMERALD_HOE, Items.EMERALD, recipeExporter, "emerald_hoe");
-        recipeBuilder.PickaxeRecipes(ModItems.COPPER_PICKAXE, Items.COPPER_INGOT, recipeExporter);
-        recipeBuilder.PickaxeRecipes(ModItems.EMERALD_PICKAXE, Items.EMERALD, recipeExporter);
+        AxeRecipes(ModItems.COPPER_AXE, Items.COPPER_INGOT, recipeExporter, "copper_axe");
+        AxeRecipes(ModItems.EMERALD_AXE, Items.EMERALD, recipeExporter, "emerald_axe");
+        HoeRecipes(ModItems.COPPER_HOE, Items.COPPER_INGOT, recipeExporter, "copper_hoe");
+        HoeRecipes(ModItems.EMERALD_HOE, Items.EMERALD, recipeExporter, "emerald_hoe");
+        PickaxeRecipes(ModItems.COPPER_PICKAXE, Items.COPPER_INGOT, recipeExporter);
+        PickaxeRecipes(ModItems.EMERALD_PICKAXE, Items.EMERALD, recipeExporter);
 
-        recipeBuilder.ShovelRecipes(ModItems.EMERALD_SHOVEL, Items.EMERALD, recipeExporter);
+        ShovelRecipes(ModItems.EMERALD_SHOVEL, Items.EMERALD, recipeExporter);
 
-        recipeBuilder.SwordRecipes(ModItems.EMERALD_SWORD, Items.EMERALD, recipeExporter);
+        SwordRecipes(ModItems.EMERALD_SWORD, Items.EMERALD, recipeExporter);
 
-        recipeBuilder.BootsRecipes(ModItems.EMERALD_BOOTS, Items.EMERALD, recipeExporter);
+        BootsRecipes(ModItems.EMERALD_BOOTS, Items.EMERALD, recipeExporter);
 
-        recipeBuilder.ChestplateRecipes(ModItems.EMERALD_CHESTPLATE, Items.EMERALD, recipeExporter);
+        ChestplateRecipes(ModItems.EMERALD_CHESTPLATE, Items.EMERALD, recipeExporter);
 
-        recipeBuilder.HelmetRecipes(ModItems.EMERALD_HELMET, Items.EMERALD, recipeExporter);
+        HelmetRecipes(ModItems.EMERALD_HELMET, Items.EMERALD, recipeExporter);
 
-        recipeBuilder.LeggingsRecipes(ModItems.EMERALD_LEGGINGS, Items.EMERALD, recipeExporter);
+        LeggingsRecipes(ModItems.EMERALD_LEGGINGS, Items.EMERALD, recipeExporter);
     }
 }

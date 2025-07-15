@@ -14,9 +14,14 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
+import net.bryanleonard1984.wileslib.block.BlockBuilderLib;
+
+import static net.bryanleonard1984.wileslib.block.BlockBuilderLib.*;
 
 public class ModBlocks
 {
+    BlockBuilderLib blockBuilderLib = new BlockBuilderLib(Wilesvanillaenhanced1211.MOD_ID, Wilesvanillaenhanced1211.LOGGER);
+
     public static final Block RECLAIM_BLOCK = registerBlock("reclaim_block",
             new ReclaimBlock(AbstractBlock.Settings.create().strength(4.0f, 2.5f)
                     .luminance(state -> 15).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
@@ -104,7 +109,6 @@ public class ModBlocks
                     .sounds(BlockSoundGroup.WOOD).nonOpaque()));
 
 
-
     private static Block registerBlock(String name, Block block)
     {
         registerBlockItem(name, block);
@@ -116,6 +120,7 @@ public class ModBlocks
         Registry.register(Registries.ITEM, Identifier.of(Wilesvanillaenhanced1211.MOD_ID, name),
                 new BlockItem(block, new Item.Settings()));
     }
+
 
     public static void registerModBlocks()
     {
