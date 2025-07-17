@@ -1,4 +1,4 @@
-// 1.21.1	2025-07-12T23:20:23.2710949	Wiles Vanilla Enhanced 1.21.1/Model Definitions
+// 1.21.1	2025-07-17T11:57:36.1461022	Wiles Vanilla Enhanced 1.21.1/Model Definitions
 a79c410e288b4e5702adb5139b5adc1e8fcc5fc6 assets\vanenhanced\blockstates\nether_diamond_ore.json
 4097165e992652ba85e11b6667b83252e0be89a5 assets\vanenhanced\models\item\iron_hammer.json
 1b9ddafe49194a318a57c926585e3778559133f4 assets\vanenhanced\models\item\emerald_chestplate.json
@@ -40,8 +40,8 @@ ba638090e83359725a74badf2257395b58a310f5 assets\vanenhanced\models\item\emerald_
 eba20a9793cf1102441ebe02dee87c08eb98f013 assets\vanenhanced\blockstates\end_quartz_ore.json
 a16a4c2aaff49b0d394a5df8bad8d09fe7e3e067 assets\vanenhanced\models\item\end_gold_ore.json
 175fcc6d7b0872e34bf5d7206ae192941a2cc793 assets\vanenhanced\models\item\decay_block.json
-2268be309cf94b4926cc4b911dc364fea1a4f3b4 assets\vanenhanced\models\block\end_coal_ore.json
 0f3b832af78af58e4ab4c06c91b74dc68fcbb7c5 assets\vanenhanced\models\block\nether_redstone_ore.json
+2268be309cf94b4926cc4b911dc364fea1a4f3b4 assets\vanenhanced\models\block\end_coal_ore.json
 cdd1eef59f87427e74a7a1ea0ff9f18c95a2fc16 assets\vanenhanced\models\item\crushed_iron.json
 b6feec19a4c0e1892c0a9b57e3ab0cd5b28c12d1 assets\vanenhanced\models\block\end_redstone_ore.json
 517210ba5708104b34bf8c1da4373a953c63172b assets\vanenhanced\blockstates\end_coal_ore.json
@@ -57,8 +57,8 @@ a435e3f0b3e941c9f49ed175dd0797272c8b8885 assets\vanenhanced\blockstates\end_diam
 3f7ec8f658218ae80efbff0de91f13bde770771c assets\vanenhanced\models\item\emerald_chisel.json
 eeae63e64a518e6341b31b72b4e9cbfc85df2004 assets\vanenhanced\models\item\emerald_hoe.json
 d84edced7ec2aa8ffaf8e36d6ca62ed08ff7d8ee assets\vanenhanced\models\item\emerald_leggings.json
-957f8dd57dc13930c31880eb88e7be03ec3482ed assets\vanenhanced\models\item\book_enchantment_core.json
 92e293854d4bba9a9b5d94b529e140aeb9cccfbb assets\vanenhanced\models\block\reclaim_block.json
+957f8dd57dc13930c31880eb88e7be03ec3482ed assets\vanenhanced\models\item\book_enchantment_core.json
 f72c6e4a8e3518c14ac280bf46aae2423d8a3c5c assets\vanenhanced\blockstates\nether_emerald_ore.json
 4d326bc01b765e3929812d0dafd00ffa09f5e106 assets\vanenhanced\blockstates\quartz_ore.json
 8b03b972f793dae49d8772e9836303dcdb58a3aa assets\vanenhanced\models\item\end_quartz_ore.json

@@ -3,16 +3,19 @@
   "category": "equipment",
   "key": {
     "I": {
-      "item": "minecraft:emerald"
+      "item": "minecraft:copper_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
     }
   },
   "pattern": [
-    "III",
-    "I I",
-    "I I"
+    " II",
+    " S ",
+    " S "
   ],
   "result": {
     "count": 1,
-    "id": "vanenhanced:emerald_leggings"
+    "id": "vanenhanced:copper_hoe"
   }
 }

@@ -5,6 +5,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.text.Text;
+import net.bryanleonard1984.wileslib.util.utils;
 
 import java.util.List;
 
@@ -18,13 +19,7 @@ public class HammerItem extends Item
     @Override
     public ItemStack getRecipeRemainder(ItemStack stack)
     {
-        if(stack.getDamage() < stack.getMaxDamage() - 1)
-        {
-            ItemStack moreDamaged = stack.copy();
-            moreDamaged.setDamage(stack.getDamage() + 1);
-            return moreDamaged;
-        }
-        return ItemStack.EMPTY;
+        return utils.setDamageOnCraft(stack);
     }
 
     @Override

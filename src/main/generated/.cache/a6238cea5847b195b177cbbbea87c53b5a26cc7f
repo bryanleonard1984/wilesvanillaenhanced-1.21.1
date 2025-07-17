@@ -1,8 +1,8 @@
-// 1.21.1	2025-07-12T23:20:23.2660786	Wiles Vanilla Enhanced 1.21.1/Block Loot Tables
+// 1.21.1	2025-07-17T11:57:36.1394067	Wiles Vanilla Enhanced 1.21.1/Block Loot Tables
 c47ae1f1621efbc193fe0994bbe377e6bf1d3bf1 data\vanenhanced\loot_table\blocks\decay_block.json
 4e677e8b093ba58cdcfa256316d78668b43c918b data\vanenhanced\loot_table\blocks\nether_emerald_ore.json
-0e7f2a580d776d4acc50bbb13be49d7711295d7a data\vanenhanced\loot_table\blocks\end_quartz_ore.json
 aa51e72722ef25ec3ed781e08852fcbfc3da1111 data\vanenhanced\loot_table\blocks\end_emerald_ore.json
+0e7f2a580d776d4acc50bbb13be49d7711295d7a data\vanenhanced\loot_table\blocks\end_quartz_ore.json
 01bb3b01c296b0b03dff46d762792b3038b25e8d data\vanenhanced\loot_table\blocks\end_coal_ore.json
 dec1d89f96138d23e1454198b22bf652db557655 data\minecraft\loot_table\blocks\nether_gold_ore.json
 00da81d1e88c4c0c5a0d5e1ae78c7b4ffdf5ff10 data\vanenhanced\loot_table\blocks\end_gold_ore.json

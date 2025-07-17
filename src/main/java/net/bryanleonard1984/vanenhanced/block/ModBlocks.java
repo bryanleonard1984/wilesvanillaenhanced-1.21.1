@@ -6,20 +6,61 @@ import net.bryanleonard1984.vanenhanced.block.custom.DecayBlock;
 import net.bryanleonard1984.vanenhanced.block.custom.ReclaimBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
-import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.bryanleonard1984.wileslib.block.BlockBuilderLib;
 
 public class ModBlocks
 {
     static BlockBuilderLib blockBuilderLib = new BlockBuilderLib(Wilesvanillaenhanced1211.MOD_ID, Wilesvanillaenhanced1211.LOGGER);
     static final String MOD_ID = blockBuilderLib.getId();
+
+    public static final Block QUARTZ_ORE = blockBuilderLib.createOre("quartz_ore", 1, 3,
+            3.0f, 1.5f, BlockSoundGroup.STONE);
+    public static final Block DEEPSLATE_QUARTZ_ORE = blockBuilderLib.createOre("deepslate_quartz_ore", 2, 4,
+            4.5f, 2.0f, BlockSoundGroup.DEEPSLATE);
+
+    public static final Block NETHER_COAL_ORE = blockBuilderLib.createOre("nether_coal_ore", 3, 4,
+            3.0f, 1.75f, BlockSoundGroup.NETHER_ORE);
+    public static final Block NETHER_IRON_ORE= blockBuilderLib.createOre("nether_iron_ore", 3, 5,
+            3.25f, 1.75f, BlockSoundGroup.NETHER_ORE);
+    public static final Block NETHER_DIAMOND_ORE = blockBuilderLib.createOre("nether_diamond_ore", 4, 6,
+            3.25f, 1.75f, BlockSoundGroup.NETHER_ORE);
+    public static final Block NETHER_LAPIS_ORE = blockBuilderLib.createOre("nether_lapis_ore", 3, 5,
+            3.25f, 1.75f, BlockSoundGroup.NETHER_ORE);
+    public static final Block NETHER_EMERALD_ORE = blockBuilderLib.createOre("nether_emerald_ore", 4, 7,
+            3.25f, 1.75f, BlockSoundGroup.NETHER_ORE);
+    public static final Block NETHER_REDSTONE_ORE = blockBuilderLib.createOre("nether_redstone_ore", 3, 5,
+            3.25f, 1.75f,BlockSoundGroup.NETHER_ORE);
+    public static final Block NETHER_COPPER_ORE = blockBuilderLib.createOre("nether_copper_ore", 3, 4,
+            3.0f, 4.0f, BlockSoundGroup.NETHER_ORE);
+
+    public static final Block END_COAL_ORE = blockBuilderLib.createOre("end_coal_ore", 3, 6,
+            3.0f, 2.0f, BlockSoundGroup.STONE);
+    public static final Block END_COPPER_ORE = blockBuilderLib.createOre("end_copper_ore", 3, 6,
+            3.0f, 2.0f, BlockSoundGroup.STONE);
+    public static final Block END_DIAMOND_ORE = blockBuilderLib.createOre("end_diamond_ore", 5, 7,
+            3.25f, 2.0f, BlockSoundGroup.STONE);
+    public static final Block END_EMERALD_ORE = blockBuilderLib.createOre("end_emerald_ore", 6, 8,
+            3.25f, 2.0f, BlockSoundGroup.STONE);
+    public static final Block END_GOLD_ORE = blockBuilderLib.createOre("end_gold_ore", 4, 7,
+            3.0f, 2.0f, BlockSoundGroup.STONE);
+    public static final Block END_IRON_ORE = blockBuilderLib.createOre("end_iron_ore", 3, 6,
+            3.0f, 2.0f, BlockSoundGroup.STONE);
+    public static final Block END_LAPIS_ORE = blockBuilderLib.createOre("end_lapis_ore", 3, 6,
+            3.0f, 2.0f, BlockSoundGroup.STONE);
+    public static final Block END_QUARTZ_ORE = blockBuilderLib.createOre("end_quartz_ore", 3, 6,
+            3.0f, 2.0f, BlockSoundGroup.STONE);
+    public static final Block END_REDSTONE_ORE = blockBuilderLib.createOre("end_redstone_ore", 3, 6,
+            3.0f, 2.0f, BlockSoundGroup.STONE);
+
+    public static final Block BANK_BLOCK = registerBlock("bank_block",
+            new BankBlock(AbstractBlock.Settings.create().strength(3.0f, 2.0f).burnable()
+                    .sounds(BlockSoundGroup.WOOD).nonOpaque()));
 
     public static final Block RECLAIM_BLOCK = registerBlock("reclaim_block",
             new ReclaimBlock(AbstractBlock.Settings.create().strength(4.0f, 2.5f)
@@ -28,94 +69,21 @@ public class ModBlocks
             new DecayBlock(AbstractBlock.Settings.create().strength(3.0f, 1.5f)
                     .requiresTool().sounds(BlockSoundGroup.MUD)));
 
-    public static final Block QUARTZ_ORE = blockBuilderLib.createOre(MOD_ID, "quartz_ore", 1, 3, 3.0f, 1.5f, BlockSoundGroup.STONE);
-    public static final Block DEEPSLATE_QUARTZ_ORE = blockBuilderLib.createOre(MOD_ID, "deepslate_quartz_ore", 2, 4, 4.5f, 2.0f, BlockSoundGroup.DEEPSLATE);
-
-    public static final Block NETHER_COAL_ORE = registerBlock("nether_coal_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(3, 4),
-                    AbstractBlock.Settings.create().strength(3.0f, 1.75f)
-                    .requiresTool().sounds(BlockSoundGroup.NETHER_ORE)));
-    public static final Block NETHER_IRON_ORE = registerBlock("nether_iron_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(3,5),
-                    AbstractBlock.Settings.create().strength(3.25f, 1.75f)
-                    .requiresTool().sounds(BlockSoundGroup.NETHER_ORE)));
-    public static final Block NETHER_DIAMOND_ORE = registerBlock("nether_diamond_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(4,6),
-                    AbstractBlock.Settings.create().strength(3.25f, 1.75f)
-                    .requiresTool().sounds(BlockSoundGroup.NETHER_ORE)));
-    public static final Block NETHER_LAPIS_ORE = registerBlock("nether_lapis_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(3,5),
-                    AbstractBlock.Settings.create().strength(3.25f, 1.75f)
-                    .requiresTool().sounds(BlockSoundGroup.NETHER_ORE)));
-    public static final Block NETHER_EMERALD_ORE = registerBlock("nether_emerald_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(4,7),
-                    AbstractBlock.Settings.create().strength(3.25f, 1.75f)
-                    .requiresTool().sounds(BlockSoundGroup.NETHER_ORE)));
-    public static final Block NETHER_REDSTONE_ORE = registerBlock("nether_redstone_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(3,5),
-                    AbstractBlock.Settings.create().strength(3.25f, 1.75f)
-                    .requiresTool().sounds(BlockSoundGroup.NETHER_ORE)));
-    public static final Block NETHER_COPPER_ORE = registerBlock("nether_copper_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(3,4),
-                    AbstractBlock.Settings.create().strength(3, 4)
-                    .requiresTool().sounds(BlockSoundGroup.NETHER_ORE)));
-
-    public static final Block END_COAL_ORE = registerBlock("end_coal_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),
-                    AbstractBlock.Settings.create().strength(3.0f, 2.0f)
-                    .requiresTool().sounds(BlockSoundGroup.STONE)));
-    public static final Block END_COPPER_ORE = registerBlock("end_copper_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),
-                    AbstractBlock.Settings.create().strength(3.0f, 2.0f)
-                            .requiresTool().sounds(BlockSoundGroup.STONE)));
-    public static final Block END_DIAMOND_ORE = registerBlock("end_diamond_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(5, 7),
-                    AbstractBlock.Settings.create().strength(3.25f, 2.0f)
-                            .requiresTool().sounds(BlockSoundGroup.STONE)));
-    public static final Block END_EMERALD_ORE = registerBlock("end_emerald_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(6, 8),
-                    AbstractBlock.Settings.create().strength(3.25f, 2.0f)
-                            .requiresTool().sounds(BlockSoundGroup.STONE)));
-    public static final Block END_GOLD_ORE = registerBlock("end_gold_ore",
-        new ExperienceDroppingBlock(UniformIntProvider.create(4, 7),
-                AbstractBlock.Settings.create().strength(3.0f, 2.0f)
-                        .requiresTool().sounds(BlockSoundGroup.STONE)));
-    public static final Block END_IRON_ORE = registerBlock("end_iron_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),
-                    AbstractBlock.Settings.create().strength(3.0f, 2.0f)
-                            .requiresTool().sounds(BlockSoundGroup.STONE)));
-    public static final Block END_LAPIS_ORE = registerBlock("end_lapis_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),
-                    AbstractBlock.Settings.create().strength(3.0f, 2.0f)
-                            .requiresTool().sounds(BlockSoundGroup.STONE)));
-    public static final Block END_QUARTZ_ORE = registerBlock("end_quartz_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),
-                    AbstractBlock.Settings.create().strength(3.0f, 2.0f)
-                            .requiresTool().sounds(BlockSoundGroup.STONE)));
-    public static final Block END_REDSTONE_ORE = registerBlock("end_redstone_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),
-                    AbstractBlock.Settings.create().strength(3.0f, 2.0f)
-                            .requiresTool().sounds(BlockSoundGroup.STONE)));
-
-    public static final Block BANK_BLOCK = registerBlock("bank_block",
-            new BankBlock(AbstractBlock.Settings.create().strength(3.0f, 2.0f).burnable()
-                    .sounds(BlockSoundGroup.WOOD).nonOpaque()));
-
 
     private static Block registerBlock(String name, Block block)
     {
         registerBlockItem(name, block);
-        return Registry.register(Registries.BLOCK, Identifier.of(Wilesvanillaenhanced1211.MOD_ID, name), block);
+        return Registry.register(Registries.BLOCK, Identifier.of(MOD_ID, name), block);
     }
 
     private static void registerBlockItem(String name, Block block)
     {
-        Registry.register(Registries.ITEM, Identifier.of(Wilesvanillaenhanced1211.MOD_ID, name),
+        Registry.register(Registries.ITEM, Identifier.of(MOD_ID, name),
                 new BlockItem(block, new Item.Settings()));
     }
 
     public static void registerModBlocks()
     {
-        Wilesvanillaenhanced1211.LOGGER.info("Loading mod blocks");
+        blockBuilderLib.getLogger().info("Loading mod blocks");
     }
 }

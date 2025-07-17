@@ -2,6 +2,7 @@ package net.bryanleonard1984.vanenhanced.item.custom;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ShearsItem;
+import net.bryanleonard1984.wileslib.util.utils;
 
 public class ModShearsItem extends ShearsItem
 {
@@ -13,12 +14,6 @@ public class ModShearsItem extends ShearsItem
     @Override
     public ItemStack getRecipeRemainder(ItemStack stack)
     {
-        if(stack.getDamage() < stack.getMaxDamage() - 1)
-        {
-            ItemStack moreDamaged = stack.copy();
-            moreDamaged.setDamage(stack.getDamage() + 1);
-            return moreDamaged;
-        }
-        return ItemStack.EMPTY;
+        return utils.setDamageOnCraft(stack);
     }
 }

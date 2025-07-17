@@ -3,7 +3,7 @@
 	"package": "net.bryanleonard1984.vanenhanced.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ItemSettingMixin"
 	],
 	"client": [],
 	"injectors": {
