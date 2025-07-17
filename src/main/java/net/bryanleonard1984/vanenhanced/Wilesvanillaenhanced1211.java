@@ -4,6 +4,8 @@ import net.bryanleonard1984.vanenhanced.block.ModBlocks;
 import net.bryanleonard1984.vanenhanced.item.ModItemGroups;
 import net.bryanleonard1984.vanenhanced.item.ModItems;
 import net.bryanleonard1984.vanenhanced.world.gen.ModWorldGeneration;
+import net.bryanleonard1984.wileslib.block.BlockBuilderLib;
+import net.bryanleonard1984.wileslib.item.ItemBuilderLib;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
@@ -18,10 +20,14 @@ public class Wilesvanillaenhanced1211 implements ModInitializer
 	@Override
 	public void onInitialize()
 	{
+		ItemBuilderLib itemBuilder = new ItemBuilderLib(LOGGER, MOD_ID);
+		BlockBuilderLib blockBuilder = new BlockBuilderLib(MOD_ID, LOGGER);
+
 		ModItemGroups.registerModItemGroups();
 
+		blockBuilder.registerModBlocks();
 		ModBlocks.registerModBlocks();
-		ModItems.registerModItems();
+		itemBuilder.registerModItems();
 
 		ModWorldGeneration.generateModWorldGeneration();
 

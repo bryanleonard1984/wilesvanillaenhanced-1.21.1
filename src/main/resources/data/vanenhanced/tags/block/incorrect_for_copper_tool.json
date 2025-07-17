@@ -1,0 +1,10 @@
+{
+  "values":
+          [
+            "#minecraft:incorrect_for_stone_tool"
+          ],
+  "remove":
+          [
+            "#vanenhanced:needs_copper_tool"
+          ]
+}

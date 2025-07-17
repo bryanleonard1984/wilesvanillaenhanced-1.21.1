@@ -16,11 +16,10 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.bryanleonard1984.wileslib.block.BlockBuilderLib;
 
-import static net.bryanleonard1984.wileslib.block.BlockBuilderLib.*;
-
 public class ModBlocks
 {
-    BlockBuilderLib blockBuilderLib = new BlockBuilderLib(Wilesvanillaenhanced1211.MOD_ID, Wilesvanillaenhanced1211.LOGGER);
+    static BlockBuilderLib blockBuilderLib = new BlockBuilderLib(Wilesvanillaenhanced1211.MOD_ID, Wilesvanillaenhanced1211.LOGGER);
+    static final String MOD_ID = blockBuilderLib.getId();
 
     public static final Block RECLAIM_BLOCK = registerBlock("reclaim_block",
             new ReclaimBlock(AbstractBlock.Settings.create().strength(4.0f, 2.5f)
@@ -29,14 +28,8 @@ public class ModBlocks
             new DecayBlock(AbstractBlock.Settings.create().strength(3.0f, 1.5f)
                     .requiresTool().sounds(BlockSoundGroup.MUD)));
 
-    public static final Block QUARTZ_ORE = registerBlock("quartz_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(1, 3),
-                    AbstractBlock.Settings.create().strength(3.0f, 1.5f)
-                    .requiresTool().sounds(BlockSoundGroup.STONE)));
-    public static final Block DEEPSLATE_QUARTZ_ORE = registerBlock("deepslate_quartz_ore",
-            new ExperienceDroppingBlock(UniformIntProvider.create(2, 4),
-                    AbstractBlock.Settings.create().strength(4.5f, 2.0f)
-                    .requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
+    public static final Block QUARTZ_ORE = blockBuilderLib.createOre(MOD_ID, "quartz_ore", 1, 3, 3.0f, 1.5f, BlockSoundGroup.STONE);
+    public static final Block DEEPSLATE_QUARTZ_ORE = blockBuilderLib.createOre(MOD_ID, "deepslate_quartz_ore", 2, 4, 4.5f, 2.0f, BlockSoundGroup.DEEPSLATE);
 
     public static final Block NETHER_COAL_ORE = registerBlock("nether_coal_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(3, 4),
@@ -121,9 +114,8 @@ public class ModBlocks
                 new BlockItem(block, new Item.Settings()));
     }
 
-
     public static void registerModBlocks()
     {
-        Wilesvanillaenhanced1211.LOGGER.info("Registering Mod Blocks for " + Wilesvanillaenhanced1211.MOD_ID);
+        Wilesvanillaenhanced1211.LOGGER.info("Loading mod blocks");
     }
 }
