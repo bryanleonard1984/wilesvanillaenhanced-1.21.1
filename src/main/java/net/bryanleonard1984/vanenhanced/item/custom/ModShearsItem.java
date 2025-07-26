@@ -1,7 +1,11 @@
 package net.bryanleonard1984.vanenhanced.item.custom;
 
+import net.bryanleonard1984.vanenhanced.item.ModItems;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ShearsItem;
+
+import static net.bryanleonard1984.wileslib.util.utils.setDamageOnCraft;
 
 public class ModShearsItem extends ShearsItem
 {
@@ -13,12 +17,11 @@ public class ModShearsItem extends ShearsItem
     @Override
     public ItemStack getRecipeRemainder(ItemStack stack)
     {
-        if(stack.getDamage() < stack.getMaxDamage() - 1)
-        {
-            ItemStack moreDamaged = stack.copy();
-            moreDamaged.setDamage(stack.getDamage() + 1);
-            return moreDamaged;
-        }
-        return ItemStack.EMPTY;
+        return setDamageOnCraft(stack);
+    }
+
+    public static Item createModShearsItem(String id, String name, Item item)
+    {
+        return ModItems.registerItem(id, name, new ModShearsItem(new Settings().recipeRemainder(item)));
     }
 }

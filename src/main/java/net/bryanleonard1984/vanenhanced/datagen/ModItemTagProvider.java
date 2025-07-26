@@ -36,5 +36,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider
 
         getOrCreateTagBuilder(ModTags.Items.GRASS)
                 .add(Items.SHORT_GRASS, Items.TALL_GRASS, Items.FERN, Items.LARGE_FERN);
+
+        getOrCreateTagBuilder(ModTags.Items.COINS)
+                .add(ModItems.SMALL_COPPER_COIN, ModItems.COPPER_COIN, ModItems.SMALL_IRON_COIN, ModItems.IRON_COIN, ModItems.SMALL_GOLD_COIN, ModItems.GOLD_COIN);
     }
 }

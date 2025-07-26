@@ -1,10 +1,12 @@
 package net.bryanleonard1984.vanenhanced.item.custom;
 
+import net.bryanleonard1984.vanenhanced.item.ModItems;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.text.Text;
+import static net.bryanleonard1984.wileslib.util.utils.setDamageOnCraft;
 
 import java.util.List;
 
@@ -18,13 +20,7 @@ public class HammerItem extends Item
     @Override
     public ItemStack getRecipeRemainder(ItemStack stack)
     {
-        if(stack.getDamage() < stack.getMaxDamage() - 1)
-        {
-            ItemStack moreDamaged = stack.copy();
-            moreDamaged.setDamage(stack.getDamage() + 1);
-            return moreDamaged;
-        }
-        return ItemStack.EMPTY;
+        return setDamageOnCraft(stack);
     }
 
     @Override
@@ -37,6 +33,16 @@ public class HammerItem extends Item
         else
         {
             tooltip.add(Text.translatable("tooltip.vanenhanced.hammer"));
+        }
+    }
+
+    public static Item createHammerItem(String id, String name, Item item, boolean fireproof)
+    {
+        if(fireproof)
+        {
+            return ModItems.registerItem(id, name, new HammerItem(new Settings().maxCount(1).recipeRemainder(item).fireproof()));
+        } else {
+            return ModItems.registerItem(id, name, new HammerItem(new Settings().maxCount(1).recipeRemainder(item)));
         }
     }
 }

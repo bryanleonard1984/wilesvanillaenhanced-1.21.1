@@ -1,5 +1,6 @@
 package net.bryanleonard1984.vanenhanced.item.custom;
 
+import net.bryanleonard1984.vanenhanced.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
@@ -65,6 +66,16 @@ public class ChiselItem extends Item
         else
         {
             tooltip.add(Text.translatable("tooltip.vanenhanced.chisel"));
+        }
+    }
+
+    public static Item createChiselItem(String id, String name, boolean isFireproof)
+    {
+        if(isFireproof)
+        {
+            return ModItems.registerItem(id, name, new ChiselItem(new Settings().maxCount(1).fireproof()));
+        } else {
+            return ModItems.registerItem(id, name, new ChiselItem(new Settings().maxCount(1)));
         }
     }
 }

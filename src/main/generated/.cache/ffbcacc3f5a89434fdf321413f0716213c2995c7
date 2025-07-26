@@ -1,7 +1,7 @@
-// 1.21.1	2025-07-12T23:20:23.2710949	Wiles Vanilla Enhanced 1.21.1/Tags for minecraft:block
-8a5c0259bcd2ead3895d724e67cd9164df33c2ac data\vanenhanced\tags\block\deepslate_ores.json
-9b2ce7121e35651a4b82ac4c4a4359e956612d6a data\vanenhanced\tags\block\overworld_ores.json
-1452750377a39a2aa1f374533e486afbfd34bad2 data\minecraft\tags\block\needs_iron_tool.json
-7d2793fbe2aa568c81cf29be871d569f9d49247a data\minecraft\tags\block\needs_stone_tool.json
-a6c210221aaeec381c6bc2363c5e83f921da3226 data\minecraft\tags\block\mineable\pickaxe.json
-6d7cc82fd57f3685c0ff5e30d2cf522eaec38a92 data\minecraft\tags\block\needs_diamond_tool.json
+// 1.21.1	2025-07-23T20:06:11.624958296	Wiles Vanilla Enhanced 1.21.1/Tags for minecraft:block
+a6c210221aaeec381c6bc2363c5e83f921da3226 data/minecraft/tags/block/mineable/pickaxe.json
+7d2793fbe2aa568c81cf29be871d569f9d49247a data/minecraft/tags/block/needs_stone_tool.json
+1452750377a39a2aa1f374533e486afbfd34bad2 data/minecraft/tags/block/needs_iron_tool.json
+9b2ce7121e35651a4b82ac4c4a4359e956612d6a data/vanenhanced/tags/block/overworld_ores.json
+6d7cc82fd57f3685c0ff5e30d2cf522eaec38a92 data/minecraft/tags/block/needs_diamond_tool.json
+8a5c0259bcd2ead3895d724e67cd9164df33c2ac data/vanenhanced/tags/block/deepslate_ores.json

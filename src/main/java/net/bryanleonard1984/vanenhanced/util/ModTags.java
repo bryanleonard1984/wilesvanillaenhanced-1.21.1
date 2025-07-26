@@ -45,6 +45,7 @@ public class ModTags
         public static final TagKey<Item> CHISELS = createTag("chisels");
         public static final TagKey<Item> SEEDS = createTag("seeds");
         public static final TagKey<Item> GRASS = createTag("grass");
+        public static final TagKey<Item> COINS = createTag("coins");
 
         private static TagKey<Item> createTag(String name)
         {

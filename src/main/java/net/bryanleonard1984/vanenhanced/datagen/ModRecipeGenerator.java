@@ -151,8 +151,8 @@ public class ModRecipeGenerator extends FabricRecipeProvider
                 .offerTo(recipeExporter);
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.STRING, 4)
-                .input(ItemTags.WOOL).input(Items.SHEARS)
-                .criterion(hasItem(Items.SHEARS), conditionsFromItem(Items.SHEARS))
+                .input(ItemTags.WOOL).input(ModItems.MOD_SHEARS)
+                .criterion(hasItem(ModItems.MOD_SHEARS), conditionsFromItem(ModItems.MOD_SHEARS))
                 .offerTo(recipeExporter, "string_with_shears");
 
         offerShapelessRecipe(recipeExporter, Items.NETHER_WART, Blocks.NETHER_WART_BLOCK, "nether_wart", 4);
@@ -212,7 +212,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider
         eggRecipe(Items.ZOMBIE_VILLAGER_SPAWN_EGG, Items.EMERALD, recipeExporter);
         eggRecipe(Items.ZOMBIFIED_PIGLIN_SPAWN_EGG, Items.GOLD_NUGGET, recipeExporter);
 
-        HammerRecipes(ModItems.STONE_HAMMER, Blocks.COBBLESTONE, recipeExporter);
+        HammerRecipes(ModItems.STONE_HAMMER, Blocks.SMOOTH_STONE, recipeExporter);
         HammerRecipes(ModItems.IRON_HAMMER, Items.IRON_INGOT, recipeExporter);
         HammerRecipes(ModItems.DIAMOND_HAMMER, Items.DIAMOND, recipeExporter);
         HammerRecipes(ModItems.NETHERITE_HAMMER, Items.NETHERITE_INGOT, recipeExporter);
@@ -231,9 +231,9 @@ public class ModRecipeGenerator extends FabricRecipeProvider
         HoeRecipes(ModItems.EMERALD_HOE, Items.EMERALD, recipeExporter, "emerald_hoe");
         PickaxeRecipes(ModItems.COPPER_PICKAXE, Items.COPPER_INGOT, recipeExporter);
         PickaxeRecipes(ModItems.EMERALD_PICKAXE, Items.EMERALD, recipeExporter);
-
+        ShovelRecipes(ModItems.COPPER_SHOVEL, Items.COPPER_INGOT, recipeExporter);
         ShovelRecipes(ModItems.EMERALD_SHOVEL, Items.EMERALD, recipeExporter);
-
+        SwordRecipes(ModItems.COPPER_SWORD, Items.COPPER_INGOT, recipeExporter);
         SwordRecipes(ModItems.EMERALD_SWORD, Items.EMERALD, recipeExporter);
 
         BootsRecipes(ModItems.EMERALD_BOOTS, Items.EMERALD, recipeExporter);

@@ -12,9 +12,11 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups
 {
+    public static final String MOD_ID = Wilesvanillaenhanced1211.MOD_ID;
+
     public static final ItemGroup VAN_ENHANCED_ITEMS = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(Wilesvanillaenhanced1211.MOD_ID, "van_enhanced_items"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.BOOK_ENCHANTMENT_CORE))
+            Identifier.of(MOD_ID, "van_enhanced_items"), FabricItemGroup.builder()
+                    .icon(() -> new ItemStack(ModItems.BOOK_ENCHANTMENT_CORE))
                     .displayName(Text.translatable("itemgroup.vanenhanced.van_enhanced_items"))
                     .entries((displayContext, entries) ->
                     {
@@ -35,8 +37,8 @@ public class ModItemGroups
                     }).build());
 
     public static final ItemGroup VAN_ENHANCED_TOOLS = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(Wilesvanillaenhanced1211.MOD_ID, "van_enhanced_tools"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.IRON_CHISEL))
+            Identifier.of(MOD_ID, "van_enhanced_tools"), FabricItemGroup.builder()
+                    .icon(() -> new ItemStack(ModItems.IRON_CHISEL))
                     .displayName(Text.translatable("itemgroup.vanenhanced.van_enhanced_tools"))
                     .entries((displayContext, entries) ->
                     {
@@ -60,8 +62,8 @@ public class ModItemGroups
                     }).build());
 
     public static final ItemGroup VAN_ENHANCED_BLOCKS = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(Wilesvanillaenhanced1211.MOD_ID, "van_enhanced_blocks"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.RECLAIM_BLOCK))
+            Identifier.of(MOD_ID, "van_enhanced_blocks"), FabricItemGroup.builder()
+                    .icon(() -> new ItemStack(ModBlocks.RECLAIM_BLOCK))
                     .displayName(Text.translatable("itemgroup.vanenhanced.van_enhanced_blocks"))
                     .entries((displayContext, entries) ->
                     {
