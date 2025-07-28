@@ -3,6 +3,7 @@ package net.bryanleonard1984.vanenhanced.command;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.IntegerArgumentType;
 import com.mojang.brigadier.context.CommandContext;
+import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import net.bryanleonard1984.vanenhanced.util.CopperPoints;
 import net.bryanleonard1984.vanenhanced.util.IEntityDataSaver;
 import net.minecraft.command.CommandRegistryAccess;
@@ -10,6 +11,7 @@ import net.minecraft.command.argument.EntityArgumentType;
 import net.minecraft.command.argument.ItemStackArgument;
 import net.minecraft.command.argument.ItemStackArgumentType;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtElement;
 import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.command.ServerCommandSource;
@@ -21,7 +23,7 @@ public class ItemCopperPointsValueCommand
                                 CommandRegistryAccess commandRegistryAccess,
                                 CommandManager.RegistrationEnvironment registrationEnvironment)
     {
-        serverCommandSourceCommandDispatcher.register(
+        /*serverCommandSourceCommandDispatcher.register(
                 CommandManager.literal("copperPoints")
                         .then(CommandManager.literal("check")
                                 .then(CommandManager.argument("item", ItemStackArgumentType.itemStack(commandRegistryAccess)).executes(ItemCopperPointsValueCommand::runItemCheck))
@@ -40,17 +42,35 @@ public class ItemCopperPointsValueCommand
                                         )
                                 )
                 )
+        );*/
+
+        serverCommandSourceCommandDispatcher.register(
+                CommandManager.literal("copperPoints")
+                        .then(CommandManager.literal("items")
+                                .then(CommandManager.argument("item", ItemStackArgumentType.itemStack(commandRegistryAccess))
+                                        .executes(context -> runItemCheck(
+                                                context.getSource(),
+                                                ItemStackArgumentType.getItemStackArgument(context, "item")
+                                                )
+                                        )
+                                )
+                        )
+                        .then(CommandManager.literal("players")
+                                .then(CommandManager.literal("check"))
+                                .then(CommandManager.literal("add"))
+                                .then(CommandManager.literal("subtract"))
+                                .then(CommandManager.literal("clear"))
+                        )
         );
     }
 
-    private static int runItemCheck(CommandContext<ServerCommandSource> context)
+    private static int runItemCheck(ServerCommandSource source, ItemStackArgument item) throws CommandSyntaxException
     {
-        ItemStackArgument stackArgument = ItemStackArgumentType.getItemStackArgument(context, "item");
-        Item item = stackArgument.getItem();
+        ItemStack itemStack = item.createStack(1, false);
         CopperPoints copperPointsItem = (CopperPoints) item;
-
         int points = copperPointsItem.getCopperPoints();
-        context.getSource().sendFeedback(() -> Text.literal("Copper Points: " + points), false);
+
+        source.sendFeedback(() -> Text.translatable("commands.copperPointsItem.success", itemStack.toHoverableText(), points), false);
 
         return 1;
     }

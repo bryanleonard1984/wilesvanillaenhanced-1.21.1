@@ -1,6 +1,7 @@
 package net.bryanleonard1984.vanenhanced;
 
 import net.bryanleonard1984.vanenhanced.datagen.*;
+
 import net.bryanleonard1984.vanenhanced.world.ModConfiguredFeatures;
 import net.bryanleonard1984.vanenhanced.world.ModPlacedFeatures;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
@@ -22,6 +23,7 @@ public class Wilesvanillaenhanced1211DataGenerator implements DataGeneratorEntry
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeGenerator::new);
 		pack.addProvider(ModWorldGenerator::new);
+
 	}
 
 	@Override

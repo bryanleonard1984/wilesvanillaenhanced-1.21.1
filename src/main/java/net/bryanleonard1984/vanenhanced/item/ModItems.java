@@ -41,9 +41,13 @@ public class ModItems
     public static final Item COPPER_SWORD = itemBuilder.createSwordItem(MOD_ID, "copper_sword", ModToolMaterials.COPPER, 3, -2.4f);
     public static final Item EMERALD_SWORD = itemBuilder.createSwordItem(MOD_ID, "emerald_sword", ModToolMaterials.EMERALD, 3, -2.4f);
 
+    public static final Item COPPER_BOOTS = itemBuilder.createArmorItem(MOD_ID, "copper_boots", ModArmorMaterials.COPPER, ArmorItem.Type.BOOTS, 33);
     public static final Item EMERALD_BOOTS = itemBuilder.createArmorItem(MOD_ID, "emerald_boots", ModArmorMaterials.EMERALD, ArmorItem.Type.BOOTS, 33);
+    public static final Item COPPER_CHESTPLATE = itemBuilder.createArmorItem(MOD_ID, "copper_chestplate", ModArmorMaterials.COPPER, ArmorItem.Type.CHESTPLATE, 33);
     public static final Item EMERALD_CHESTPLATE = itemBuilder.createArmorItem(MOD_ID, "emerald_chestplate", ModArmorMaterials.EMERALD, ArmorItem.Type.CHESTPLATE, 33);
+    public static final Item COPPER_HELMET = itemBuilder.createArmorItem(MOD_ID, "copper_helmet", ModArmorMaterials.COPPER, ArmorItem.Type.HELMET, 33);
     public static final Item EMERALD_HELMET = itemBuilder.createArmorItem(MOD_ID, "emerald_helmet", ModArmorMaterials.EMERALD, ArmorItem.Type.HELMET, 33);
+    public static final Item COPPER_LEGGINGS = itemBuilder.createArmorItem(MOD_ID, "copper_leggings", ModArmorMaterials.COPPER, ArmorItem.Type.LEGGINGS, 33);
     public static final Item EMERALD_LEGGINGS = itemBuilder.createArmorItem(MOD_ID, "emerald_leggings", ModArmorMaterials.EMERALD, ArmorItem.Type.LEGGINGS, 33);
 
     public static final Item CRUSHED_COAL = itemBuilder.createSimpleItem(MOD_ID, "crushed_coal");
@@ -59,23 +63,8 @@ public class ModItems
     public static final Item IRON_COIN = itemBuilder.createSimpleItem(MOD_ID, "iron_coin");
     public static final Item GOLD_COIN = itemBuilder.createSimpleItem(MOD_ID, "gold_coin");
 
-    public void initializeCopperPoints()
-    {
-        registerCopperPoints(SMALL_COPPER_COIN, 1);
-        registerCopperPoints(COPPER_COIN, 10);
-        registerCopperPoints(SMALL_IRON_COIN, 100);
-        registerCopperPoints(IRON_COIN, 1000);
-        registerCopperPoints(SMALL_GOLD_COIN, 10000);
-        registerCopperPoints(GOLD_COIN, 100000);
-    }
-
     public static Item registerItem(String id, String name, Item item)
     {
         return Registry.register(Registries.ITEM, Identifier.of(id, name), item);
-    }
-
-    void registerCopperPoints(Item item, int copperPoints)
-    {
-        ((CopperPoints) item).copperPoints(copperPoints);
     }
 }

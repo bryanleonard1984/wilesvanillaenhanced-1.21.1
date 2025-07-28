@@ -42,6 +42,10 @@ public class ModTags
         public static final TagKey<Item> RECLAMABLE_ITEMS = createTag("reclamable_items");
         public static final TagKey<Item> DECAYABLE_ITEMS = createTag("decayable_items");
         public static final TagKey<Item> HAMMERS = createTag("hammers");
+        public static final TagKey<Item> LOGS = createTag("logs");
+        public static final TagKey<Item> STRIPPED_LOGS = createTag("stripped_logs");
+        public static final TagKey<Item> WOODS = createTag("woods");
+        public static final TagKey<Item> STRIPPED_WOODS = createTag("stripped_woods");
         public static final TagKey<Item> CHISELS = createTag("chisels");
         public static final TagKey<Item> SEEDS = createTag("seeds");
         public static final TagKey<Item> GRASS = createTag("grass");

@@ -21,6 +21,15 @@
   "item.vanenhanced.iron_coin": "Iron Coin",
   "item.vanenhanced.gold_coin": "Gold Coin",
 
+  "item.vanenhanced.copper_axe": "Copper Axe",
+  "item.vanenhanced.copper_boots": "Copper Boots",
+  "item.vanenhanced.copper_chestplate": "Copper Chestplate",
+  "item.vanenhanced.copper_helmet": "Copper Helmet",
+  "item.vanenhanced.copper_hoe": "Copper Hoe",
+  "item.vanenhanced.copper_leggings": "Copper Leggings",
+  "item.vanenhanced.copper_pickaxe": "Copper Pickaxe",
+  "item.vanenhanced.copper_shovel": "Copper Shovel",
+  "item.vanenhanced.copper_sword": "Copper Sword",
   "item.vanenhanced.emerald_axe": "Emerald Axe",
   "item.vanenhanced.emerald_boots": "Emerald Boots",
   "item.vanenhanced.emerald_chestplate": "Emerald Chestplate",
@@ -62,5 +71,7 @@
   "tooltip.vanenhanced.hammer": "<Press §eshift§r for more info>",
   "tooltip.vanenhanced.hammer.shiftdown": "Crushes various ores and stone!",
   "tooltip.vanenhanced.decay_block": "Throw an item on it to decay the item.",
-  "tooltip.vanenhanced.reclaim_block": "Throw a decayed item on it to restore the item!"
+  "tooltip.vanenhanced.reclaim_block": "Throw a decayed item on it to restore the item!",
+
+  "commands.copperPointsItem.success": "%s is worth %s copper points."
 }

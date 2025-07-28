@@ -50,14 +50,23 @@ public class ModItemGroups
                         entries.add(ModItems.IRON_HAMMER);
                         entries.add(ModItems.DIAMOND_HAMMER);
                         entries.add(ModItems.NETHERITE_HAMMER);
+                        entries.add(ModItems.COPPER_AXE);
                         entries.add(ModItems.EMERALD_AXE);
+                        entries.add(ModItems.COPPER_HOE);
                         entries.add(ModItems.EMERALD_HOE);
+                        entries.add(ModItems.COPPER_PICKAXE);
                         entries.add(ModItems.EMERALD_PICKAXE);
+                        entries.add(ModItems.COPPER_SHOVEL);
                         entries.add(ModItems.EMERALD_SHOVEL);
+                        entries.add(ModItems.COPPER_SWORD);
                         entries.add(ModItems.EMERALD_SWORD);
+                        entries.add(ModItems.COPPER_BOOTS);
                         entries.add(ModItems.EMERALD_BOOTS);
+                        entries.add(ModItems.COPPER_CHESTPLATE);
                         entries.add(ModItems.EMERALD_CHESTPLATE);
+                        entries.add(ModItems.COPPER_HELMET);
                         entries.add(ModItems.EMERALD_HELMET);
+                        entries.add(ModItems.COPPER_LEGGINGS);
                         entries.add(ModItems.EMERALD_LEGGINGS);
                     }).build());
 

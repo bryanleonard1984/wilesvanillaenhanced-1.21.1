@@ -4,6 +4,7 @@ import net.bryanleonard1984.vanenhanced.item.ModItems;
 import net.bryanleonard1984.vanenhanced.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 
@@ -39,5 +40,21 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider
 
         getOrCreateTagBuilder(ModTags.Items.COINS)
                 .add(ModItems.SMALL_COPPER_COIN, ModItems.COPPER_COIN, ModItems.SMALL_IRON_COIN, ModItems.IRON_COIN, ModItems.SMALL_GOLD_COIN, ModItems.GOLD_COIN);
+
+        getOrCreateTagBuilder(ModTags.Items.LOGS)
+                .add(Items.ACACIA_LOG, Items.BAMBOO_BLOCK, Items.BIRCH_LOG, Items.CHERRY_LOG, Items.JUNGLE_LOG, Items.MANGROVE_LOG,
+                        Items.DARK_OAK_LOG, Items.OAK_LOG, Items.SPRUCE_LOG);
+
+        getOrCreateTagBuilder(ModTags.Items.STRIPPED_LOGS)
+                .add(Items.STRIPPED_ACACIA_LOG, Items.STRIPPED_BAMBOO_BLOCK, Items.STRIPPED_BIRCH_LOG, Items.STRIPPED_CHERRY_LOG, Items.STRIPPED_JUNGLE_LOG, Items.STRIPPED_MANGROVE_LOG,
+                        Items.STRIPPED_DARK_OAK_LOG, Items.STRIPPED_OAK_LOG, Items.STRIPPED_SPRUCE_LOG);
+
+        getOrCreateTagBuilder(ModTags.Items.WOODS)
+                .add(Items.ACACIA_WOOD, Items.BAMBOO_MOSAIC, Items.BIRCH_WOOD, Items.CHERRY_WOOD, Items.JUNGLE_WOOD, Items.MANGROVE_WOOD,
+                        Items.DARK_OAK_WOOD, Items.OAK_WOOD, Items.SPRUCE_WOOD);
+
+        getOrCreateTagBuilder(ModTags.Items.STRIPPED_WOODS)
+                .add(Items.STRIPPED_ACACIA_WOOD, Items.STRIPPED_BIRCH_WOOD, Items.STRIPPED_CHERRY_WOOD, Items.STRIPPED_JUNGLE_WOOD, Items.STRIPPED_MANGROVE_WOOD,
+                        Items.STRIPPED_DARK_OAK_WOOD, Items.STRIPPED_OAK_WOOD, Items.STRIPPED_SPRUCE_WOOD);
     }
 }
