@@ -45,6 +45,8 @@ public class ModRecipeGenerator extends FabricRecipeProvider
         final List<ItemConvertible> QUARTZ_SMELTABLES = List.of(ModBlocks.QUARTZ_ORE, ModBlocks.DEEPSLATE_QUARTZ_ORE, ModBlocks.END_QUARTZ_ORE);
         final List<ItemConvertible> GOLD_SMELTABLES = List.of(ModBlocks.END_GOLD_ORE, ModItems.CRUSHED_GOLD);
         final List<ItemConvertible> SOUL_SMELTABLES = List.of(Blocks.SOUL_SAND);
+        final List<ItemConvertible> COPPER_EQUIPMENT_SMELTABLES = List.of(ModItems.COPPER_AXE, ModItems.COPPER_CHESTPLATE, ModItems.COPPER_HOE, ModItems.COPPER_BOOTS, ModItems.COPPER_PICKAXE, ModItems.COPPER_HELMET,
+            ModItems.COPPER_LEGGINGS, ModItems.COPPER_SWORD, ModItems.COPPER_SHOVEL);
 
         offerSmelting(recipeExporter, COAL_SMELTABLES, RecipeCategory.MISC, Items.COAL, 0.5f, 200, "coal_ore_smelts");
         offerSmelting(recipeExporter, IRON_SMELTABLES, RecipeCategory.MISC, Items.IRON_INGOT, 0.75f, 200, "iron_ore_smelts");
@@ -56,6 +58,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider
         offerSmelting(recipeExporter, QUARTZ_SMELTABLES, RecipeCategory.MISC, Items.QUARTZ, 1.0f, 200, "quartz_ore_smelts");
         offerSmelting(recipeExporter, GOLD_SMELTABLES, RecipeCategory.MISC, Items.GOLD_INGOT, 1.0f, 200, "gold_ore_smelts");
         offerSmelting(recipeExporter, SOUL_SMELTABLES, RecipeCategory.BUILDING_BLOCKS, Blocks.SOUL_SOIL, 1.0f, 150, "soul_smelts");
+        offerSmelting(recipeExporter, COPPER_EQUIPMENT_SMELTABLES, RecipeCategory.MISC, Items.COPPER_INGOT, 2.5f, 200, "copper_equipment_smelts");
 
         offerBlasting(recipeExporter, COAL_SMELTABLES, RecipeCategory.MISC, Items.COAL, 0.5f, 100, "coal_ore_smelts");
         offerBlasting(recipeExporter, IRON_SMELTABLES, RecipeCategory.MISC, Items.IRON_INGOT, 0.75f, 100, "iron_ore_smelts");
@@ -67,6 +70,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider
         offerBlasting(recipeExporter, QUARTZ_SMELTABLES, RecipeCategory.MISC, Items.QUARTZ, 1.0f, 100, "quartz_ore_smelts");
         offerBlasting(recipeExporter, GOLD_SMELTABLES, RecipeCategory.MISC, Items.GOLD_INGOT, 1.0f, 100, "gold_ore_smelts");
         offerBlasting(recipeExporter, SOUL_SMELTABLES, RecipeCategory.BUILDING_BLOCKS, Blocks.SOUL_SOIL, 1.0f, 75, "soul_smelts");
+        offerBlasting(recipeExporter, COPPER_EQUIPMENT_SMELTABLES, RecipeCategory.MISC, Items.COPPER_INGOT, 2.5f, 100, "copper_equipment_smelts");
 
         CookingRecipeJsonBuilder.createCampfireCooking(Ingredient.ofItems(Items.STICK), RecipeCategory.MISC, Items.TORCH,
                 0.5f, 50).criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
@@ -235,13 +239,13 @@ public class ModRecipeGenerator extends FabricRecipeProvider
         ShovelRecipes(ModItems.EMERALD_SHOVEL, Items.EMERALD, recipeExporter);
         SwordRecipes(ModItems.COPPER_SWORD, Items.COPPER_INGOT, recipeExporter);
         SwordRecipes(ModItems.EMERALD_SWORD, Items.EMERALD, recipeExporter);
-
+        BootsRecipes(ModItems.COPPER_BOOTS, Items.COPPER_INGOT, recipeExporter);
         BootsRecipes(ModItems.EMERALD_BOOTS, Items.EMERALD, recipeExporter);
-
+        ChiselRecipes(ModItems.COPPER_CHESTPLATE, Items.COPPER_INGOT, recipeExporter);
         ChestplateRecipes(ModItems.EMERALD_CHESTPLATE, Items.EMERALD, recipeExporter);
-
+        HelmetRecipes(ModItems.COPPER_HELMET, Items.COPPER_INGOT, recipeExporter);
         HelmetRecipes(ModItems.EMERALD_HELMET, Items.EMERALD, recipeExporter);
-
+        LeggingsRecipes(ModItems.COPPER_LEGGINGS, Items.COPPER_INGOT, recipeExporter);
         LeggingsRecipes(ModItems.EMERALD_LEGGINGS, Items.EMERALD, recipeExporter);
     }
 }

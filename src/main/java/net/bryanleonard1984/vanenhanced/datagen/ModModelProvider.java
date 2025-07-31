@@ -59,6 +59,15 @@ public class ModModelProvider extends FabricModelProvider
         itemModelGenerator.register(ModItems.IRON_HAMMER, Models.GENERATED);
         itemModelGenerator.register(ModItems.DIAMOND_HAMMER, Models.GENERATED);
         itemModelGenerator.register(ModItems.NETHERITE_HAMMER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COPPER_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.COPPER_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.COPPER_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.COPPER_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.COPPER_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.COPPER_BOOTS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COPPER_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COPPER_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COPPER_LEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ModItems.EMERALD_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.EMERALD_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.EMERALD_PICKAXE, Models.HANDHELD);
