@@ -73,5 +73,8 @@
   "tooltip.vanenhanced.decay_block": "Throw an item on it to decay the item.",
   "tooltip.vanenhanced.reclaim_block": "Throw a decayed item on it to restore the item!",
 
-  "commands.copperPointsItem.success": "%s is worth %s copper points."
+  "commands.copperPointsItem.success": "%s is worth %s copper points.",
+  "commands.copperPointsPlayerCheck.success": "%s has %s copper points.",
+  "commands.copperPointsChange.success": "%s now has %s copper points.",
+  "commands.copperPointsClear.success": "Copper points have been removed from %s."
 }

@@ -2,7 +2,6 @@ package net.bryanleonard1984.vanenhanced.command;
 
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.IntegerArgumentType;
-import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import net.bryanleonard1984.vanenhanced.util.CopperPoints;
 import net.bryanleonard1984.vanenhanced.util.IEntityDataSaver;
@@ -10,6 +9,7 @@ import net.minecraft.command.CommandRegistryAccess;
 import net.minecraft.command.argument.EntityArgumentType;
 import net.minecraft.command.argument.ItemStackArgument;
 import net.minecraft.command.argument.ItemStackArgumentType;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtElement;
@@ -23,27 +23,6 @@ public class ItemCopperPointsValueCommand
                                 CommandRegistryAccess commandRegistryAccess,
                                 CommandManager.RegistrationEnvironment registrationEnvironment)
     {
-        /*serverCommandSourceCommandDispatcher.register(
-                CommandManager.literal("copperPoints")
-                        .then(CommandManager.literal("check")
-                                .then(CommandManager.argument("item", ItemStackArgumentType.itemStack(commandRegistryAccess)).executes(ItemCopperPointsValueCommand::runItemCheck))
-                                .then(CommandManager.argument("targets", EntityArgumentType.player()).executes(ItemCopperPointsValueCommand::runPlayerCheck)))
-                        .requires(source -> source.hasPermissionLevel(2))
-                        .then(CommandManager.literal("add")
-                                .then(CommandManager.argument("targets", EntityArgumentType.player()).executes(context ->
-                                        (
-                                                addCopperPoints(context, 1)
-                                        )
-                                )
-                                        .then(CommandManager.argument("count", IntegerArgumentType.integer(1)).executes(context -> addCopperPoints(
-                                                                context, IntegerArgumentType.getInteger(context, "count")
-                                                        )
-                                                )
-                                        )
-                                )
-                )
-        );*/
-
         serverCommandSourceCommandDispatcher.register(
                 CommandManager.literal("copperPoints")
                         .then(CommandManager.literal("items")
@@ -56,53 +35,128 @@ public class ItemCopperPointsValueCommand
                                 )
                         )
                         .then(CommandManager.literal("players")
-                                .then(CommandManager.literal("check"))
-                                .then(CommandManager.literal("add"))
-                                .then(CommandManager.literal("subtract"))
-                                .then(CommandManager.literal("clear"))
+                                .then(CommandManager.literal("check")
+                                        .then(CommandManager.argument("targets", EntityArgumentType.player())
+                                                .executes(context -> runPlayerCheck(
+                                                        context.getSource(),
+                                                        EntityArgumentType.getPlayer(context, "targets")))))
+                                .then(CommandManager.literal("add")
+                                        .then(CommandManager.argument("targets", EntityArgumentType.player())
+                                                .executes(context -> addCopperPoints(
+                                                        context.getSource(),
+                                                        EntityArgumentType.getPlayer(context, "targets"),
+                                                        1
+                                                ))
+                                                .then(CommandManager.argument("amount", IntegerArgumentType.integer(1))
+                                                        .executes(context -> addCopperPoints(
+                                                                context.getSource(),
+                                                                EntityArgumentType.getPlayer(context, "targets"),
+                                                                IntegerArgumentType.getInteger(context, "amount")
+                                                        )))))
+                                .then(CommandManager.literal("subtract")
+                                        .then(CommandManager.argument("targets", EntityArgumentType.player())
+                                                .executes(context -> subtractCopperPoints(
+                                                        context.getSource(),
+                                                        EntityArgumentType.getPlayer(context, "targets"),
+                                                        1
+                                                ))
+                                                .then(CommandManager.argument("amount", IntegerArgumentType.integer(1))
+                                                        .executes(context -> subtractCopperPoints(
+                                                                context.getSource(),
+                                                                EntityArgumentType.getPlayer(context, "targets"),
+                                                                IntegerArgumentType.getInteger(context, "amount")
+                                                        )))))
+                                .then(CommandManager.literal("clear")
+                                        .then(CommandManager.argument("targets", EntityArgumentType.player())
+                                                .executes(context -> clearCopperPoints(
+                                                        context.getSource(),
+                                                        EntityArgumentType.getPlayer(context, "targets")
+                                                ))))
                         )
         );
     }
 
-    private static int runItemCheck(ServerCommandSource source, ItemStackArgument item) throws CommandSyntaxException
+    private static int runItemCheck(ServerCommandSource source, ItemStackArgument itemStackArgument) throws CommandSyntaxException
     {
-        ItemStack itemStack = item.createStack(1, false);
-        CopperPoints copperPointsItem = (CopperPoints) item;
-        int points = copperPointsItem.getCopperPoints();
+        ItemStack itemStack = itemStackArgument.createStack(1, false);
+        Text name = itemStack.toHoverableText();
+        Item item = itemStack.getItem();
+        int points = ((CopperPoints) item).getCopperPoints();
 
-        source.sendFeedback(() -> Text.translatable("commands.copperPointsItem.success", itemStack.toHoverableText(), points), false);
+        source.sendFeedback(() -> Text.translatable("commands.copperPointsItem.success", name, points), false);
 
         return 1;
     }
 
-    private static int runPlayerCheck(CommandContext<ServerCommandSource> context)
+    private static int runPlayerCheck(ServerCommandSource source, PlayerEntity player)
     {
-        IEntityDataSaver player = (IEntityDataSaver) context.getSource().getPlayer();
-        assert player != null;
-        if(player.getPersistentData().contains("copperPoints", NbtElement.INT_TYPE))
+        IEntityDataSaver playerData = (IEntityDataSaver) player;
+        assert playerData != null;
+        Text name = player.getName();
+
+        if(playerData.getPersistentData().contains("copperPoints", NbtElement.INT_TYPE))
         {
-            int points = player.getPersistentData().getInt("copperPoints");
-            context.getSource().sendFeedback(() -> Text.literal("You have " + points + " Copper Points."), false);
+            int points = playerData.getPersistentData().getInt("copperPoints");
+            source.sendFeedback(() -> Text.translatable("commands.copperPointsPlayerCheck.success", name, points), false);
         } else {
-            player.getPersistentData().putInt("copperPoints", 0);
-            context.getSource().sendFeedback(() -> Text.literal("You have 0 Copper Points."), false);
+            playerData.getPersistentData().putInt("copperPoints", 0);
+            source.sendFeedback(() -> Text.translatable("commands.copperPointsPlayerCheck.success", name, 0), false);
         }
 
         return 1;
     }
 
-    private static int addCopperPoints(CommandContext<ServerCommandSource> context, int count)
+    private static int addCopperPoints(ServerCommandSource source, PlayerEntity player, int count)
     {
-        IEntityDataSaver player = (IEntityDataSaver) context.getSource().getPlayer();
-        assert player != null;
-        if(player.getPersistentData().contains("copperPoints", NbtElement.INT_TYPE))
+        IEntityDataSaver playerData = (IEntityDataSaver) source.getPlayer();
+        assert playerData != null;
+        Text name = player.getName();
+
+        if(playerData.getPersistentData().contains("copperPoints", NbtElement.INT_TYPE))
         {
-            int points = player.getPersistentData().getInt("copperPoints") + count;
-            player.getPersistentData().putInt("copperPoints", points);
-            context.getSource().sendFeedback(() -> Text.literal("You have added " + count + " Copper Points for a total of " + points + " Copper Points."), false);
+            int points = playerData.getPersistentData().getInt("copperPoints") + count;
+            playerData.getPersistentData().putInt("copperPoints", points);
+            source.sendFeedback(() -> Text.translatable("commands.copperPointsChange.success", name, points), true);
         } else {
-            player.getPersistentData().putInt("copperPoints", count);
-            context.getSource().sendFeedback(() -> Text.literal("You have added " + count + " Copper Points."), false);
+            playerData.getPersistentData().putInt("copperPoints", count);
+            source.sendFeedback(() -> Text.translatable("commands.copperPointsChange.success", name, count), true);
+        }
+
+        return 1;
+    }
+
+    private static int subtractCopperPoints(ServerCommandSource source, PlayerEntity player, int count)
+    {
+        IEntityDataSaver playerData = (IEntityDataSaver) player;
+        assert playerData != null;
+        Text name = player.getName();
+
+        if(playerData.getPersistentData().contains("copperPoints", NbtElement.INT_TYPE))
+        {
+            int playerCopperPoints = playerData.getPersistentData().getInt("copperPoints");
+            playerCopperPoints = playerCopperPoints >= count ? playerCopperPoints - count: 0;
+            playerData.getPersistentData().putInt("copperPoints", playerCopperPoints);
+            source.sendFeedback(() -> Text.translatable("commands.copperPointsChange.success", name, playerData.getPersistentData().getInt("copperPoints")), true);
+        } else {
+            source.sendFeedback(() -> Text.literal("Source has not initiated field copper points."), true);
+        }
+
+
+        return 1;
+    }
+
+    private static int clearCopperPoints(ServerCommandSource source, PlayerEntity player)
+    {
+        IEntityDataSaver playerData = (IEntityDataSaver) player;
+        assert playerData != null;
+        Text name = player.getName();
+
+        if(playerData.getPersistentData().contains("copperPoints", NbtElement.INT_TYPE))
+        {
+            playerData.getPersistentData().putInt("copperPoints", 0);
+            source.sendFeedback(() -> Text.translatable("commands.copperPointsClear.success", name), true);
+        } else {
+            source.sendFeedback(() -> Text.literal("Source has not initiated field copper points."), true);
         }
 
         return 1;
