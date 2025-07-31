@@ -1,4 +1,4 @@
-// 1.21.1	2025-07-31T09:15:57.3640802	Wiles Vanilla Enhanced 1.21.1/Model Definitions
+// 1.21.1	2025-07-31T12:01:34.0046261	Wiles Vanilla Enhanced 1.21.1/Model Definitions
 a79c410e288b4e5702adb5139b5adc1e8fcc5fc6 assets\vanenhanced\blockstates\nether_diamond_ore.json
 4097165e992652ba85e11b6667b83252e0be89a5 assets\vanenhanced\models\item\iron_hammer.json
 1b9ddafe49194a318a57c926585e3778559133f4 assets\vanenhanced\models\item\emerald_chestplate.json
@@ -14,8 +14,8 @@ b2d1130697cf728cc1c5453cb7b64819c1ea9403 assets\vanenhanced\models\item\nether_l
 9f8ac23d50b6a9692fd83c320964d4472024013a assets\vanenhanced\blockstates\end_iron_ore.json
 b3a11beeefca9b710bccb8520eec4cd3532bcf0c assets\vanenhanced\models\block\end_lapis_ore.json
 72268cef6b61050f6baf6326b5593eeea5c9ee93 assets\vanenhanced\models\item\crushed_copper.json
-4658cac5d732dda160ee16d197f04179e11b9438 assets\vanenhanced\blockstates\nether_copper_ore.json
 b882aefcd0e83a5ef5a2408c9d92ff1c4d2820a0 assets\vanenhanced\blockstates\end_gold_ore.json
+4658cac5d732dda160ee16d197f04179e11b9438 assets\vanenhanced\blockstates\nether_copper_ore.json
 4ec5ed517b0af628ab157e63b2ae2e428211c810 assets\vanenhanced\models\block\deepslate_quartz_ore.json
 cac9c8fe07e46eade73010dab79f65985eac0fb3 assets\vanenhanced\models\item\end_diamond_ore.json
 63a732dad8ddbe9b249d634bcf9bb5608d1d7c90 assets\vanenhanced\models\item\nether_diamond_ore.json
@@ -45,8 +45,8 @@ ba638090e83359725a74badf2257395b58a310f5 assets\vanenhanced\models\item\emerald_
 eba20a9793cf1102441ebe02dee87c08eb98f013 assets\vanenhanced\blockstates\end_quartz_ore.json
 a16a4c2aaff49b0d394a5df8bad8d09fe7e3e067 assets\vanenhanced\models\item\end_gold_ore.json
 175fcc6d7b0872e34bf5d7206ae192941a2cc793 assets\vanenhanced\models\item\decay_block.json
-0f3b832af78af58e4ab4c06c91b74dc68fcbb7c5 assets\vanenhanced\models\block\nether_redstone_ore.json
 2268be309cf94b4926cc4b911dc364fea1a4f3b4 assets\vanenhanced\models\block\end_coal_ore.json
+0f3b832af78af58e4ab4c06c91b74dc68fcbb7c5 assets\vanenhanced\models\block\nether_redstone_ore.json
 cdd1eef59f87427e74a7a1ea0ff9f18c95a2fc16 assets\vanenhanced\models\item\crushed_iron.json
 b6feec19a4c0e1892c0a9b57e3ab0cd5b28c12d1 assets\vanenhanced\models\block\end_redstone_ore.json
 517210ba5708104b34bf8c1da4373a953c63172b assets\vanenhanced\blockstates\end_coal_ore.json

@@ -1,12 +1,12 @@
-// 1.21.1	2025-07-31T09:15:57.3650806	Wiles Vanilla Enhanced 1.21.1/Tags for minecraft:item
+// 1.21.1	2025-07-31T12:01:34.0056271	Wiles Vanilla Enhanced 1.21.1/Tags for minecraft:item
 542e3a383d73f6aeb2e3c5af21a8435493b02323 data\vanenhanced\tags\item\woods.json
 25efefe9434320d07736266bcbd6e8acbda2fc3a data\vanenhanced\tags\item\decayable_items.json
 aa3f45a2b63092c7414f468979a4e4080571be8b data\vanenhanced\tags\item\grass.json
 dbfc6b0afd6cecdacf602577f6bd1e7fef42bf8b data\vanenhanced\tags\item\reclamable_items.json
-4b6b93a1d34df35f1d7c9ca5012f5d2419375d35 data\vanenhanced\tags\item\seeds.json
 a24b7222b0736336f3da4c678a3ad0962b87ca3e data\vanenhanced\tags\item\chisels.json
+4b6b93a1d34df35f1d7c9ca5012f5d2419375d35 data\vanenhanced\tags\item\seeds.json
 ca343602aad014b3ca22374631afc453e62a20ab data\vanenhanced\tags\item\logs.json
 747b21eb49b8c575f8a85182ce009c3cfd570bba data\vanenhanced\tags\item\stripped_logs.json
-b4c3f0cd805e6bb7e2a1bc9f111245e6b3a7b22c data\vanenhanced\tags\item\coins.json
 4f10d620d35cac6d95d7cd34e7b37b4d51cfa1fa data\vanenhanced\tags\item\hammers.json
+b4c3f0cd805e6bb7e2a1bc9f111245e6b3a7b22c data\vanenhanced\tags\item\coins.json
 815c93c9bb062dc352cc0c1b7dae8da190acafc5 data\vanenhanced\tags\item\stripped_woods.json

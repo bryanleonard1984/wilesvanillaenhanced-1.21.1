@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "vanenhanced:block/forester_block",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "vanenhanced:block/forester_block",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "vanenhanced:block/forester_block"
+    },
+    "facing=west": {
+      "model": "vanenhanced:block/forester_block",
+      "y": 90
+    }
+  }
+}

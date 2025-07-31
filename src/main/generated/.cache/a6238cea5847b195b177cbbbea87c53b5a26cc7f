@@ -1,4 +1,4 @@
-// 1.21.1	2025-07-31T09:15:57.3540807	Wiles Vanilla Enhanced 1.21.1/Block Loot Tables
+// 1.21.1	2025-07-31T12:01:33.9986265	Wiles Vanilla Enhanced 1.21.1/Block Loot Tables
 c47ae1f1621efbc193fe0994bbe377e6bf1d3bf1 data\vanenhanced\loot_table\blocks\decay_block.json
 4e677e8b093ba58cdcfa256316d78668b43c918b data\vanenhanced\loot_table\blocks\nether_emerald_ore.json
 aa51e72722ef25ec3ed781e08852fcbfc3da1111 data\vanenhanced\loot_table\blocks\end_emerald_ore.json
@@ -17,6 +17,7 @@ ef23cf147f250861e253b32c94ab6181aa128b1f data\vanenhanced\loot_table\blocks\neth
 cf574900ac5572cc73229810996c6bd27ca399de data\vanenhanced\loot_table\blocks\reclaim_block.json
 5dba690d25a00cb5652797217800cc389732780e data\vanenhanced\loot_table\blocks\nether_redstone_ore.json
 76d2392dd3732c7c4e7e21ef1df7d58bfeb2e46c data\vanenhanced\loot_table\blocks\bank_block.json
+5ebcff1aa16baf6ecbfa5d032f8fbee7827d1663 data\vanenhanced\loot_table\blocks\forester_block.json
 646710ec939fc8b7a19272d8696e4ff3660991c0 data\vanenhanced\loot_table\blocks\quartz_ore.json
 f953dd27c585aded416dd8a3d395e8db4aab3703 data\vanenhanced\loot_table\blocks\end_redstone_ore.json
 8aa9a343f31f30f9f5dbfdbe3b239a0adff3a44b data\vanenhanced\loot_table\blocks\end_lapis_ore.json

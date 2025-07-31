@@ -3,6 +3,7 @@ package net.bryanleonard1984.vanenhanced.block;
 import net.bryanleonard1984.vanenhanced.Wilesvanillaenhanced1211;
 import net.bryanleonard1984.vanenhanced.block.custom.BankBlock;
 import net.bryanleonard1984.vanenhanced.block.custom.DecayBlock;
+import net.bryanleonard1984.vanenhanced.block.custom.ForesterBlock;
 import net.bryanleonard1984.vanenhanced.block.custom.ReclaimBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -60,6 +61,9 @@ public class ModBlocks
 
     public static final Block BANK_BLOCK = registerBlock("bank_block",
             new BankBlock(AbstractBlock.Settings.create().strength(3.0f, 2.0f).burnable()
+                    .sounds(BlockSoundGroup.WOOD).nonOpaque()));
+    public static final Block FORESTER_BLOCK = registerBlock("forester_block",
+            new ForesterBlock(AbstractBlock.Settings.create().strength(2.5f, 1.5f).burnable()
                     .sounds(BlockSoundGroup.WOOD).nonOpaque()));
 
     public static final Block RECLAIM_BLOCK = registerBlock("reclaim_block",

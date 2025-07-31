@@ -60,6 +60,7 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider
         addDrop(ModBlocks.END_REDSTONE_ORE, multipleOreDrops(ModBlocks.END_REDSTONE_ORE, Items.REDSTONE, 6.0f, 10.0f));
 
         addDrop(ModBlocks.BANK_BLOCK);
+        addDrop(ModBlocks.FORESTER_BLOCK);
     }
 
     @Override
