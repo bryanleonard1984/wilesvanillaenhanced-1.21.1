@@ -1,10 +1,7 @@
 package net.bryanleonard1984.vanenhanced.block;
 
 import net.bryanleonard1984.vanenhanced.Wilesvanillaenhanced1211;
-import net.bryanleonard1984.vanenhanced.block.custom.BankBlock;
-import net.bryanleonard1984.vanenhanced.block.custom.DecayBlock;
-import net.bryanleonard1984.vanenhanced.block.custom.ForesterBlock;
-import net.bryanleonard1984.vanenhanced.block.custom.ReclaimBlock;
+import net.bryanleonard1984.vanenhanced.block.custom.*;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -65,6 +62,23 @@ public class ModBlocks
     public static final Block FORESTER_BLOCK = registerBlock("forester_block",
             new ForesterBlock(AbstractBlock.Settings.create().strength(2.5f, 1.5f).burnable()
                     .sounds(BlockSoundGroup.WOOD).nonOpaque()));
+    public static final Block MINER_BLOCK = registerBlock("miner_block",
+            new MinerBlock(AbstractBlock.Settings.create()
+                    .strength(3.0f, 3.0f)
+                    .nonOpaque()
+                    .luminance(MinerBlock.STATE_TO_LUMINANCE)
+                    .sounds(BlockSoundGroup.STONE)));
+    public static final Block NETHER_EXPLORER_BLOCK = registerBlock("nether_explorer_block",
+            new NetherExplorerBlock(AbstractBlock.Settings.create()
+                    .strength(3.25f, 3.0f)
+                    .nonOpaque()
+                    .luminance(NetherExplorerBlock.STATE_TO_LUMINANCE)
+                    .sounds(BlockSoundGroup.NETHER_BRICKS)));
+    public static final Block HUNTER_BLOCK = registerBlock("hunter_block",
+            new HunterBlock(AbstractBlock.Settings.create()
+                    .strength(2.5f, 1.5f)
+                    .nonOpaque()
+                    .sounds(BlockSoundGroup.WOOD)));
 
     public static final Block RECLAIM_BLOCK = registerBlock("reclaim_block",
             new ReclaimBlock(AbstractBlock.Settings.create().strength(4.0f, 2.5f)

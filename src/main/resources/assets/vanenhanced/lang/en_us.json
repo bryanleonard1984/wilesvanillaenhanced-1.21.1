@@ -61,7 +61,10 @@
   "block.vanenhanced.end_quartz_ore": "End Quartz Ore",
   "block.vanenhanced.end_redstone_ore": "End Redstone Ore",
   "block.vanenhanced.bank_block": "Bank",
-  "block.vanenhanced.forester_block": "Forester Block",
+  "block.vanenhanced.forester_block": "Forester",
+  "block.vanenhanced.miner_block": "Miner",
+  "block.vanenhanced.nether_explorer_block": "Nether Explorer",
+  "block.vanenhanced.hunter_block": "Hunter",
 
   "itemgroup.vanenhanced.van_enhanced_tools": "Vanilla Enhanced Tools",
   "itemgroup.vanenhanced.van_enhanced_items": "Vanilla Enhanced Items",

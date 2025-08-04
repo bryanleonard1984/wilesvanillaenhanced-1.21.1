@@ -61,6 +61,9 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider
 
         addDrop(ModBlocks.BANK_BLOCK);
         addDrop(ModBlocks.FORESTER_BLOCK);
+        addDrop(ModBlocks.MINER_BLOCK);
+        addDrop(ModBlocks.NETHER_EXPLORER_BLOCK);
+        addDrop(ModBlocks.HUNTER_BLOCK);
     }
 
     @Override
